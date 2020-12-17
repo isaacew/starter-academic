@@ -1,6 +1,6 @@
 ---
-title: Isaac Weintraub
 role: Electronics Engineer
+avatar_filename: weintraubdec2020.png
 bio: My research includes the use of optimization and differential game for
   aerospace applications.
 interests:
@@ -37,9 +37,10 @@ education:
     - course: Bachelor of Science in Mechanical Engineering
       institution: Rose-Hulman Institute of Technology
       year: 2009
-email: ""
 superuser: true
 highlight_name: false
+title: Isaac Weintraub
+email: ""
 ---
 Isaac Weintraub was born and raised in Toledo, Ohio. After graduating in 2005 from the Toledo Technology Academy, where he specialized in industrial automatic control and manufacturing, Isaac attended Rose-Hulman Institute of Technology. He graduated magna cum laude in 2009 with a bachelor's of science in mechanical engineering, minoring in electrical engineering, and receiving a certificate in robotics.
 
