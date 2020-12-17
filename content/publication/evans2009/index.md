@@ -4,6 +4,9 @@
 title: "The 50:50 Lifeline on `Who Wants to be a Millionaire?'"
 authors: [D. L. Evans, I. Weintraub]
 date: 2009
+volume:43
+number:1
+pages:69--80
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
