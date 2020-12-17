@@ -24,19 +24,19 @@ social:
     icon_pack: fab
     link: https://www.linkedin.com/
 organizations:
-  - name: Stanford University
-    url: https://www.stanford.edu/
+  - name: Air Force Research Laboratory
+    url: https://www.afrl.af.mil
 education:
   courses:
-    - course: PhD in Artificial Intelligence
-      institution: Stanford University
-      year: 2012
-    - course: MEng in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
+    - course: PhD in Electrical Engineering
+      institution: Air Force Institute of Technology
+      year: 2021
+    - course: Masters of Science in Electrical Engineering
+      institution: The University of Texas at Arlington
+      year: 2011
+    - course: Bachelor of Science in Mechanical Engineering
+      institution: Rose-Hulman Institute of Technology
       year: 2009
-    - course: BSc in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2008
 email: ""
 superuser: true
 highlight_name: false
