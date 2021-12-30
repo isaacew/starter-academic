@@ -1,22 +1,27 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Weintraub2014implementation"
-authors: []
-date: 2021-12-29T21:03:38-05:00
-doi: ""
+title: "Implementation of Split-Cycle Control for Micro Aerial Vehicles"
+authors: 
+- Isaac E Weintraub
+- David O Sigthorsson
+- Michael W Oppenheimer
+- David B Doman
+
+date: 2014-01-01T21:03:38-05:00
+doi: "10.1007/978-3-319-05582-4_76"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2021-12-29T21:03:38-05:00
+publishDate: 2014-01-01T21:03:38-05:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["0"]
+publication_types: ["6"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
+publication: "Robot Intelligence Technology and Applications 2"
 publication_short: ""
 
 abstract: ""
@@ -24,7 +29,11 @@ abstract: ""
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
+tags: 
+- flapping wing 
+- biomimetics
+- split-cycle control
+- micro air vehicles
 categories: []
 featured: false
 

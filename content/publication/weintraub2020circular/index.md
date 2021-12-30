@@ -1,25 +1,41 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Weintraub2020circular"
-authors: []
-date: 2021-12-29T21:03:01-05:00
-doi: ""
+title: "Circular Rejoin in 3D Using Bézier Paths"
+authors: 
+- Isaac E Weintraub
+- Zachary J L Demers
+- Jason Shroyer
+- Nathan P Ritsema
+- Dillon P Sluss
+
+date: 2020-08-24T08:03:01-05:00
+doi: "10.1109/CCTA41146.2020.9206385"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2021-12-29T21:03:01-05:00
+publishDate: 2020-09-28T08:03:01-05:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["0"]
+publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
+publication: "IEEE Conference on Control Technology and Applications (CCTA)"
 publication_short: ""
 
-abstract: ""
+abstract: "In this paper, the interception of a target vehicle is presented
+utilizing a Bézier path. Utilizing the Bézier path, the controlled vehicle
+is navigated from an initial point and velocity vector to a desired target
+waypoint and velocity vector. To ensure a flyable path, control points of
+the Bézier are adjusted using a nonlinear program that takes into account
+maximum path curvature and vehicle performance criteria. A model predictive
+controller is designed to provide the real-time controls that drive the
+controlled vehicle along the Bézier path with minimal flight path error and
+control effort. A numerical simulation, which demonstrates the ability to
+navigate to a desired waypoint and velocity vector for circular rejoin, is
+provided as an example."
 
 # Summary. An optional shortened abstract.
 summary: ""
