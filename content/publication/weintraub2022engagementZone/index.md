@@ -1,25 +1,38 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Weintraub2022engagementZone"
-authors: []
-date: 2021-12-29T20:59:44-05:00
+title: "An Optimal Engagement Zone Avoidance Scenario in 2-D"
+authors:
+- Isaac E. Weintraub
+- Alexander Von Moll
+- Christian Carrizales
+- Nicholas Hanlon
+- Zachariah Fuchs
+
+author_notes:
+- "Controls Science Center, Air Force Research Laboratory"
+- "Controls Science Center, Air Force Research Laboratory"
+- "Aerospace Systems Directorate, Air Force Research Laboratory"
+- "Aerospace Systems Directorate, Air Force Research Laboratory"
+- "Department of Electrical Engineering, University of Cincinnati"
+  
+date: 2021-11-10T08:00:00-05:00
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2021-12-29T20:59:44-05:00
+publishDate: 2021-11-10T08:00:00-05:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["0"]
+publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
+publication: "arXiv"
 publication_short: ""
 
-abstract: ""
+abstract: "In this paper, an optimal control problem is considered where a target vehicle aims to reach a desired location in minimum time while avoiding a dynamic engagement zone. Using simple motion, four potential approaches are considered. First, the min-time strategy which ignores the engagement zone is posed and solved. Second, the min-time strategy which avoids the engagement zone entirely is considered. Third, the min-time strategy which allows for some time in the engagement zone; but, still strives to stay away from the center of the engagement zone is posed. Lastly, a fixed final-time strategy is considered, wherein the target tries to avoid the engagement zone; but, is required to arrive at the desired location at a specific time. Using a nonlinear program solver, the optimal strategies are numerically solved. From the results of the numeric solutions, the optimal strategies are discussed and comparisons are drawn."
 
 # Summary. An optional shortened abstract.
 summary: ""
@@ -36,7 +49,7 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf:
+url_pdf: https://arxiv.org/pdf/2111.05904.pdf
 url_code:
 url_dataset:
 url_poster:
