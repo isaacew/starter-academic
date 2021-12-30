@@ -1,6 +1,6 @@
 ---
 role: Electronics Engineer
-avatar_filename: "weintraubdec2020.png"
+avatar_filename: 'weintraubdec2020.png'
 bio: My research includes the use of optimization and differential games for
   aerospace applications.
 interests:

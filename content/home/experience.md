@@ -23,23 +23,25 @@ date_format: Jan 2006
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
   - title: Electrical Engineer
-    company: Ari Force Research Laboratory
-    company_url: ''
-    location: Ohio
-    date_start: '2017-01-01'
+    company: Air Force Research Laboratory
+    company_url: 'https://afresearchlab.com/'
+    location: Wright-Patterson AFB
+    date_start: '2016-09-29'
     date_end: ''
     description: |2-
         Responsibilities include:
+
+        * Collaborated with 7 universities in cooperative control and tactical autonomomy.
+        * Developed autonomous relational maneuvering algorithms for manned and
+      unmanned aircraft.
+        * Lead flying and handling qualities motion tuning in the LAMARS
+        motion simulator.
         
-        * Analysing
-        * Modelling
-        * Deploying
-        
-  - title: Director of Operations
-    company: AFRL Maker Hub
+  - title: Research Scientist
+    company: Infoscitex Corp.
     company_url: ''
     location: Ohio
-    date_start: '2016-01-01'
-    date_end: '2016-12-31'
+    date_start: '2016-01-05'
+    date_end: '2016-09-29'
     description: Taught electronic engineering and researched semiconductor physics.
 ---
