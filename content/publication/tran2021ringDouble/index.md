@@ -1,19 +1,31 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Tran2021ringDouble"
-authors: []
-date: 2021-12-29T21:00:41-05:00
-doi: ""
+title: "Ring Formation Maneuver: Double-Integrator Kinematics with Input Saturation"
+authors:
+- Dzung Tran
+- David Casbeer
+- Eloy Garcia
+- Isaac E. Weintraub
+- Dejan Milutinovic
+author_notes:
+- "Control Science Center, Air Force Research Laboratory"
+- "Control Science Center, Air Force Research Laboratory"
+- "Control Science Center, Air Force Research Laboratory"
+- "Control Science Center, Air Force Research Laboratory"
+- "Department of Electrical and Computer Engineering, University of
+  California Santa Cruz"
+date: 2021-09-13T08:00:00-05:00
+doi: "10.2514/1.G005925"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2021-12-29T21:00:41-05:00
+publishDate: 2021-09-13T08:00:00-05:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["0"]
+publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
 publication: ""
