@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Manyam2021quaQuadratic Bezier Curves for Multi-Agent Coordinated Arrival in the Presence of Obstaclesdratic"
+title: "Quadratic Bezier Curves for Multi-Agent Coordinated Arrival in the Presence of Obstaclesdratic"
 authors:
 - Satyanarayana G Manyam
 - David Casbeer
