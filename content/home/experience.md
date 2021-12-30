@@ -7,7 +7,7 @@ widget: experience
 headless: true
 
 # Order that this section appears on the page.
-weight: 30
+weight: 40
 
 title: Experience
 subtitle:
@@ -22,24 +22,39 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: Electrical Engineer
+  - title: 'Electrical Engineer'
     company: Air Force Research Laboratory
     company_url: 'https://afresearchlab.com/'
     location: Wright-Patterson AFB
     date_start: '2016-09-29'
     date_end: ''
-    description:
-        * Collaborated with 7 universities in cooperative control and tactical autonomomy.
-        * Developed autonomous relational maneuvering algorithms for manned and
-      unmanned aircraft.
-        * Lead flying and handling qualities motion tuning in the LAMARS
-        motion simulator.
+    description: |2-
         
-  - title: Research Scientist
-    company: Infoscitex Corp.
+        * Collaborated with 7 universities in cooperative control and tactical autonomomy.
+        * Developed autonomous relational maneuvering algorithms for manned and unmanned aircraft.
+        * Lead flying and handling qualities motion tuning in the LAMARS motion simulator.
+        
+  - title:    'Research Scientist'
+    company:  'Infoscitex Corp.'
     company_url: ''
-    location: Ohio
-    date_start: '2016-01-05'
-    date_end: '2016-09-29'
-    description: Taught electronic engineering and researched semiconductor physics.
+    location: Dayton, OH
+    date_start: '2016-01-01'
+    date_end: '2016-12-31'
+    description: Things
+
+  - title:    'Scientist'
+    company:  'General Dynamics'
+    company_url: ''
+    location: Dayton, OH
+    date_start: '2016-01-01'
+    date_end: '2016-12-31'
+    description: Things
+    
+  - title:    'Summer Research Fellow'
+    company:  'Universal Technolgy Corporation'
+    company_url: ''
+    location: Dayton, OH
+    date_start: '2016-01-01'
+    date_end: '2016-12-31'
+    description: Things
 ---
