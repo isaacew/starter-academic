@@ -1,25 +1,32 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Garcia2018adaptive"
-authors: []
-date: 2021-12-29T21:03:14-05:00
-doi: ""
+title: "Adaptive Event-triggered Cooperative Control of Uncertain Networked Systems"
+authors:
+- Eloy Garcia
+- Isaac E. Weintraub
+- David W. Casbeer
+author_notes:
+- "Control Science Center of Excellence, Air Force Research Laboratory, Wright-Patterson AFB, OH 45433"
+- "Aerospace Systems Directorate, Air Force Research Laboratory, Wright-Patterson AFB, OH 45433"
+- Control Science Center of Excellence, Air Force Research Laboratory, Wright-Patterson AFB, OH 45433"
+date: 2018-12-01T08:00:00-05:00
+doi: "10.1016/j.ifacol.2018.07.092"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2021-12-29T21:03:14-05:00
+publishDate: 2018-12-01T08:00:00-05:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["0"]
+publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
+publication: "IFAC-PapersOnLine"
 publication_short: ""
 
-abstract: ""
+abstract: "Coordination and cooperation of networked multi-agent systems is usually constrained by dynamic and communication limitations. In this work we consider the problem of distributed leader following of heterogeneous and uncertain multi-agent systems. Each agent or subsystem implements a local and completely decentralized adaptive controller in order to compensate for the uncertainty on its system parameters. At the inter-agent communication level and due to the limitations on broadcasting continuous signals, each agent employs a decentralized event-triggered multi-agent system (MAS) controller which tracks the state of the leader and reduces broadcasting of information. Hence, the two layer controller architecture provides a useful framework for the multiple agents to follow the leader in the presence of system uncertainties and absence of continuous exchange of information."
 
 # Summary. An optional shortened abstract.
 summary: ""
@@ -36,6 +43,7 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
+url: https://www.sciencedirect.com/science/article/pii/S2405896318308358#!
 url_pdf:
 url_code:
 url_dataset:

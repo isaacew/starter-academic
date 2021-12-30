@@ -1,8 +1,20 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Clem2019Intercept"
-authors: []
+title: "An Intercept and Following Strategy for a Multi-rotor Platform using a Modified Proportional Navigation
+"
+authors:
+- Garrett Clem
+- Jay Wilhelm
+- David Casbeer
+- Isaac E. Weintraub
+- David J. Grymin
+author_notes:
+- "Russ College of Engineering and Technology, Athens, OH"
+- "Russ College of Engineering and Technology, Athens, OH"
+- "Control Science Center, Air Force Research Laboratory"
+- "Control Science Center, Air Force Research Laboratory"
+- Control Science Center, Air Force Research Laboratory
 date: 2021-12-29T20:57:48-05:00
 doi: ""
 

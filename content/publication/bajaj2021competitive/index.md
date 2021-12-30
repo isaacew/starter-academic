@@ -10,11 +10,20 @@ authors:
 - Isaac Weintraub
 - Eloy Garcia
 - David Casbeer
-date: 2021-10-10T08:01:03-05:00
+
+author_notes:
+- "Department of Electrical and Computer Engineering, Michigan State University"
+- "Department of Computer Science, Michigan State University"
+- "Department of Electrical and Computer Engineering, Michigan State University"
+- "Control Science Center, Air Force Research Laboratory"
+- "Control Science Center, Air Force Research Laboratory"
+- Control Science Center, Air Force Research Laboratory
+- Control Science Center, Air Force Research Laboratory
+date: 2021-10-10T08:00:00-05:00
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2021-10-10T08:01:03-05:00
+publishDate: 2021-10-10T08:00:00-05:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
