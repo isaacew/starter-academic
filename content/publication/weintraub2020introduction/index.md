@@ -3,11 +3,11 @@
 
 title: "An Introduction to Pursuit-evasion Differential Games"
 authors: [Isaac E. Weintraub, Meir Pachter, Eloy Garcia]
-date: 2021-07-01T08:00:00-05:00
+date: 2020-07-01T08:00:00-05:00
 doi: "10.23919/ACC45564.2020.9147205"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2021-07-01T08:00:00-05:00
+publishDate: 2020-07-01T08:00:00-05:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -17,7 +17,7 @@ publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
 publication: "2020 American Control Conference"
-publication_short: "ACC"
+publication_short: "2020 American Control Conference"
 
 abstract: "Pursuit and evasion conflicts represent challenging problems with important applications in aerospace and robotics. In pursuit-evasion problems, synthesis of intelligent actions must consider the adversary's potential strategies. Differential game theory provides an adequate framework to analyze possible outcomes of the conflict without assuming particular behaviors by the opponent. This article presents an organized introduction of pursuit-evasion differential games with an overview of recent advances in the area. First, a summary of the seminal work is outlined, highlighting important contributions. Next, more recent results are described by employing a classification based on the number of players: one-pursuer-one-evader, N-pursuers-one-evader, one-pursuer-M-evaders, and N-pursuer-M-evader games. In each scenario, a brief summary of the literature is presented. Finally, two representative pursuit-evasion differential games are studied in detail: the two-cutters and fugitive ship differential game and the active target defense differential game. These problems provide two important applications and, more importantly, they give great insight into the realization of cooperation between friendly agents in order to form a team and defeat the adversary."
 
