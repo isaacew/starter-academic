@@ -1,13 +1,17 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Sigthorsson2012STEAP"
-authors: []
-date: 2021-12-29T21:03:54-05:00
+title: "Structural Technology Evaluation and Analysis Program (STEAP). Delivery Order 0035: Dynamics and Control and Computational Design of Flapping Wing Micro Air Vehicles"
+authors:
+- David O Sigthorsson
+- Isaac Weintraub
+- Christopher Smithson
+
+date: 2012-10-01T21:03:54-05:00
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2021-12-29T21:03:54-05:00
+publishDate: 2012-10-01T21:03:54-05:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -36,7 +40,7 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf:
+url_pdf: "https://apps.dtic.mil/sti/pdfs/ADA582345.pdf"
 url_code:
 url_dataset:
 url_poster:
