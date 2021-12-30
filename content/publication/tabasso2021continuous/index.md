@@ -1,25 +1,43 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Tabasso2021continuous"
-authors: []
-date: 2021-12-29T21:00:20-05:00
-doi: ""
+title: "Continuous Monitoring of a Path-Constrained Moving Target by Multiple Unmanned Aerial Vehicles"
+authors:
+- Camilla Tabasso
+- Calvin Kielas-Jensen
+- Venanzio Cichella
+- Satyanarayana Manyam
+- David W. Casbeer
+- Isaac Weintraub
+date: 2021-11-15T08:00:20-05:00
+doi: "10.2514/1.G006043"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2021-12-29T21:00:20-05:00
+publishDate: 2021-11-15T08:00:20-05:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["0"]
+publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
-publication_short: ""
+publication: "Journal of Guidance, Control, and Dynamics"
+publication_short: "JGCD"
 
-abstract: ""
+abstract: "In this work, a continuous monitoring scenario where multiple
+unmanned aerial vehicles are tasked to monitor a dynamic target moving
+along a path with unknown speed profile is addressed. Optimal trajectories
+based on the nominal trajectory of the target are generated offline. If
+changes in the speed profile of the target are detected, the agents’
+trajectories can be modified online to ensure that the monitoring
+requirements are met, while still maintaining intervehicle safety
+guarantees. The time-coordination algorithm proposed as a solution to this
+problem is based on a leader–follower structure. The unmanned aerial
+vehicles are assumed to exchange information over a communication network
+where limited quality of service, switching topologies, and data package
+dropouts are considered. Finally, performance bounds and simulation results
+to prove the efficacy of our method are provided."
 
 # Summary. An optional shortened abstract.
 summary: ""
