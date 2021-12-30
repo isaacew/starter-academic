@@ -28,9 +28,7 @@ experience:
     location: Wright-Patterson AFB
     date_start: '2016-09-29'
     date_end: ''
-    description: |2-
-        Responsibilities include:
-
+    description:
         * Collaborated with 7 universities in cooperative control and tactical autonomomy.
         * Developed autonomous relational maneuvering algorithms for manned and
       unmanned aircraft.

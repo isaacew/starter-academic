@@ -10,6 +10,7 @@ headless: true
 weight: 40
 
 title: Skills
+
 Sheet Metal Fabrication, Carbon Fiber and Fiberglass Molding and
 Fabrication, Mill, Lathe, Welding (MIG/Stick), Circuit Design and
 Debugging, CNC Mill, CNC Lathe, Laser Cutting, 3D Printing (SLA FDM SLS),
@@ -20,8 +21,6 @@ Altium, Autodesk Inventor, AutoCAD, Eagle CAD, MasterCAM, Solid Edge, Solid
 Works, Labview, Labview Real-Time, MATLAB, Simulink, Maple, Microsoft
 Office, Open Office, Google Docs, PCB Design, Visi-Peps Wire, Adobe
 Photoshop, Basic, C, C#, G-Code, LaTeX, TikZ
-
-
 
 subtitle:
 
