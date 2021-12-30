@@ -6,15 +6,17 @@ authors:
 - Eloy Garcia
 - Isaac E. Weintraub
 - David W. Casbeer
+  
 author_notes:
 - "Control Science Center of Excellence, Air Force Research Laboratory, Wright-Patterson AFB, OH 45433"
 - "Aerospace Systems Directorate, Air Force Research Laboratory, Wright-Patterson AFB, OH 45433"
 - Control Science Center of Excellence, Air Force Research Laboratory, Wright-Patterson AFB, OH 45433"
-date: 2018-12-01T08:00:00-05:00
+  
+date: 2018-06-01T08:00:00-05:00
 doi: "10.1016/j.ifacol.2018.07.092"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2018-12-01T08:00:00-05:00
+publishDate: 2018-06-01T08:00:00-05:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -43,7 +45,6 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url: https://www.sciencedirect.com/science/article/pii/S2405896318308358#!
 url_pdf:
 url_code:
 url_dataset:

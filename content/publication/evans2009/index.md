@@ -2,20 +2,18 @@
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "The 50:50 Lifeline on `Who Wants to be a Millionaire?'"
-authors: 
+authors:
 - D. L. Evans
 - I. Weintraub
 author_notes:
-- "Department of Mathematics, Rose-Hulman Institute of Technology"
-- "Department of Mechanical Engineering, Rose-Hulman Institute of Technology" 
-date: 2009-01-07T08:00:00-05:00
-volume: 43
-number: 1
-pages: 69--80
+- "Department of Mathematics and Statistics, Rose-Hulman Institute of Technology"
+- "Department of Mechanical Engineering, Rose-Hulman Institute of Technology"
+  
+date: 2009-01-01T09:17:43-05:00
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2009-01-07T08:00:00-05:00
+publishDate: 2009-01-01T09:17:43-05:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -24,7 +22,7 @@ publishDate: 2009-01-07T08:00:00-05:00
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: "Mathematics and Computer Education"
+publication: ""
 publication_short: ""
 
 abstract: ""
