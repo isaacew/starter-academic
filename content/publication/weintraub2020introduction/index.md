@@ -2,7 +2,16 @@
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "An Introduction to Pursuit-evasion Differential Games"
-authors: [Isaac E. Weintraub, Meir Pachter, Eloy Garcia]
+authors:
+- Isaac E. Weintraub
+- Meir Pachter
+- Eloy Garcia
+author_notes:
+- "Air Force Research Laboratory, Aerospace Systems Directorate"
+- "Air Force Institute of Technology, Department of Electrical and Computer
+  Engineering"
+- "Air Force Research Laboratory, Aerospace Systems Directorate"
+- 
 date: 2020-07-01T08:00:00-05:00
 doi: "10.23919/ACC45564.2020.9147205"
 
