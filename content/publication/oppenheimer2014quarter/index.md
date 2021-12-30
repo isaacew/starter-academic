@@ -1,22 +1,27 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Oppenheimer2015quarter"
-authors: []
-date: 2021-12-29T20:57:59-05:00
-doi: ""
+title: "Oppenheimer2014quarter"
+authors: 
+- Michael W Oppenheimer
+- Isaac E Weintraub
+- David O Sigthorsson
+- David B Doman
+
+date: 2014-01-13T20:57:59-05:00
+doi: "10.2514/6.2014-1467"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2021-12-29T20:57:59-05:00
+publishDate: 2014-01-13T20:57:59-05:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["0"]
+publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
+publication: "Guidance, Navigation, and Control Conference"
 publication_short: ""
 
 abstract: ""

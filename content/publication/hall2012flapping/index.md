@@ -1,23 +1,27 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Hall2012flapping"
-authors: []
-date: 2021-12-29T20:54:57-05:00
+title: "Flapping Wing Technology for Micro Air Vehicles Incorporating a Lead Zirconate Titanate (PZT) Bimorph Actuator"
+authors:
+- Asha J Hall
+- Richard A Roberts
+- Isaac Weintraub
+- Jaret C Riddick
+date: 2012-06-01T20:54:57-05:00
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2021-12-29T20:54:57-05:00
+publishDate: 2012-06-01T20:54:57-05:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["0"]
+publication_types: ["4"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
-publication_short: ""
+publication: "Defense Technical Information Center"
+publication_short: "DTIC"
 
 abstract: ""
 
@@ -36,7 +40,7 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf:
+url_pdf:  https://apps.dtic.mil/sti/pdfs/ADA564753.pdf
 url_code:
 url_dataset:
 url_poster:

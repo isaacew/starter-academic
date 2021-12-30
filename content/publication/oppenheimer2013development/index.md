@@ -1,25 +1,32 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Oppenheimer2013development"
-authors: []
-date: 2021-12-29T20:53:36-05:00
-doi: ""
+title: "Development of a Flapping Wing Mechanism that can Produce Lift Greater Than Weight"
+authors:
+- Michael W Oppenheimer
+- David Sigthorsson
+- Isaac Weintraub
+- Todd J Smith
+- Jaderic Dawson
+- David B Doman
+  
+date: 2013-08-19T20:53:36-05:00
+doi: "10.2514/6.2013-5106"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2021-12-29T20:53:36-05:00
+publishDate: 2013-08-19T20:53:36-05:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["0"]
+publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
-publication_short: ""
+publication: "Guidance, Navigation, and Control Conference"
+publication_short: "GNC"
 
-abstract: ""
+abstract: "This work is focused on testing multiple versions of flapping wing mechanisms to improve the lift generating capabilities of the mechanisms. Three mechanisms are considered in this work, a traditional four bar linkage version, a four bar mechanism which used ball joints, and a four bar mechanism with a sector and output gear for amplified motion. The traditional four bar version has a wing stroke amplitude of about 55◦ while the other two mechanisms have an amplitude of nearly 90◦. The criteria for comparison is the lift force generating capacity of each mechanism. For each mechanism, the forward kinematics are derived for use in a table lookup so that symmetric and asymmetric flapping can be achieved as desired."
 
 # Summary. An optional shortened abstract.
 summary: ""
