@@ -42,7 +42,7 @@ featured: false
 
 
 image: 
-  caption: Slide1.png
+  caption: SciTech2022.png
   focal_point: Right
 
 links:

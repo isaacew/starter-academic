@@ -38,7 +38,7 @@ featured: false
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
-image:
+image: 
   caption: ""
   focal_point: ""
   preview_only: false
@@ -52,10 +52,10 @@ image:
 #   icon: twitter
 
 # Optional filename of your slides within your talk's folder or a URL.
-url_slides:
+url_slides: 
 
 url_code:
-url_pdf:
+url_pdf: 
 url_video: "https://youtu.be/Zy6ir5e-Fbo"
 
 # Markdown Slides (optional).
