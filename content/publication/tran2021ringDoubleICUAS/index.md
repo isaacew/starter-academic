@@ -1,30 +1,52 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Tran2021ringDoubleICUAS"
-authors: []
-date: 2021-12-29T21:01:28-05:00
-doi: ""
+title: "Ring Formation Maneuvering with Double Integrator Dynamics"
+authors: 
+- Dzung Tran
+- David Casbeer
+- Eloy Garcia
+- Isaac E Weintraub
+- Dejan Milutinović
+  
+date: 2021-06-15T21:01:28-05:00
+doi: "10.1109/ICUAS51884.2021.9476770"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2021-12-29T21:01:28-05:00
+publishDate: 2021-06-15T21:01:28-05:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["0"]
+publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
+publication: "International Conference on Unmanned Aircraft Systems (ICUAS)"
 publication_short: ""
 
-abstract: ""
+abstract: "Conventional leader-follower formations restrict the follower to
+a single desired position relative to the leader. To give the follower more
+flexibility in motion and to replicate typical human pilot operations, in
+this paper we propose a control architecture allowing the follower to
+converge to a ring, which is a set of desired points, relative to the
+leader. The follower is considered subject to a point-mass aircraft model,
+which can be transformed into the double integrator kinematics. For that
+reason, the nonlinear backstepping method is first utilized to design the
+controller for the double integrator kinematics with input saturation
+constraints being taken into account. The controller is then converted into
+control variables for the point-mass model. The stability of the proposed
+architecture is analyzed. Finally, a numerical example is presented to
+illustrate the efficacy of the proposed controller."
 
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
+tags: 
+- feedback control
+- nonlinear control
+- aircraft control
+- aerospace systems
 categories: []
 featured: false
 
