@@ -1,25 +1,49 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Tran2021ring"
-authors: []
-date: 2021-12-29T20:55:46-05:00
-doi: ""
+title: "Ring Formation Maneuver: Single-Integrator Kinematics"
+authors: 
+- Dzung M Tran
+- David Casbeer
+- Eloy Garcia
+- Isaac E Weintraub
+- Dejan Milutinovic
+- Satyanarayana G Manyam
+
+date: 2021-01-11T20:55:46-05:00
+doi: "10.2514/6.2021-0978"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2021-12-29T20:55:46-05:00
+publishDate: 2021-01-11T20:55:46-05:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["0"]
+publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
+publication: "AIAA Scitech 2021 Forum"
 publication_short: ""
 
-abstract: ""
+abstract: "Most conventional formation control algorithms consider
+convergence towards a specific desired point (or a specific desired
+displacement) for each vehicle relative to their neighbors. However, this
+specification restricts the flexibility in the motion of the vehicles.
+Motivated from this standpoint, this paper considers a formation control
+problem, where the desired position of each vehicle in the formation is
+described by a set of points. In particular, we consider relative motion in
+a two-vehicle system consisting of a leader and a follower, which is
+scalable to a larger formation in a distributed manner. The leader is free
+to move in 3-dimensional space while the follower seeks to converge to the
+desired set of points. We especially consider the desired set to be a ring
+of a given radius located at a certain distance from the leader in this
+paper. In addition, we propose two control algorithms. Both of them allow
+the follower to alter the set point smoothly during the mission and thus
+increase the follower's flexibility of motion. The stability of the
+formation under the proposed control algorithms is analyzed using the
+Lyapunov theory. Numerical examples are also provided to illustrate the
+efficacy of the control algorithms."
 
 # Summary. An optional shortened abstract.
 summary: ""
