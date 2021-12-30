@@ -42,12 +42,6 @@ highlight_name: false
 title: Isaac Weintraub
 email: ""
 ---
-Isaac Weintraub was born and raised in Toledo, Ohio. After graduating in 2005 from the Toledo Technology Academy, where he specialized in industrial automatic control and manufacturing, Isaac attended Rose-Hulman Institute of Technology. He graduated magna cum laude in 2009 with a bachelor's of science in mechanical engineering, minoring in electrical engineering, and receiving a certificate in robotics.
-
-In 2009, Isaac was accepted to the University of Texas at Arlington. Working under Frank Lewis, Isaac specialized in control theory, consensus, and robotics. In 2011 he graduated magna cum laude with a masters of science in electrical engineering. 
-
-Upon completion of his masters, Isaac was employed by General Dynamics Information Technology Corporation at Wright-Patterson Air Force Base, OH. At General Dynamics, Isaac worked at Air Force Research Laboratory(AFRL) developing flapping-wing micro-air vehicles capable of controllable flight.
-
-In 2015, Isaac accepted a position at Air Force Research Laboratories, working in the Aerospace Vehicle Technology Assessment and Simulation Branch of the Aerospace Systems Directorate. Presently, he is a Ph.D. candidate studying optimal control and differential game theory in the Department of Electrical and Computer Engineering at the Air Force Institute of Technology(AFIT).
+I am an Electronics Engineer in the Autonomous Controls branch in the Power and Control division of the Aerospace Systems Directorate in the Air Force Research Laboratory. I received my PhD in Electrical Engineering from the Air Force Institute of Technology in 2021, my MS in Electrical Engineering from the University of Texas at Arlington in 2011, and my BS in Mechanical Engineering from Rose-Hulman Institute of Technology in 2009. I am currently a senior member of the American Institute of Aeronautics and Astronautics (AIAA) and a senior member of the Institute of Electrical and Electronics Engineers (IEEE). I am an active member of both the IEEE Robotics and Automation Society (RAS) and the IEEE Controls Systems Society (CSS). My research interests lie in automation and control of aerospace systems for defense applications.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
