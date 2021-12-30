@@ -1,30 +1,53 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Weintraub2020optimal3d"
-authors: []
-date: 2021-12-29T20:53:55-05:00
-doi: ""
+title: "An Optimal Guidance Strategy for the Defense of a Non-Maneuverable Target in 3-D"
+authors: 
+- Isaac Weintraub
+- Eloy Garcia
+- Meir Pachter
+
+date: 2020-07-23T20:53:55-05:00
+doi: "10.1049/iet-cta.2019.0541"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2021-12-29T20:53:55-05:00
+publishDate: 2020-07-23T20:53:55-05:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["0"]
+publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
+publication: "IET Control Theory and Applications"
 publication_short: ""
 
-abstract: ""
+abstract: "An engagement scenario involving the defence of a
+non-manoeuvrable agent, called the Target, is considered. A pursuing agent,
+engages the non-manoeuvrable Target while a defending agent, which aims at
+intercepting the Pursuer to protect the Target, is considered in
+3-dimensions. A zero-sum differential game is formulated where the
+objective of the Defender is to capture the Pursuer and maximise the
+terminal Pursuer-Target range at final time; while the Pursuer aims at
+minimising the terminal Pursuer-Target range at final time. The terminal
+time is not fixed and is determined by the interception of the Pursuer by
+the Defender. The saddle point state-feedback strategies for the Pursuer
+and the Defender are obtained using a gradient-based minimisation routine.
+A comparison of the saddle point strategy against a heuristic approach,
+Pure Pursuit, is conducted. The comparison demonstrates that poorer
+performance is achieved by players who deviate from the optimal saddle
+point strategy; and, as a result, the saddle point strategies outperform
+the heuristic method."
 
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
+tags:
+- differential games
+- pursuit-evasion
+- HVAA defense
+- target-attacker-defender
 categories: []
 featured: false
 
@@ -36,7 +59,7 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf:
+url_pdf: https://ietresearch.onlinelibrary.wiley.com/doi/pdfdirect/10.1049/iet-cta.2019.0541
 url_code:
 url_dataset:
 url_poster:
