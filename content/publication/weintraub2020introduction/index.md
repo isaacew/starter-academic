@@ -31,7 +31,7 @@ publication_short: "American Control Conference"
 abstract: "Pursuit and evasion conflicts represent challenging problems with important applications in aerospace and robotics. In pursuit-evasion problems, synthesis of intelligent actions must consider the adversary's potential strategies. Differential game theory provides an adequate framework to analyze possible outcomes of the conflict without assuming particular behaviors by the opponent. This article presents an organized introduction of pursuit-evasion differential games with an overview of recent advances in the area. First, a summary of the seminal work is outlined, highlighting important contributions. Next, more recent results are described by employing a classification based on the number of players: one-pursuer-one-evader, N-pursuers-one-evader, one-pursuer-M-evaders, and N-pursuer-M-evader games. In each scenario, a brief summary of the literature is presented. Finally, two representative pursuit-evasion differential games are studied in detail: the two-cutters and fugitive ship differential game and the active target defense differential game. These problems provide two important applications and, more importantly, they give great insight into the realization of cooperation between friendly agents in order to form a team and defeat the adversary."
 
 # Summary. An optional shortened abstract.
-summary: ""
+summary: "Pursuit and evasion conflicts represent challenging problems with important applications in aerospace and robotics. In pursuit-evasion problems, synthesis of intelligent actions must consider the adversary's potential strategies. Differential game theory provides an adequate framework to analyze possible outcomes of the conflict without assuming particular behaviors by the opponent. This article presents an organized introduction of pursuit-evasion differential games with an overview of recent advances in the area."
 
 tags: [differential games]
 categories: []
@@ -45,7 +45,7 @@ featured: true
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf:
+url_pdf: https://arxiv.org/pdf/2003.05013.pdf
 url_code:
 url_dataset:
 url_poster:
