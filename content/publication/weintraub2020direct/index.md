@@ -1,25 +1,46 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Weintraub2020direct"
-authors: []
-date: 2021-12-29T20:54:13-05:00
-doi: ""
+title: "Direct Methods Comparison for the Active Target Defense Scenario"
+authors: 
+- Isaac E Weintraub
+- Richard G Cobb
+- William Baker
+- Meir Pachter
+
+date: 2020-01-06T20:54:13-05:00
+doi: "10.2514/6.2020-0612"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2021-12-29T20:54:13-05:00
+publishDate: 2020-01-06T20:54:13-05:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["0"]
+publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
+publication: "AIAA Scitech 2020 Forum"
 publication_short: ""
 
-abstract: ""
+abstract: "The goal of optimal control is to obtain an admissible function
+which minimizes an objective functional subject to specified constraints
+and boundary conditions. Four popular methods of computing the optimal
+control directly are the Single Shooting Method, Multiple Shootings Method,
+Even Collocation Method, and Pseudospectral Method. In this paper, the four
+direct methods of computing the optimal control for the Active Target
+Defense Scenario are presented and compared. The Active Target Defense
+Scenario is a three-agent engagement where an evading agent tries to escape
+a pursuing agent with the assistance of a defending agent. The goal of the
+Evader is to maneuver in such a way as to assist the Defender in capturing
+the Pursuer while maximizing his range from the Pursuer. This work begins
+by describing each direct method and summarizing advantages and
+disadvantages of each. Next, each method is used to solve the optimal
+control for the Active Target Defense Scenario; results are presented and a
+comparison of the performance of each method is made. Finally, concluding
+remarks describing the results, performance, and real-time implementation
+are presented."
 
 # Summary. An optional shortened abstract.
 summary: ""
