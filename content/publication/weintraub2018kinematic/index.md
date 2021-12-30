@@ -34,7 +34,7 @@ summary: ""
 
 tags: []
 categories: []
-featured: false
+featured: yes
 
 # Custom links (optional).
 #   Uncomment and edit lines below to show custom links.

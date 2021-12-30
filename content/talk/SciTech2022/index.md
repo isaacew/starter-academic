@@ -1,29 +1,22 @@
 ---
-title: An Optimal Engagement Zone Avoidance Scenario in 2-D
+# Documentation
 
-event: AIAA SciTech 2022
-
-event_url: https://www.aiaa.org/SciTech
-
-location: San Diego, CA / Virtual
-# address:
-#   street: 450 Serra Mall
-#   city: Stanford
-#   region: CA
-#   postcode: '94305'
-#   country: United States
-
-summary: "The optimal strategy for avoding a dynamic engagement zone by an
-airborne asset"
-
+title: "An Optimal Engagement Zone Avoidance Scenario in 2-D"
+event: "AIAA SciTech 2022"
+event_url: "https://www.aiaa.org/SciTech"
+location: "San Diego, CA / Virtual"
+address:
+  street: 
+  city: 
+  region: 
+  postcode: 
+  country: 
+summary:
 abstract: 
+
 # Talk start and end times.
-#   End time can optionally be hidden by prefixing the line with `#`.
-
-date: "2022-01-07T16:00:00Z"
-
-date_end: "2022-01-07T17:15:00Z"
-
+date: 2022-01-07T16:00:00Z
+date_end: 2022-01-07T17:15:00Z
 all_day: false
 
 # Schedule page publish date (NOT talk date).
@@ -70,15 +63,3 @@ url_video: "https://youtu.be/1fl0F8FNxZ8"
 projects: []
 # - example
 ---
-
-<!-- {{% callout note %}}
-Click on the **Slides** button above to view the built-in slides feature.
-{{% /callout %}}
-
-Slides can be added in a few ways:
-
-- **Create** slides using Wowchemy's [*Slides*](https://wowchemy.com/docs/managing-content/#create-slides) feature and link using `slides` parameter in the front matter of the talk file
-- **Upload** an existing slide deck to `static/` and link using `url_slides` parameter in the front matter of the talk file
-- **Embed** your slides (e.g. Google Slides) or presentation video on this page using [shortcodes](https://wowchemy.com/docs/writing-markdown-latex/).
-
-Further event details, including [page elements](https://wowchemy.com/docs/writing-markdown-latex/) such as image galleries, can be added to the body of this page. -->
