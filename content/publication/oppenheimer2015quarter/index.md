@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Oppenheimer2014quarter"
+title: "Quarter Cycle Modulation of a Minimally Actuated Biomimetic Vehicle"
 authors: 
 - Michael W Oppenheimer
 - Isaac E Weintraub
