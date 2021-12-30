@@ -8,14 +8,14 @@ authors:
 author_notes:
 - "Department of Mathematics, Rose-Hulman Institute of Technology"
 - "Department of Mechanical Engineering, Rose-Hulman Institute of Technology" 
-date: 2009-01-01T08:00:00-05:00
+date: 2009-01-07T08:00:00-05:00
 volume: 43
 number: 1
 pages: 69--80
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2009-01-01T08:00:00-05:00
+publishDate: 2009-01-07T08:00:00-05:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
