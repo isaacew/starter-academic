@@ -1,35 +1,34 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Engagement Zone Defense of a Non-Maneuvering Evader"
+title: "Circular Rejoin in 3-D Using Bezier Paths"
 event: "Conference on Control Tehnology and Applications"
-event_url: https://ccta2021.ieeecss.org/
-location: San Diego, CA / Virtual
+event_url:
+location: Virtual
 address:
   street:
   city:
   region:
   postcode:
   country:
-summary: 
+summary:
 abstract:
-
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: 2021-08-09T10:20:03Z
-date_end: 2021-08-09T10:40:03Z
+date: 2020-08-25T16:20:00Z
+date_end: 2020-08-25T16:40:00Z
 all_day: false
 
 # Schedule page publish date (NOT talk date).
-publishDate: 2021-08-09T10:40:00-05:00
+publishDate: 2020-08-25T16:40:00Z
 
-authors:
-- Isaac Weintraub 
-- Alexander Von Moll
-- David Casbeer
-- Eloy Garcia 
-- Meir Pachter
+authors: 
+- Isaac Weintraub
+- Zachary Demers
+- Jason Shroyer
+- Nathan Ritsema
+- Dillon Sluss
 tags: []
 
 # Is this a featured talk? (true/false)
@@ -38,7 +37,7 @@ featured: false
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
-image: 
+image:
   caption: ""
   focal_point: ""
   preview_only: false
@@ -52,11 +51,11 @@ image:
 #   icon: twitter
 
 # Optional filename of your slides within your talk's folder or a URL.
-url_slides: 
+url_slides:
 
 url_code:
-url_pdf: 
-url_video: "https://youtu.be/Zy6ir5e-Fbo"
+url_pdf:
+url_video: "https://youtu.be/lRcqDNRXtTY"
 
 # Markdown Slides (optional).
 #   Associate this talk with Markdown slides.
