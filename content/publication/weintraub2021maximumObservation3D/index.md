@@ -1,22 +1,27 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Weintraub2021maximumObservation3D"
-authors: []
-date: 2021-12-29T21:02:15-05:00
-doi: ""
+title: "Maximum Observation of a Target by a Slower Observer in Three Dimensions"
+authors:
+- Isaac E Weintraub
+- Alexander Von Moll
+- Eloy Garcia
+- Meir Pachter
+
+date: 2021-03-01T08:00:00-05:00
+doi: "10.2514/1.G005619"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2021-12-29T21:02:15-05:00
+publishDate: 2020-12-21T08:00:00-05:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["0"]
+publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
+publication: "Journal of Guidance, Control, and Dynamics"
 publication_short: ""
 
 abstract: ""
