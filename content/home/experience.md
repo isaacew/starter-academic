@@ -4,7 +4,7 @@
 widget: experience
 
 # This file represents a page section.
-headless: true
+headless: false
 
 # Order that this section appears on the page.
 weight: 40
@@ -22,10 +22,10 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: CEO
-    company: GenCoin
+  - title: Electrical Engineer
+    company: Ari Force Research Laboratory
     company_url: ''
-    location: California
+    location: Ohio
     date_start: '2017-01-01'
     date_end: ''
     description: |2-
@@ -35,10 +35,10 @@ experience:
         * Modelling
         * Deploying
         
-  - title: Professor
-    company: University X
+  - title: Director of Operations
+    company: AFRL Maker Hub
     company_url: ''
-    location: California
+    location: Ohio
     date_start: '2016-01-01'
     date_end: '2016-12-31'
     description: Taught electronic engineering and researched semiconductor physics.
