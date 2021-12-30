@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Weintraub2020introduction"
+title: "An Introduction to Pursuit-evasion Differential Games"
 authors: [Isaac E. Weintraub, Meir Pachter, Eloy Garcia]
 date: 2021-07-01T08:00:00-05:00
 doi: "10.23919/ACC45564.2020.9147205"
