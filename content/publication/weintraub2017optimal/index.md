@@ -1,22 +1,27 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Weintraub2017optimal"
-authors: []
-date: 2021-12-29T20:52:42-05:00
-doi: ""
+title: "An Optimal Aircraft Defense Strategy for the Active Target Defense Scenario"
+authors: 
+- Isaac Weintraub
+- Eloy Garcia
+- David Casbeer
+- Meir Pachter
+
+date: 2017-01-09T20:52:42-05:00
+doi: "10.2514/6.2017-1917"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2021-12-29T20:52:42-05:00
+publishDate: 2017-01-09T20:52:42-05:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["0"]
+publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
+publication: "AIAA Guidance, Navigation, and Control Conference"
 publication_short: ""
 
 abstract: ""
