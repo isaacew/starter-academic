@@ -1,13 +1,18 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Sigthorsson2017wingObservation"
-authors: []
-date: 2021-12-29T20:57:18-05:00
-doi: ""
+title: "Wing Flexibility Induced Control Reversal For Flapping Wing Vehicles: Observation and Evaluation"
+authors:
+- David Sigthorsson
+- Michael W Oppenheimer
+- David B Doman
+- Isaac Weintraub
+
+date: 2017-01-09T20:57:18-05:00
+doi: "10.2514/6.2017-1273"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2021-12-29T20:57:18-05:00
+publishDate: 2017-01-09T20:57:18-05:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -16,7 +21,7 @@ publishDate: 2021-12-29T20:57:18-05:00
 publication_types: ["0"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
+publication: "AIAA Guidance, Navigation, and Control Conference"
 publication_short: ""
 
 abstract: ""
