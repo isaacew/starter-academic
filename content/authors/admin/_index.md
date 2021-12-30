@@ -1,6 +1,6 @@
 ---
 role: Electronics Engineer
-avatar_filename: weintraubdec2020.png
+avatar_filename: "weintraubdec2020.png"
 bio: My research includes the use of optimization and differential games for
   aerospace applications.
 interests:
@@ -22,7 +22,7 @@ social:
     link: https://github.com/isaacew
   - icon: linkedin
     icon_pack: fab
-    link: https://www.linkedin.com/
+    link: https://www.linkedin.com/in/isaac-weintraub-a06a591b/
 organizations:
   - name: Air Force Research Laboratory
     url: https://afresearchlab.com/
