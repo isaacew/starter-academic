@@ -29,8 +29,13 @@ abstract: ""
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
-categories: []
+tags: 
+- flapping wing 
+- micro air vehicle
+- vehicle design
+- theoretical analysis
+categories: 
+- flapping wing micro air vehicle
 featured: false
 
 # Custom links (optional).

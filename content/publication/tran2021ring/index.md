@@ -48,8 +48,12 @@ efficacy of the control algorithms."
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
-categories: []
+tags:
+- nonlinear control
+- vehicle control
+- ring formation
+categories: 
+- vehicle control
 featured: false
 
 # Custom links (optional).

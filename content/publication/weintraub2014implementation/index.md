@@ -31,10 +31,10 @@ summary: ""
 
 tags: 
 - flapping wing 
-- biomimetics
 - split-cycle control
-- micro air vehicles
-categories: []
+- micro air vehicle
+categories: 
+- flapping wing micro air vehicle
 featured: false
 
 # Custom links (optional).

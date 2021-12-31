@@ -55,13 +55,12 @@ future hardware implementation."
 summary: ""
 
 tags:
-- optimization
-- pursuit-evasion
-- differental games
+- optimal control
+- active target defense
 - cooperative control
-- HVAA defense
-- target-attacker-defender
-categories: []
+- differential game
+categories:
+- cooperative control
 featured: true
 
 # Custom links (optional).

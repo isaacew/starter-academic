@@ -51,8 +51,13 @@ undertaken."
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
-categories: []
+tags:
+- optimal control theory
+- differential game theory
+- dynamic programming
+categories:
+- control theory
+  
 featured: false
 
 # Custom links (optional).

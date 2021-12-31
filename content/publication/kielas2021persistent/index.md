@@ -37,8 +37,16 @@ abstract: "A framework for monitoring a target modeled as Dubins car using multi
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
-categories: []
+tags:
+- persistent monitoring
+- optimization
+- bernstein polynomials
+- cooperative control
+- constrained vehicle model
+- constrained environment
+- 2-D
+categories:
+- cooperative control
 featured: false
 
 # Custom links (optional).

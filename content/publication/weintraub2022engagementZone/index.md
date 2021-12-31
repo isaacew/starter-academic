@@ -49,8 +49,12 @@ solutions, the optimal strategies are discussed and comparisons are drawn."
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
-categories: []
+tags: 
+- area defense
+- cooperative control
+- path planning
+categories: 
+- cooperative control
 featured: false
 
 # Custom links (optional).

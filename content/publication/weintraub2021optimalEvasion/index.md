@@ -38,8 +38,14 @@ maximum separation at final time."
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
-categories: []
+tags:
+- active target defense
+- cooperative control
+- optimal control
+- even collocation
+- 3-D
+categories: 
+- cooperative control
 featured: false
 
 # Custom links (optional).

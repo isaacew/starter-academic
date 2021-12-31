@@ -42,8 +42,12 @@ to prove the efficacy of our method are provided."
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
-categories: []
+tags:
+- persistent monitoring
+- cooperative control
+- constrained vehicle
+categories: 
+- cooperative control
 featured: false
 
 # Custom links (optional).

@@ -45,8 +45,17 @@ are presented."
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
-categories: []
+tags: 
+- direct methods comparison
+- optimal control
+- cooperative control
+- active target defense
+- single shooting method
+- multiple shootings method
+- even collocation method
+- pseudospectral method
+categories:
+- cooperative control
 featured: false
 
 # Custom links (optional).

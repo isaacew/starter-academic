@@ -44,11 +44,13 @@ the heuristic method."
 summary: ""
 
 tags:
-- differential games
+- differential game
+- optimal control
 - pursuit-evasion
-- HVAA defense
-- target-attacker-defender
-categories: []
+- active target defense
+- 3-D
+categories: 
+- cooperative control
 featured: false
 
 # Custom links (optional).

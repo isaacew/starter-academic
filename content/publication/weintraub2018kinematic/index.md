@@ -27,13 +27,29 @@ publication_types: ["1"]
 publication: "American Control Conference"
 publication_short: ""
 
-abstract: "An engagement scenario involving the defense of a valuable and non-maneuverable aircraft is investigated in this paper. An Attacker missile pursuing a Target aircraft and a Defender missile which aims at intercepting the Attacker in order to protect the Target aircraft are considered. A zero-sum differential game is formulated where the objective of the Attacker is to minimize the terminal distance with respect to the Target aircraft and the objective of the Defender is to maximize the terminal Attacker-Target separation at the time of intercepting the Attacker. The saddle point state-feedback strategies for the Attacker and the Defender are obtained; these strategies are compared to other heuristic approaches. It is shown that better performance is obtained by implementation of the saddle point strategies derived in this paper."
+abstract: "An engagement scenario involving the defense of a valuable and
+non-maneuverable aircraft is investigated in this paper. An Attacker
+missile pursuing a Target aircraft and a Defender missile which aims at
+intercepting the Attacker in order to protect the Target aircraft are
+considered. A zero-sum differential game is formulated where the objective
+of the Attacker is to minimize the terminal distance with respect to the
+Target aircraft and the objective of the Defender is to maximize the
+terminal Attacker-Target separation at the time of intercepting the
+Attacker. The saddle point state-feedback strategies for the Attacker and
+the Defender are obtained; these strategies are compared to other heuristic
+approaches. It is shown that better performance is obtained by
+implementation of the saddle point strategies derived in this paper."
 
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
-categories: []
+tags:
+- active target defense
+- cooperative control
+- differential game
+- optimal control
+categories: 
+- cooperative control
 featured: yes
 
 # Custom links (optional).

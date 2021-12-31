@@ -45,7 +45,8 @@ tags:
 - area defense
 - observation
 - optimal control
-categories: []
+categories: 
+- cooperative control
 featured: false
 
 # Custom links (optional).

@@ -45,9 +45,10 @@ summary: ""
 tags: 
 - feedback control
 - nonlinear control
-- aircraft control
-- aerospace systems
-categories: []
+- vehicle control
+- ring formation
+categories:
+- vehicle control
 featured: false
 
 # Custom links (optional).

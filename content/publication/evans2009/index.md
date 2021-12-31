@@ -30,8 +30,13 @@ abstract: ""
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
-categories: []
+tags:
+- game
+- probability
+- monte hall
+- conditional probability
+categories:
+- probability
 featured: false
 
 # Custom links (optional).

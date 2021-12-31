@@ -58,9 +58,13 @@ relative performance of our algorithms."
 summary: ""
 
 tags:
-- pursuit-evasion
+- competitive ratio
+- border defense
+- conical environment
+- 2-D
   
-categories: []
+categories: 
+- cooperative control
 featured: false
 
 # Custom links (optional).

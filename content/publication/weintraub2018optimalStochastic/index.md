@@ -28,8 +28,14 @@ abstract: ""
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
-categories: []
+tags: 
+- active target defense
+- optimal stochastic control
+- proportional navigation
+- monte carlo
+- optimal control
+categories: 
+- cooperative control
 featured: false
 
 # Custom links (optional).

@@ -33,8 +33,11 @@ abstract: "Pursuit and evasion conflicts represent challenging problems with imp
 # Summary. An optional shortened abstract.
 summary: "Pursuit and evasion conflicts represent challenging problems with important applications in aerospace and robotics. In pursuit-evasion problems, synthesis of intelligent actions must consider the adversary's potential strategies. Differential game theory provides an adequate framework to analyze possible outcomes of the conflict without assuming particular behaviors by the opponent. This article presents an organized introduction of pursuit-evasion differential games with an overview of recent advances in the area."
 
-tags: [differential games]
-categories: []
+tags:
+- differential games
+- survey
+categories: 
+- cooperative control
 featured: true
 
 # Custom links (optional).

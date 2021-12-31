@@ -27,20 +27,26 @@ publication_short: "GNC"
 
 abstract: "Typically, inertial loads associated with flapping wing micro
 air vehicles are ignored for analysis and control law development purposes.
-The goal of this work is to compute the inertial loads associated with flapping a wing
-and compare those loads to aerodynamic loads. It is assumed that the wing is a rigid flat plate so that there is no in-plane, out-of-plane, or torsional
-bending of the wing. The analysis begins by computing the acceleration of
-the wing center-of-gravity over a complete wingbeat cycle. Newton’s second
-law is then used to compute the inertial forces and eventually, the
-inertial moments. Simulation results are provided which compare the
-magnitude of the inertial loads to the aerodynamic loads for a wing of
-varying geometry."
+The goal of this work is to compute the inertial loads associated with
+flapping a wing and compare those loads to aerodynamic loads. It is assumed
+that the wing is a rigid flat plate so that there is no in-plane,
+out-of-plane, or torsional bending of the wing. The analysis begins by
+computing the acceleration of the wing center-of-gravity over a complete
+wingbeat cycle. Newton’s second law is then used to compute the inertial
+forces and eventually, the inertial moments. Simulation results are
+provided which compare the magnitude of the inertial loads to the
+aerodynamic loads for a wing of varying geometry."
 
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
-categories: []
+tags:
+- flapping wing
+- micro air vehicle
+- dynamics
+- vehicle design
+categories:
+- FWMAV
 featured: false
 
 # Custom links (optional).

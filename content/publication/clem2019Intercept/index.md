@@ -45,8 +45,14 @@ range of initial line-of-sight angles."
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
-categories: []
+tags:
+- pursuit-evasion
+- UAV
+- proportional navigation
+- sensors
+  
+categories:
+- cooperative control
 featured: false
 
 # Custom links (optional).

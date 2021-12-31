@@ -26,12 +26,28 @@ publication_types: ["1"]
 publication: "Guidance, Navigation, and Control Conference"
 publication_short: "GNC"
 
-abstract: "This work is focused on testing multiple versions of flapping wing mechanisms to improve the lift generating capabilities of the mechanisms. Three mechanisms are considered in this work, a traditional four bar linkage version, a four bar mechanism which used ball joints, and a four bar mechanism with a sector and output gear for amplified motion. The traditional four bar version has a wing stroke amplitude of about 55◦ while the other two mechanisms have an amplitude of nearly 90◦. The criteria for comparison is the lift force generating capacity of each mechanism. For each mechanism, the forward kinematics are derived for use in a table lookup so that symmetric and asymmetric flapping can be achieved as desired."
+abstract: "This work is focused on testing multiple versions of flapping
+wing mechanisms to improve the lift generating capabilities of the
+mechanisms. Three mechanisms are considered in this work, a traditional
+four bar linkage version, a four bar mechanism which used ball joints, and
+a four bar mechanism with a sector and output gear for amplified motion.
+The traditional four bar version has a wing stroke amplitude of about 55◦
+while the other two mechanisms have an amplitude of nearly 90 deg. The
+criteria for comparison is the lift force generating capacity of each
+mechanism. For each mechanism, the forward kinematics are derived for use
+in a table lookup so that symmetric and asymmetric flapping can be achieved
+as desired."
 
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
+tags:
+- flapping wing
+- micro air vehicle
+- mechanisms 
+- kinematics
+- four bar mechanism
+- vehicle design
 categories: []
 featured: false
 

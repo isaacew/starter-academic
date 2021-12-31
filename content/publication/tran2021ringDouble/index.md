@@ -28,7 +28,7 @@ publishDate: 2021-09-13T08:00:00-05:00
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
+publication: "Journal of Guidance, Control, and Dynamics"
 publication_short: ""
 
 abstract: ""
@@ -36,8 +36,12 @@ abstract: ""
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
-categories: []
+tags:
+- nonlinear control
+- vehicle control
+- ring formation
+categories: 
+- vehicle control
 featured: false
 
 # Custom links (optional).

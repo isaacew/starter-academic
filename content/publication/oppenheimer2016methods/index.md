@@ -26,27 +26,28 @@ publication: "US Patent: 9428269"
 publication_short: ""
 
 abstract: "A method of configuring a wing velocity profile includes
-segmenting a complete wingbeat cycle into a set of quarter
-strokes including a first quarter-stroke, a second quarter
-stroke, a third quarter-stroke, and a fourth quarter-stroke.
-The method further includes generating time-varying quar
-ter-stroke wing position commands for each of a first and
-second wing planforms to produce wing flapping trajectories
-that generate non-Zero, cycle averaged wing lift and drag
-and alter a cycle average center of pressure of each of the
-first and the second wing planforms relative to the aircraft.
-The wing position commands include Velocities and posi tions with temporally symmetric and asymmetric quarter
-stroke components for the first wing planform and the
-second wing planform. The first wing planform and the
-second wing planform produce controlled six-degrees-of
-freedom vehicle motion without using actuators in excess of
+segmenting a complete wingbeat cycle into a set of quarter strokes
+including a first quarter-stroke, a second quarter stroke, a third
+quarter-stroke, and a fourth quarter-stroke. The method further includes
+generating time-varying quarter-stroke wing position commands for each of
+a first and second wing planforms to produce wing flapping trajectories
+that generate non-Zero, cycle averaged wing lift and drag and alter a cycle
+average center of pressure of each of the first and the second wing
+planforms relative to the aircraft. The wing position commands include
+Velocities and positions with temporally symmetric and asymmetric quarter
+stroke components for the first wing planform and the second wing planform.
+The first wing planform and the second wing planform produce controlled
+six-degrees-of freedom vehicle motion without using actuators in excess of
 the first actuator and the second actuator."
 
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
-categories: []
+tags:
+- flapping wing
+- micro air vehicle
+categories:
+- flapping wing micro air vehicle
 featured: false
 
 # Custom links (optional).

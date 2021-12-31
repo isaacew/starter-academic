@@ -29,8 +29,12 @@ abstract: ""
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
-categories: []
+tags:
+- active target defense
+- optimal control
+- proportional navigation
+categories: 
+- cooperative control
 featured: false
 
 # Custom links (optional).

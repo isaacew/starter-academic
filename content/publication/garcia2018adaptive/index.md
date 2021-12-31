@@ -33,8 +33,16 @@ abstract: "Coordination and cooperation of networked multi-agent systems is usua
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
-categories: []
+tags:
+- multi-agent system
+- communication
+- consensus
+- adaptive control
+- parameter uncertainty
+- cooperative control
+  
+categories:
+- cooperative control
 featured: false
 
 # Custom links (optional).

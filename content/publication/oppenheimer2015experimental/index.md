@@ -24,13 +24,26 @@ publication_types: ["1"]
 publication: "AIAA Guidance, Navigation, and Control Conference"
 publication_short: ""
 
-abstract: "In this work, experimental measurements of cycle-averaged forces produced by a flapping wing micro air vehicle are provided. The measurements are taken with a one degree-of-freedom force balance. The vehicle is mounted in different orientations so that cycle-averaged lift and drag can be measured. A variety of wing flapping frequencies are examined as well as different split-cycle parameters. The cycle-averaged measurements are compared to theoretical values obtained with a blade element model. The primary objective of this work is to determine if a blade element based aerodynamic model can accurately predict the cycle-averaged forces produced by wing flapping."
+abstract: "In this work, experimental measurements of cycle-averaged forces
+produced by a flapping wing micro air vehicle are provided. The
+measurements are taken with a one degree-of-freedom force balance. The
+vehicle is mounted in different orientations so that cycle-averaged lift
+and drag can be measured. A variety of wing flapping frequencies are
+examined as well as different split-cycle parameters. The cycle-averaged
+measurements are compared to theoretical values obtained with a blade
+element model. The primary objective of this work is to determine if a
+blade element based aerodynamic model can accurately predict the
+cycle-averaged forces produced by wing flapping."
 
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
-categories: []
+tags:
+- flapping wing 
+- micro air vehicle
+- split-cycle control
+categories: 
+- flapping wing micro air vehicle
 featured: false
 
 # Custom links (optional).

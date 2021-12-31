@@ -30,8 +30,18 @@ abstract: "We consider a multiple vehicle path planning problem with curvature c
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
-categories: []
+tags:
+- path planning
+- simultaneous arrival
+- cooperative control
+- 2-D
+- bezier
+- graph partition
+- shortest path
+- optimization
+- constrained vehicle model
+categories: 
+- cooperative control
 featured: false
 
 # Custom links (optional).

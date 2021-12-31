@@ -40,8 +40,14 @@ provided as an example."
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
-categories: []
+tags: 
+- cooperative control
+- circular rejoin
+- vehicle control
+- bezier
+- aircraft control
+categories:
+- cooperative control
 featured: false
 
 # Custom links (optional).
