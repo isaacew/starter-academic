@@ -10,7 +10,7 @@ authors:
 - David Doman
 
 date: 2012-08-13T21:04:11-05:00
-doi: ""
+doi: "10.2514/6.2012-4981"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: 2012-08-13T21:04:11-05:00

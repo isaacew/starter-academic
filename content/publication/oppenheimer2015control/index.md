@@ -8,11 +8,11 @@ authors:
 - David O Sigthorsson
 - David B Doman
 
-date: 2021-07-01T20:54:44-05:00
+date: 2021-01-09T20:54:44-05:00
 doi: "10.2514/1.G000548"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2021-07-01T20:54:44-05:00
+publishDate: 2021-01-09T20:54:44-05:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;

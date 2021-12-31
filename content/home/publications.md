@@ -9,8 +9,8 @@ headless: true
 # Order that this section appears on the page.
 weight: 90
 
-title: Recent Publications
-subtitle: ''
+title: All Publications
+subtitle: 
 
 content:
   # Page type to display. E.g. post, talk, publication...
@@ -37,6 +37,6 @@ design:
   view: 1
 ---
 
-{{% callout note %}}
+<!-- {{% callout note %}}
 Quickly discover relevant content by [filtering publications](./publication/).
-{{% /callout %}}
+{{% /callout %}} -->

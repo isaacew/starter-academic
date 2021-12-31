@@ -40,13 +40,13 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf: "https://apps.dtic.mil/sti/pdfs/ADA582345.pdf"
+url_pdf: https://apps.dtic.mil/sti/pdfs/ADA582345.pdf
 url_code:
 url_dataset:
 url_poster:
 url_project:
 url_slides:
-url_source:
+url_source: https://apps.dtic.mil/sti/citations/ADA582345
 url_video:
 
 # Featured image

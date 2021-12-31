@@ -8,7 +8,7 @@ authors:
 - Isaac Weintraub
 - Jaret C Riddick
 date: 2012-06-01T20:54:57-05:00
-doi: ""
+doi: 
 
 # Schedule page publish date (NOT publication's date).
 publishDate: 2012-06-01T20:54:57-05:00
@@ -46,7 +46,7 @@ url_dataset:
 url_poster:
 url_project:
 url_slides:
-url_source:
+url_source: https://apps.dtic.mil/sti/citations/ADA564753 
 url_video:
 
 # Featured image

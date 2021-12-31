@@ -8,11 +8,11 @@ authors:
 - David O Sigthorsson
 - David B Doman
 
-date: 2014-01-13T20:57:59-05:00
+date: 2014-01-13T21:04:28Z
 doi: "10.2514/6.2014-1467"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2014-01-13T20:57:59-05:00
+publishDate: 2014-01-13T21:04:28Z
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;

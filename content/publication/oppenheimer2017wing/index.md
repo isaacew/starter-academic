@@ -8,7 +8,7 @@ authors:
 - David B. Doman
 - Isaac Weintraub
 date: 2017-01-09T20:53:21-05:00
-doi: ""
+doi: "10.2514/6.2017-1271"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: 2017-01-09T20:53:21-05:00
