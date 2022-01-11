@@ -36,9 +36,8 @@ tags:
 - optimization
 - vehicle control
 - ring formation
-categories: 
+categories:  
 - cooperative control
-- 
 featured: false
 
 # Custom links (optional).

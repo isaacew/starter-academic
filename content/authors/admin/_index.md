@@ -23,6 +23,18 @@ social:
   - icon: linkedin
     icon_pack: fab
     link: https://www.linkedin.com/in/isaac-weintraub-a06a591b/
+  - icon: product-hunt
+    icon_pack: fab
+    link: https://publons.com/researcher/4706316/isaac-weintraub/
+  - icon: orcid
+    icon_pack: fab
+    link: https://orcid.org/my-orcid?orcid=0000-0003-2209-2500
+  - icon: ieee
+    icon_pack: fab
+    link: https://www.ieee.org
+  - icon: leaf
+    icon_pack: fa
+    link: https://www.overleaf.com/project
 organizations:
   - name: Air Force Research Laboratory
     url: https://afresearchlab.com/
