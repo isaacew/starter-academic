@@ -1,9 +1,9 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "61st IEEE Conference on Decision and Control"
+title: "2022 Conference on Decision and Control"
 subtitle: "Dec 6-9, 2022 | Cancun, Mexico"
-summary: ""
+summary: "Dec 6-9, 2022 | Cancun, Mexico"
 authors: []
 tags: []
 categories: []

@@ -1,9 +1,9 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "American Control Conference 2022"
-subtitle: "June 8-10, 2022 | Atlanta, GA"
-summary: "June 8-10, 2022 | Atlanta, GA"
+title: "2022 American Control Conference"
+subtitle: "Jun 8-10, 2022 | Atlanta, GA"
+summary: "Jun 8-10, 2022 | Atlanta, GA"
 authors: []
 tags: []
 categories: []
