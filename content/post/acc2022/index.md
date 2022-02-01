@@ -39,7 +39,7 @@ Final Manuscript Submission Deadline :milestone, des3, 2022-03-14, 0d
 American Control Conference : des4, 2022-06-08, 3d
 ```
 
-The 2022 American Control Conference schedule is as follows:
+The 2022 [American Control Conference](https://acc2022.a2c2.org/) schedule is as follows:
 - Manuscript Submission Deadline (2021-10-12)
 - Acceptance/Rejection Notice (2022-01-31)
 - Final Manuscript Submission Deadline (2022-03-14)
