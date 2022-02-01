@@ -33,10 +33,10 @@ dateFormat  YYYY-MM-DD
 title       American Control Conference 2022
 excludes    weekends
 section Schedule
-Manuscript Submission Deadline :milestone, des1, 2021-10-12, 0d
-Acceptance/Rejection Notice :milestone, des2, 2022-01-31, 0d
-Final Manuscript Submission Deadline :milestone, des3, 2022-03-14, 0d
-American Control Conference : des4, 2022-06-08, 3d
+Manuscript Submission Deadline :milestone, 2021-10-12, 0d
+Acceptance/Rejection Notice :milestone, 2022-01-31, 0d
+Final Manuscript Submission Deadline :milestone, 2022-03-14, 0d
+American Control Conference :active, 2022-06-08, 3d
 ```
 
 The 2022 [American Control Conference](https://acc2022.a2c2.org/) schedule is as follows:

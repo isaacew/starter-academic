@@ -41,7 +41,7 @@ Workshop Proposals :milestone, 2022-05-02, 0d
 Decision Notification :milestone, 2022-07-15, 0d
 Registration Site Opens :milestone, 2022-08-01, 0d
 Final Submission :milestone, 2022-09-21, 0d 
-IEEE Conference on Decision and Control : 2022-12-06, 3d
+IEEE Conference on Decision and Control :active, 2022-12-06, 3d
 ```
 
 The 2022 [Conference on Decision and Control](https://cdc2022.ieeecss.org/) schedule is as follows:

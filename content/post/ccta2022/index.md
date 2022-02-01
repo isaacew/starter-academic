@@ -39,9 +39,10 @@ Paper Submission :milestone, 2022-02-08, 0d
 Decision Notification :milestone, 2022-04-22, 0d
 Registration Opens :milestone, 2022-05-15, 0d
 Final Submissions :milestone, 2022-06-10, 0d
-IEEE Conference on Control Technology and Applications : 2022-08-23, 3d
+IEEE Conference on Control Technology and Applications :active, 2022-08-23, 3d
 ```
-The 2022 [onference on Control Technology and Applications](https://ccta2022.ieeecss.org/) schedule is as follows:
+
+The 2022 [Conference on Control Technology and Applications](https://ccta2022.ieeecss.org/) schedule is as follows:
 - Paper Submission (2022-02-08)
 - Decision Notification (2022-04-22)
 - Registration Opens (2022-05-15)
