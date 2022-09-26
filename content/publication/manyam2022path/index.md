@@ -8,8 +8,14 @@ authors:
 - Swaroop Darbha
 - Isaac E Weintraub
 - Krishna Kalyanam
+author_notes:
+- "Infoscitex corporation, A DCS Company, Dayton, OH, USA"
+- "Controls Science Center of Excellence, Air Force Research Laboratory, WPAFB, OH, USA"
+- "Texas A&M University, College Station, TX, USA"
+- "Controls Science Center of Excellence, Air Force Research Laboratory, WPAFB, OH, USA"
+- "Aviation Systems Division, NASA Ames Research Center, Moffett Field, CA, USA"
 date: 2022-05-28T16:49:16-04:00
-doi: ""
+doi: "10.1109/LRA.2022.3191810"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: 2022-05-28T16:49:16-04:00
@@ -42,7 +48,7 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf: https://arxiv.org/pdf/2205.14464.pdf
+url_pdf: 
 url_code:
 url_dataset:
 url_poster:
@@ -50,6 +56,7 @@ url_project:
 url_slides:
 url_source:
 url_video:
+url_preprint: https://arxiv.org/pdf/2205.14464.pdf
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
