@@ -43,7 +43,7 @@ tags:
 - active target defense
 categories:
 - cooperative control
-- optimal observation
+- maximum observation
 featured: false
 
 # Custom links (optional).
