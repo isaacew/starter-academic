@@ -1,34 +1,37 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Maximum Observation of a Target by a Slower Observer in Three Dimensions"
-authors:
-- Isaac E Weintraub
+title: "Surveillance of a Faster Fixed-Course Target"
+authors: 
+- Isaac E. Weintraub
 - Alexander Von Moll
 - Eloy Garcia
+- David Casbeer
 - Meir Pachter
 author_notes:
 - "Control Science Center, Aerospace Systems Directorate"
 - "Control Science Center, Aerospace Systems Directorate"
 - "Control Science Center, Aerospace Systems Directorate"
+- "Control Science Center, Aerospace Systems Directorate"
 - "Department of Electrical and Computer Engineering, Air Force Institute of Technology"
-date: 2021-03-01T08:00:00-05:00
-doi: "10.2514/1.G005619"
+date: 2022-09-22T12:00:00-05:00
+doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2020-12-21T08:00:00-05:00
+publishDate: 2022-09-22T12:00:00-05:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["2"]
+publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
-publication: "Journal of Guidance, Control, and Dynamics"
+publication: "ArXiv"
 publication_short: ""
 
-abstract: ""
+abstract: "The maximum surveillance of a target which is holding course is considered, wherein an observer vehicle aims to maximize the time that a faster target remains within a fixed-range of the observer. This entails two coupled phases: an approach phase and observation phase. In the approach phase, the observer strives to make contact with the faster target, such that in the observation phase, the observer is able to maximize the time where the target remains within range. Using Pontryagin's Minimum Principle, the optimal control laws for the observer are found in closed-form. Example scenarios highlight various aspects of the engagement.
+"
 
 # Summary. An optional shortened abstract.
 summary: ""
@@ -36,11 +39,11 @@ summary: ""
 tags: 
 - area defense
 - optimal control
-- 3-D
+- 2-D
 - active target defense
-categories: 
+categories:
 - cooperative control
-- maximum observation
+- optimal observation
 featured: false
 
 # Custom links (optional).
@@ -51,7 +54,7 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf:
+url_pdf: https://arxiv.org/pdf/2209.11289.pdf
 url_code:
 url_dataset:
 url_poster:
@@ -59,6 +62,7 @@ url_project:
 url_slides:
 url_source:
 url_video:
+url_preprint: https://arxiv.org/abs/2209.11289
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 

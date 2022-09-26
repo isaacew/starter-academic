@@ -9,6 +9,13 @@ authors:
 - David Casbeer
 - Zachary J L Demers
 - Meir Pachter
+author_notes:
+- "Aerospace Vehicles Technology Assessment and Simulations, Aerospace Systems Directorate"
+- "Control Science Center, Aerospace Systems Directorate"
+- "Control Science Center, Aerospace Systems Directorate"
+- "Control Science Center, Aerospace Systems Directorate"
+- "Aerospace Vehicles Technology Assessment and Simulations, Aerospace Systems Directorate"
+- "Department of Electrical and Computer Engineering, Air Force Institute of Technology"
 date: 2020-07-01T20:56:14-05:00
 doi: "10.23919/ACC45564.2020.9147340"
 
@@ -47,6 +54,7 @@ tags:
 - optimal control
 categories: 
 - cooperative control
+- maximum observation
 featured: false
 
 # Custom links (optional).
