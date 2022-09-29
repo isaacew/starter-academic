@@ -48,7 +48,7 @@ tags:
 - aircraft control
 categories:
 - cooperative control
-featured: false
+featured: true
 
 # Custom links (optional).
 #   Uncomment and edit lines below to show custom links.
@@ -65,7 +65,7 @@ url_poster:
 url_project:
 url_slides:
 url_source:
-url_video:
+url_video: https://youtu.be/R38znMplxpQ
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
