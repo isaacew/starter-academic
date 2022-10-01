@@ -10,7 +10,7 @@ categories: []
 date: 2022-02-01T10:02:12-05:00
 lastmod: 2022-02-01T10:02:12-05:00
 featured: false
-draft: false
+draft: true
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.

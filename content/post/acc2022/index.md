@@ -7,10 +7,12 @@ summary: "Jun 8-10, 2022 | Atlanta, GA"
 authors: []
 tags: []
 categories: []
-date: 2022-02-01T09:15:03-05:00
-lastmod: 2022-02-01T09:15:03-05:00
+date: 2022-06-08T09:15:03-05:00
+lastmod: 2022-06-08T09:15:03-05:00
 featured: false
-draft: false
+draft: true
+show_date: false
+reading_time: false
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
