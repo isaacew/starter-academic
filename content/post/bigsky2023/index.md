@@ -34,4 +34,13 @@ The international IEEE Aerospace Conference, with AIAA and PHM Society as techni
 
 The annual, weeklong conference, is set in a stimulating and thought provoking environment. The 2023 conference will be the 44th.
 
+
+Abstract Due Date (300 - 500 words) : July 1, 2022
+Paper (6 - 20 pages) Deadline : October 14, 2022
+Reviewed Paper Returned to Author : November 14, 2022
+Final Paper Due Date : January 13, 2023
+All submissions are electronic at : www.aeroconf.org
+Registration Opens: October 1, 2022
+
+
 https://www.aeroconf.org/
