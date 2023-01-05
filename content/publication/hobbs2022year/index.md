@@ -15,7 +15,7 @@ publishDate: 2022-12-18T08:01:16-05:00
 # 7 = Thesis; 8 = Patent
 publication_types: ["2"]
 
-# Publication name and optional abbreviated publication name.
+# Publication name and optional abbreviated publication name
 publication: "Aerospace America"
 publication_short: ""
 
