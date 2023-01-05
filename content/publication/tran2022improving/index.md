@@ -9,7 +9,7 @@ authors:
 - Dejan Milutinovic
 
 date: 2022-06-08T08:00:00-05:00
-doi: ""
+doi: "10.23919/ACC53348.2022.9867582"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: 2022-01-31T08:00:00-05:00
@@ -24,7 +24,7 @@ publication_types: ["1"]
 publication: "American Control Conference"
 publication_short: ""
 
-abstract: ""
+abstract: "In the ring formation control problem, the follower is designated to approach a ring defined relative to the leader. This type of formation gives the follower more flexibility as it trails the leader. To achieve such formation, the follower’s reference velocity is derived using the potential field method, and then a sliding surface is constructed to enforce the follower to track the reference. Motivated by the Levenberg-Marquardt algorithm, this paper proposes modifications on the potential field method to further enhance the follower’s performance in the ring formation. Specifically, adding the approximated Hessian into the formulation of the potential field has a damping effect on the controller and improves the follower’s performance by reducing oscillations about the sliding surface. The use of the approximated Hessian, which is introduced in this paper in the context of ring formation, extends and is useful for control design of potential field methods in general. The proposed algorithm is discussed and interpreted from the feedback control viewpoint, where stability is guaranteed. A numerical example is also presented to illustrate the efficacy of the proposed algorithm."
 
 # Summary. An optional shortened abstract.
 summary: ""
