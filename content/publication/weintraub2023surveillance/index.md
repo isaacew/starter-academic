@@ -14,8 +14,8 @@ author_notes:
 - "Control Science Center, Aerospace Systems Directorate"
 - "Control Science Center, Aerospace Systems Directorate"
 - "Department of Electrical and Computer Engineering, Air Force Institute of Technology"
-date: 2022-09-22T12:00:00-05:00
-doi: ""
+date: 2023-01-16T12:00:00-05:00
+doi: "10.1109/TAES.2023.3237129"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: 2022-09-22T12:00:00-05:00
@@ -24,10 +24,10 @@ publishDate: 2022-09-22T12:00:00-05:00
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["3"]
+publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: "ArXiv"
+publication: "IEEE Transactions on Aerospace and Electronic Systems"
 publication_short: ""
 
 abstract: "The maximum surveillance of a target which is holding course is considered, wherein an observer vehicle aims to maximize the time that a faster target remains within a fixed-range of the observer. This entails two coupled phases: an approach phase and observation phase. In the approach phase, the observer strives to make contact with the faster target, such that in the observation phase, the observer is able to maximize the time where the target remains within range. Using Pontryagin's Minimum Principle, the optimal control laws for the observer are found in closed-form. Example scenarios highlight various aspects of the engagement.
