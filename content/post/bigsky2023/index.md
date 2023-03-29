@@ -5,12 +5,12 @@ title: "2023 IEEE Aerospace Conference"
 subtitle: "4 - 11 MAR 2023 | Yellowstone Conference Center, Big Sky, Montana, USA"
 summary: "4 - 11 MAR 2023 | Yellowstone Conference Center, Big Sky, Montana, USA"
 authors: []
-tags: []
+taggit s: []
 categories: []
 date: 2022-03-04T11:14:44-04:00
 lastmod: 2023-03-04T11:14:44-04:00
 featured: false
-draft: false
+draft: true
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
