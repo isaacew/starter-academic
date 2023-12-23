@@ -3,11 +3,11 @@
 
 title: "Escape from an Orbiting Pursuer with a Nonzero Capture Radius"
 authors: [Braulio Mora, Alexander Von Moll, Isaac Weintraub, David Casbeer, Animesh Chakravarthy]
-date: 2023-12-23T12:07:34-05:00
+date: 2023-10-02T12:07:34-05:00
 doi: "10.48550/arXiv.2310.01203"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2023-12-23T12:07:34-05:00
+publishDate: 2023-10-02T12:07:34-05:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
