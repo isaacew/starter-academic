@@ -5,11 +5,11 @@ title: "Basic Engagement Zones"
 authors: 
 - Alexander Von Moll
 - Isaac E. Weintraub
-date: 2023-12-23T12:07:17-05:00
+date: 2023-08-28T12:07:17-05:00
 doi: "10.48550/arXiv.2311.06165"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2023-12-23T12:07:17-05:00
+publishDate: 2023-02-28T12:07:17-05:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
