@@ -1,10 +1,12 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Vonmoll2023basic"
-authors: []
+title: "Basic Engagement Zones"
+authors: 
+- Alexander Von Moll
+- Isaac E. Weintraub
 date: 2023-12-23T12:07:17-05:00
-doi: ""
+doi: "10.48550/arXiv.2311.06165"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: 2023-12-23T12:07:17-05:00
@@ -13,20 +15,20 @@ publishDate: 2023-12-23T12:07:17-05:00
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["0"]
+publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
+publication: "IEEE NAECON"
 publication_short: ""
 
-abstract: ""
+abstract: "This paper establishes a more formal definition for an Engagement Zone (EZ) and derives some basic EZs associated with fundamental engagement models associated with pursuit-evasion and turret-evasion. The basic EZs presented in this paper capture the most salient aspects of the Pursuer-Agent and Turret-Agent engagements: namely the geometry of the aspect angle and the relative differences in capability (i.e., maximum speeds, range, etc.). One of the main advantages of utilizing EZs for path planning is that they encode an overall desire for Agent to go somewhere without requiring an aggressive maneuver or active evasion should the Pursuer or Turret begin its pursuit. It is shown that there is some advantage, in terms of time savings, in EZ-based navigation around a single range-limited Pursuer as compared with circumnavigating the capturability region."
 
 # Summary. An optional shortened abstract.
 summary: ""
 
 tags: []
 categories: []
-featured: false
+featured: true
 
 # Custom links (optional).
 #   Uncomment and edit lines below to show custom links.
@@ -36,7 +38,7 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf:
+url_pdf: https://arxiv.org/pdf/2311.06165.pdf
 url_code:
 url_dataset:
 url_poster:
