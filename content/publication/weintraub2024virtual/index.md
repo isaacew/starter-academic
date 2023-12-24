@@ -12,7 +12,7 @@ author_notes:
 - "Control Science Center, Air Force Research Laboratory"
 - "Control Science Center, Air Force Research Laboratory"
 - "Infoscitex Corporation, Dayton, OH"
-date: 2023-12-20T12:05:48-05:00
+date: 2024-01-08T12:05:48-05:00
 doi: "10.48550/arXiv.2305.19399"
 
 # Schedule page publish date (NOT publication's date).
