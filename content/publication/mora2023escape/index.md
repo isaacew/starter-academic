@@ -2,7 +2,18 @@
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "Escape from an Orbiting Pursuer with a Nonzero Capture Radius"
-authors: [Braulio Mora, Alexander Von Moll, Isaac Weintraub, David Casbeer, Animesh Chakravarthy]
+authors: 
+- Braulio Mora
+- Alexander Von Moll
+- Isaac Weintraub
+- David Casbeer
+- Animesh Chakravarthy
+author_notes:
+- "Department of Mechanical and Aerospace Engineering, University of Texas at Arlington"
+- "Control Science Center, Air Force Research Laboratory"
+- "Control Science Center, Air Force Research Laboratory"
+- "Infoscitex Corporation, Dayton, OH"
+- - "Department of Mechanical and Aerospace Engineering, University of Texas at Arlington"
 date: 2023-10-02T12:07:34-05:00
 doi: "10.48550/arXiv.2310.01203"
 
@@ -16,7 +27,7 @@ publishDate: 2023-10-02T12:07:34-05:00
 publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
+publication: "arXiv"
 publication_short: ""
 
 abstract: "This paper explores a  multi-agent containment problem, where a fast evader, modeled having constant speed and using constant heading, attempts to escape a circular containment region that is orbited by a slower pursuer with a nonzero capture radius. The pursuer is constrained to move along the edge of the containment region and seeks to capture the evader. This paper presents an in-depth analysis of this pursuer-evader containment scenario. First, multiple types of capture conditions for a single-pursuer case are analyzed defining the worst-case initial position for the pursuer. Second, a parametric study is performed to demonstrate the effects of speed ratio, capture radius, and initial location of the evader. Finally, a reachability analysis is performed to investigate the viable escape headings and reachable regions by the evader. This work provides a foundation for the analysis of escape under more general evader inputs as well as a multiple-pursuer version of the scenario."
@@ -24,7 +35,12 @@ abstract: "This paper explores a  multi-agent containment problem, where a fast 
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: []
+tags:
+- pusuit-evasion
+- containment
+- perimeter defense
+- incomplete information
+- UAVs
 categories: []
 featured: false
 
