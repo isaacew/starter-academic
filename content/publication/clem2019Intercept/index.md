@@ -15,11 +15,11 @@ author_notes:
 - "Control Science Center, Air Force Research Laboratory"
 - "Control Science Center, Air Force Research Laboratory"
 - "Control Science Center, Air Force Research Laboratory"
-date: 2021-01-07T08:00:00-05:00
+date: 2019-01-06T08:00:00-05:00
 doi: "10.2514/6.2019-0683"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 22021-01-07T08:00:00-05:00
+publishDate: 2019-01-06T08:00:00-05:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -31,16 +31,7 @@ publication_types: ["1"]
 publication: "AIAA SciTech Forum"
 publication_short: "SciTech Forum"
 
-abstract: "Combatant small Unmanned Aerial Vehicles (CUAVs) can easily
-enter restricted airspace and may be mitigated by counter UAVs.
-Intercepting and following combatant UAVs in restricted airspace could be
-achieved with multi-rotor UAVs. A pseudotarget based Proportional
-Navigation (PN) guidance algorithm that guides a UAV to intercept and
-follow a combatant UAV using highly uncertain sensor position information
-was investigated. Simulations were performed to validate the model and
-develop a ratio of following distance to initial range. Near zero following
-distance was achieved for a finite
-range of initial line-of-sight angles."
+abstract: "Combatant small Unmanned Aerial Vehicles (CUAVs) can easily enter restricted airspace and may be mitigated by counter UAVs. Intercepting and following combatant UAVs in restricted airspace could be achieved with multi-rotor UAVs. A pseudotarget based Proportional Navigation (PN) guidance algorithm that guides a UAV to intercept and follow a combatant UAV using highly uncertain sensor position information was investigated. Simulations were performed to validate the model and develop a ratio of following distance to initial range. Near zero following distance was achieved for a finite range of initial line-of-sight angles."
 
 # Summary. An optional shortened abstract.
 summary: ""
