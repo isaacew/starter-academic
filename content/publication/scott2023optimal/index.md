@@ -8,6 +8,12 @@ authors:
 - Satyanarayana G. Manyam
 - David W. Casbeer
 - Manish Kumar
+author_notes:
+- "Department of Mechanical and Materials Engineering, University of Cincinnati"
+- "Control Science Center, Air Force Research Laboratory"
+- "Infoscitex Corporation, Dayton, OH"
+- "Control Science Center, Air Force Research Laboratory"
+- "Department of Mechanical and Materials Engineering, University of Cincinnati"
 date: 2023-10-02T12:09:04-05:00
 doi: "10.1016/j.ifacol.2023.11.005"
 

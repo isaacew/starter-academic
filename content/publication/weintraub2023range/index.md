@@ -1,18 +1,20 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Basic Engagement Zones"
+title: "Range-Limited Pursuit-Evasion"
 authors: 
-- Alexander Von Moll
 - Isaac E. Weintraub
+- Alexander Von Moll
+- Meir Pachter
 author_notes:
 - "Control Science Center, Air Force Research Laboratory"
 - "Control Science Center, Air Force Research Laboratory"
-date: 2023-08-28T12:07:17-05:00
-doi: "10.48550/arXiv.2311.06165"
+- "Department of Electrical Engineering, Air Force Institute of Technology" 
+date: 2023-08-28T07:44:45-05:00
+doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2023-02-28T12:07:17-05:00
+publishDate: 2023-02-28T07:44:45-05:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -21,17 +23,17 @@ publishDate: 2023-02-28T12:07:17-05:00
 publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
-publication: "arXiv"
-publication_short: ""
+publication: "National Aerospace and Electronics Conference"
+publication_short: "NAECON"
 
-abstract: "This paper establishes a more formal definition for an Engagement Zone (EZ) and derives some basic EZs associated with fundamental engagement models associated with pursuit-evasion and turret-evasion. The basic EZs presented in this paper capture the most salient aspects of the Pursuer-Agent and Turret-Agent engagements: namely the geometry of the aspect angle and the relative differences in capability (i.e., maximum speeds, range, etc.). One of the main advantages of utilizing EZs for path planning is that they encode an overall desire for Agent to go somewhere without requiring an aggressive maneuver or active evasion should the Pursuer or Turret begin its pursuit. It is shown that there is some advantage, in terms of time savings, in EZ-based navigation around a single range-limited Pursuer as compared with circumnavigating the capturability region."
+abstract: "In pursuit-evasion the objective of the pursuer is to capture the evader. In this work, the faster pursuer is modeled to have limited range and therefore optimal strategies for the pursuer and evader change. Depending upon the range limits of the pursuer the evader may evade capture by the pursuer. This paper describes the optimal strategies and nuances that appear for point-capture or when the pursuer is endowed with a non-zero capture radius."
 
 # Summary. An optional shortened abstract.
 summary: ""
 
 tags: []
 categories: []
-featured: true
+featured: false
 
 # Custom links (optional).
 #   Uncomment and edit lines below to show custom links.
@@ -41,7 +43,7 @@ featured: true
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf: https://arxiv.org/pdf/2311.06165.pdf
+url_pdf:
 url_code:
 url_dataset:
 url_poster:

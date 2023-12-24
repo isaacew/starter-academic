@@ -1,39 +1,37 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Virtual Target Selection for a Multiple-Pursuer Multiple-Evader Scenario"
-authors: 
-- Isaac E. Weintraub
+title: "Pure Pursuit of a Target on a Circular Trajectory"
+authors:
 - Alexander Von Moll
 - David W. Casbeer
-- Satyanarayana G. Manyam
+- Isaac E. Weintraub
 author_notes:
 - "Control Science Center, Air Force Research Laboratory"
 - "Control Science Center, Air Force Research Laboratory"
 - "Control Science Center, Air Force Research Laboratory"
-- "Infoscitex Corporation, Dayton, OH"
-date: 2023-12-20T12:05:48-05:00
-doi: "10.48550/arXiv.2305.19399"
+date: 2024-01-08T07:06:23-05:00
+doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2023-12-20T12:05:48-05:00
+publishDate: 2024-01-08T07:06:23-05:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["3"]
+publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
 publication: ""
 publication_short: ""
 
-abstract: "This paper considers an M-pursuer N-evader scenario involving virtual targets. The virtual targets serve as an intermediary target for the pursuers, allowing the pursuers to delay their final assignment to the evaders. However, upon reaching the virtual target, the pursuers must decide which evader to capture. It is assumed that there are more pursuers than evaders and that the pursuers are faster than the evaders. The objective is two-part: first, assign each pursuer to virtual target and evader such that the the pursuer team's energy is minimized, and second, choose the the virtual targets' locations for this minimization problem. The approach taken is to consider the Apollonius geometry between each pursuer's virtual target location and each evader. Using the constructed Apollonius circles, the pursuer's travel distance and maneuver at a virtual target are obtained. These metrics serve as a gauge for the total energy required to capture a particular evader and are used to solve the joint virtual target selection and pursuer-evader assignment problem. This paper provides a mathematical definition of this problem, the solution approach taken, and an example."
+abstract: ""
 
 # Summary. An optional shortened abstract.
 summary: ""
 
-tags: [weapon target assignment, optimization, MILP, apollonius, pursuit-evasion]
+tags: []
 categories: []
 featured: false
 
@@ -45,7 +43,7 @@ featured: false
 #   icon_pack: fab
 #   icon: twitter
 
-url_pdf: https://arxiv.org/pdf/2305.19399.pdf#:~:text=The%20virtual%20targets%20serve%20as,decide%20which%20evader%20to%20capture.
+url_pdf:
 url_code:
 url_dataset:
 url_poster:
