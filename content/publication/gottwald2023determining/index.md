@@ -10,11 +10,11 @@ authors:
 - "Department of Aeronautics and Astronautics, Air Force Institute of Technology"
 - "Department of Aeronautics and Astronautics, Air Force Institute of Technology"
 - "Control Science Center, Air Force Research Laboratory"
-date: 2022-10-05T07:51:47-04:00
-doi: "10.48550/arXiv.2210.01665"
+date: 2023-03-04T07:51:47-04:00
+doi: "10.1109/AERO55745.2023.10115672"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2022-10-05T07:51:47-04:00
+publishDate: 2022-03-04T07:51:47-04:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -23,8 +23,8 @@ publishDate: 2022-10-05T07:51:47-04:00
 publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
-publication: "ArXiv"
-publication_short: ""
+publication: "2023 IEEE Aerospace Conference"
+publication_short: "Big Sky"
 
 abstract: "The specific objective of this paper is to develop a tool that calculates the optimal trajectory of the follower aircraft as it completes a formation rejoin, and then maintains the formation position, defined as a ring of points, until a fixed final time. The tool is designed to produce optimal trajectories for a variety of initial conditions and leader trajectories. Triple integrator dynamics are used to model the follower aircraft in three dimensions. Control is applied directly to the rate of acceleration. Both the follower's and leader's velocities and accelerations are bounded, as dictated by the aircraft's performance envelope. Lastly, a path constraint is used to ensure the follower avoids the leader's jet wash region. This optimal control problem is solved through numerical analysis using the direct orthogonal collocation solver GPOPS-II. Two leader trajectories are investigated, including a descending spiral and continuous vertical loops. Additionally, a study of the effect of various initial guesses is performed. All trajectories displayed a direct capture of the formation position, however changes in solver initial conditions demonstrate various behaviors in how the follower maintains the formation position. The developed tool has proven adequate to support future research in crafting real-time controllers capable of determining near-optimal trajectories."
 
