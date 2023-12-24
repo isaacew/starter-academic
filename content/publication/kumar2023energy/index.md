@@ -2,7 +2,20 @@
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "Energy-Efficient Ring Formation Control with Constrained Inputs"
-authors: [Praveen Kumar Ranjan, Abhinav Sinha, Yongcan Cao, Dzung Tran, David Casbeer, Isaac Weintraub]
+authors: 
+- Praveen Kumar Ranjan
+- Abhinav Sinha
+- Yongcan Cao
+- Dzung Tran
+- David Casbeer
+- Isaac Weintraub
+author_notes:
+- "Department of Electrical and Computer Engineering, University of Texas at San Antonio"
+- "Department of Electrical and Computer Engineering, University of Texas at San Antonio"
+- "Department of Electrical and Computer Engineering, University of Texas at San Antonio"
+- "Control Science Center, Air Force Research Laboratory"
+- "Control Science Center, Air Force Research Laboratory"
+- "Control Science Center, Air Force Research Laboratory"
 date: 2023-07-01T12:09:36-05:00
 doi: "10.2514/1.G007057"
 
