@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "On the Synthesis of Optimal Control Laws"
+title: "The Synthesis of Optimal Control Laws Using Isaacs' Method for the Solution of Differential Games"
 authors:
 - Meir Pachter
 - Isaac E Weintraub
