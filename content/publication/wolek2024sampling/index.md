@@ -8,7 +8,7 @@ authors:
 - Alexander Von Moll
 - David Casbeer
 - Satyanarayana G. Manyam
-- author_notes:
+author_notes:
 - "Department of Mechanical Engineering and Engineering Science, University of North Carolina, Charlotte"
 - "Control Science Center, Air Force Research Laboratory"
 - "Control Science Center, Air Force Research Laboratory"

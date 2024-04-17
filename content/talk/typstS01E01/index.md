@@ -1,38 +1,33 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Virtual Target Selection for a Multiple-Pursuer Multiple-Evader Scenario"
-event: "AIAA SciTech"
-event_url: https://www.aiaa.org/SciTech
-location: Orlando, FL
-address: 
-  street: 9801 International Drive
-  city: Orlando
-  region: FL
-  postcode: 32819
-  country: United States of America
-summary:
+title: "Getting Started with Typst - Installing and First Usage (S01E01)"
+event:
+event_url:
+location:
+address:
+  street:
+  city:
+  region:
+  postcode:
+  country:
+summary: "In this video I show how to install Typst on a Mac using home-brew. I also show what extensions in VS Code to use when generating PDFs and how real-time editing is possible with Typst. I also show how to obtain templates on Typst Universe and how to use the terminal to install and download those templates."
 abstract:
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: 2024-01-08T11:19:51-05:00
-date_end: 2024-01-12T11:19:51-05:00
+date: 024-03-24T13:10:55-04:00
+# date_end: 
 all_day: true
 
 # Schedule page publish date (NOT talk date).
-publishDate: 2023-12-08T11:19:51-05:00
+publishDate: 2024-03-24T13:10:55-04:00
 
-authors:
-- Isaac E. Weintraub
-- Alexander Von Moll
-- David Casbeer
-- Satyanarayana G. Manyam
-tags: []
+authors: [Isaac E. Weintraub]
+tags: [Typst]
 
 # Is this a featured talk? (true/false)
 featured: false
-draft: true
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
@@ -55,7 +50,7 @@ url_slides:
 
 url_code:
 url_pdf:
-url_video:
+url_video: https://youtu.be/84O9OMHnJU0
 
 # Markdown Slides (optional).
 #   Associate this talk with Markdown slides.
@@ -69,5 +64,8 @@ slides: ""
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
-projects: []
+projects: [Typst]
 ---
+
+
+In this [video](https://youtu.be/84O9OMHnJU0) I show how to install [Typst](https://typst.app/) on a Mac using home-brew. I also show what extensions in [VS Code](https://code.visualstudio.com) to use when generating PDFs and how real-time editing is possible with Typst. I also show how to obtain templates on [Typst Universe](https://typst.app/universe/) and how to use the terminal to install and download those templates. Typst’s [online editor](https://typst.app/) can be used to type online. The [documentation](https://typst.app/docs/) can be used to find out more about Typst and its usage.

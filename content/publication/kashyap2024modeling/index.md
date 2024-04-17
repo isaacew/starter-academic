@@ -9,7 +9,7 @@ authors:
 - David Casbeer
 - Isaac E. Weintraub
 - Brandon Hencey
-- author_notes:
+author_notes:
 - "Department of Mechanical and Aerospace Engineering, The University of Texas at Arlington"
 - "Department of Mechanical and Aerospace Engineering, The University of Texas at Arlington"
 - "Department of Mechanical and Aerospace Engineering, The University of Texas at Arlington"
