@@ -23,8 +23,8 @@ all_day: true
 # Schedule page publish date (NOT talk date).
 publishDate: 2024-04-26T00:00:00-05:00
 
-authors: []
-tags: []
+authors: [Isaac E. Weintraub]
+tags: [Typst]
 
 # Is this a featured talk? (true/false)
 featured: false
