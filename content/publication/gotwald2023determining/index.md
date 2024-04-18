@@ -6,7 +6,7 @@ authors:
 - Carl A. Gotwald
 - Michael D. Zollars
 - Isaac E. Weintraub
-- author_notes:
+author_notes:
 - "Department of Aeronautics and Astronautics, Air Force Institute of Technology"
 - "Department of Aeronautics and Astronautics, Air Force Institute of Technology"
 - "Control Science Center, Air Force Research Laboratory"
