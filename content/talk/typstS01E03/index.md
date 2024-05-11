@@ -70,4 +70,4 @@ projects: []
 In this video, I talk about typesetting mathematics in Typst. I go through several examples and show you how to align equations, reference them, and show some tips and tricks for a new user. The Version of Typst at the time of recording is v0.11.
 
 
-The [code for this example](https://typst.app/project/rfWg74mXvJQgw_cS4E3h2M) is available for anyone to view. Typst's online editor can be accessed [here](https://typst.app/). Typst documentation is [here](https://typst.app/docs/).
+Typst's online editor can be accessed [here](https://typst.app/). Typst documentation is [here](https://typst.app/docs/).

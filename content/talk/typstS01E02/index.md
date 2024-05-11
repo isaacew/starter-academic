@@ -68,4 +68,4 @@ projects: [Typst]
 ---
 
 
-In this [video](https://youtu.be/rg46Mz74ssU), I explain how to do several basic commands in typing a paper with Typst. Rather than use a template, this video shows how to make a paper, insert figures, tables, equations, and citations as well as label and reference that content. The [code](https://typst.app/project/rHR0BxlvC_t5mF6r3zvKmW) for this example is available for anyone to view. Typst’s [online editor](https://typst.app/) can be used to type online. The [documentation](https://typst.app/docs/) can be used to find out more about Typst and its usage.
+In this [video](https://youtu.be/rg46Mz74ssU), I explain how to do several basic commands in typing a paper with Typst. Rather than use a template, this video shows how to make a paper, insert figures, tables, equations, and citations as well as label and reference that content. Typst’s [online editor](https://typst.app/) can be used to type online. The [documentation](https://typst.app/docs/) can be used to find out more about Typst and its usage.

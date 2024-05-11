@@ -78,7 +78,7 @@ It's important to insert figures and control their location, and how they're ref
 
 The version of Typst that I was using at the time of recording is v0.11. Please consider subscribing and commenting below. I am not, in any way affiliated with Typst development and am simply a new user of this tool. I have much to learn and hope to become more proficient through the generation of this content.
 
-The code for this example is available for anyone to view [here](https://typst.app/project/rZgrItkipKXI4MgCXcCoNg)
+<!-- The code for this example is available for anyone to view [here](https://typst.app/project/rZgrItkipKXI4MgCXcCoNg) -->
 
 Typst's online editor can be accessed [here](https://typst.app/)
 
