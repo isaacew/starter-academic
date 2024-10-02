@@ -48,7 +48,7 @@ featured: false
 
 url_pdf: https://arxiv.org/pdf/2405.05725
 url_preprint: https://arxiv.org/abs/2405.05725
-url_audio: audio.wav
+
 url_code:
 url_dataset:
 url_poster:
