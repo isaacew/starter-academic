@@ -8,9 +8,9 @@ authors:
 - Jonah A. Reeger
 - Isaac E. Weintraub
 author_notes:
-- "Department of Aerospace Engineering, Air Force Insitute of Technology"
-- "Department of Aerospace Engineering, Air Force Insitute of Technology"
-- "Department of Mathematics & Statistics, Air Force Insitute of Technology"
+- "Department of Aerospace Engineering, Air Force Institute of Technology"
+- "Department of Aerospace Engineering, Air Force Institute of Technology"
+- "Department of Mathematics & Statistics, Air Force Institute of Technology"
 - "Control Science Center, Air Force Research Laboratory"
 date: 2024-03-22T09:56:44-04:00
 doi: "10.2514/6.2024-2760"
