@@ -8,7 +8,7 @@ authors:
 - Isaac E. Weintraub
 - Alexander L Von Moll
 author_notes:
-- " Department of Aeronautical Engineering, U.S. Air Force Academy"
+- "Department of Aeronautical Engineering, U.S. Air Force Academy"
 - "Department of Aerospace Engineering, Air Force Institute of Technology"
 - "Control Science Center, Air Force Research Laboratory"
 - "Control Science Center, Air Force Research Laboratory"
