@@ -7,6 +7,16 @@ authors:
   - 'David B Doman'
 url: 'https://patentimages.storage.googleapis.com/2d/61/a5/e04e9058ba40da/US9428269.pdf'
 image: 'featured.jpg'
+short_abstract: |
+  A method of configuring a wing velocity profile includes segmenting a complete
+  wingbeat cycle into a set of quarter strokes including a first quarter-stroke,
+  a second quarter stroke, a third quarter-stroke, and a fourth quarter-stroke.
+  The method further includes generating time-varying quarter-stroke wing
+  position commands for each of a first and second wing planforms to produce
+  wing flapping trajectories that generate non-Zero, cycle averaged wing lift
+  and drag and alter a cycle average center of pressure of each of the first and
+  the second wing planforms relative to the aircraft. The wing position commands
+  include Velocities and positions with temporally...
 abstract: |
   A method of configuring a wing velocity profile includes segmenting a complete
   wingbeat cycle into a set of quarter strokes including a first quarter-stroke,

@@ -10,6 +10,16 @@ authors:
 doi: '10.48550/arXiv.2403.15188'
 url: 'https://arxiv.org/pdf/2403.15188.pdf'
 image: 'featured.jpg'
+short_abstract: |
+  In classical works on a planar differential pursuit-evasion game with a faster
+  pursuer, the intercept point resulting from the equilibrium strategies lies on
+  the Apollonius circle. This property was exploited for the construction of the
+  equilibrium strategies for two faster pursuers against one evader. Extensions
+  for planar multiple-pursuer single-evader scenarios have been considered. We
+  study a pursuit-evasion game on a sphere and the relation of the equilibrium
+  intercept point to the Apollonius domain on the sphere. The domain is a
+  generalization of the planar Apollonius circle set. We find a condition
+  resulting in the intercept point belonging to the Apollonius...
 abstract: |
   In classical works on a planar differential pursuit-evasion game with a faster
   pursuer, the intercept point resulting from the equilibrium strategies lies on

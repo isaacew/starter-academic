@@ -1,0 +1,15 @@
+---
+title: 'Implementation of Split-Cycle Control for Micro Aerial Vehicles'
+authors:
+  - 'Isaac E. Weintraub'
+  - 'David O. Sigthorsson'
+  - 'Michael W. Oppenheimer'
+  - 'David B. Doman'
+year: '2013'
+url: 'https://api.semanticscholar.org/CorpusID:42380451'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Weintraub2013ImplementationOS]
+```

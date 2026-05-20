@@ -1,0 +1,17 @@
+---
+title: 'Development of Linear Battery Model for Path Planning with Mixed Integer Linear Programming: Simulated and Experimental Validation'
+authors:
+  - 'Drew Scott'
+  - 'Satyanarayana Gupta Manyam'
+  - 'David W. Casbeer'
+  - 'Manish Kumar'
+  - 'Isaac E. Weintraub'
+  - 'Michael Rothenberger'
+year: '2022'
+url: 'https://api.semanticscholar.org/CorpusID:253708268'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Scott2022DevelopmentOL]
+```

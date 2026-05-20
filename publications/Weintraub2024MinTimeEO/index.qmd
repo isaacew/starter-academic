@@ -1,0 +1,18 @@
+---
+title: 'Min-Time Escape of a Dubins Car from a Polygon'
+authors:
+  - 'Isaac E. Weintraub'
+  - 'Alexander Von Moll'
+  - 'David W. Casbeer'
+  - 'Satyanarayana Gupta Manyam'
+  - 'Meir Pachter'
+  - 'Colin Taylor'
+  - 'Thomas Chapman'
+year: '2024'
+url: 'https://api.semanticscholar.org/CorpusID:280705148'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Weintraub2024MinTimeEO]
+```

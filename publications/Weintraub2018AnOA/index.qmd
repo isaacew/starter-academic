@@ -1,0 +1,14 @@
+---
+title: 'An Optimal-Stochastic Aircraft Defense Strategy for the Active Target Defense Scenario'
+authors:
+  - 'Isaac E. Weintraub'
+  - "Eloy Garc{\\'i}a"
+  - 'Meir Pachter'
+year: '2018'
+url: 'https://api.semanticscholar.org/CorpusID:196016752'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Weintraub2018AnOA]
+```

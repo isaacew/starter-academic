@@ -10,6 +10,16 @@ year: '2025'
 doi: '10.2514/6.2025-1348'
 url: 'https://arc.aiaa.org/doi/10.2514/6.2025-1348'
 image: 'featured.jpg'
+short_abstract: |
+  This paper explores a multi-agent containment problem, where a fast evader,
+  modeled having constant speed and using constant heading, attempts to escape a
+  circular containment region that is orbited by a slower team of pursuers with
+  a nonzero capture radius. Two distinct multi-agent dynamic models cases are
+  explored, the first uses a unicycle dynamics model with strict constraints,
+  while the second uses a double integrator model with looser constraints and
+  consensus laws implemented with a communication network. This paper considers
+  the scenario wherein some of the pursuers get compromised and turn into
+  malicious agents that suffer a delay in initiating...
 abstract: |
   This paper explores a multi-agent containment problem, where a fast evader,
   modeled having constant speed and using constant heading, attempts to escape a

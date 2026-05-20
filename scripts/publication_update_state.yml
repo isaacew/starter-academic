@@ -1,0 +1,10 @@
+# Tracks last Semantic Scholar metadata update per publication.
+#
+# Keys are publication folder names (e.g. BibTeX keys).
+# Values are ISO8601 dates when that publication was last refreshed
+# from the Semantic Scholar API.
+#
+# Example:
+# Pachter2021TheSO:
+#   last_semantic_update: 2025-05-01
+

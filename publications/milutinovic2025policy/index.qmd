@@ -9,6 +9,16 @@ year: '2025'
 doi: '10.2514/6.2025-1544'
 url: 'https://arc.aiaa.org/doi/10.2514/6.2025-1544'
 image: 'featured.jpg'
+short_abstract: |
+  This work formulates the feedback control strategies for vehicles to reach a
+  goal point amongst a field of dynamic risk regions. Whereas previous work has
+  considered deterministic versions of this problem, we consider the scenario in
+  the context of uncertainty. This uncertainty could be due to unknown wind or
+  other external disturbances. The risk regions’ dynamics are tightly coupled to
+  the state of the vehicle and as a result the task of navigating through a
+  field dynamically changes as the vehicle traverses through it. Rather than
+  using a nonlinear program solver, the approach taken here is one of
+  formulating the...
 abstract: |
   This work formulates the feedback control strategies for vehicles to reach a
   goal point amongst a field of dynamic risk regions. Whereas previous work has

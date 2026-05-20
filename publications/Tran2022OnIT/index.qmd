@@ -1,0 +1,15 @@
+---
+title: 'On Improving the Potential Field Method for Ring Formation'
+authors:
+  - 'Dzung Tran'
+  - 'David W. Casbeer'
+  - 'Isaac E. Weintraub'
+  - "Dejan Milutinovi{\\'c}"
+year: '2022'
+url: 'https://api.semanticscholar.org/CorpusID:252098172'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Tran2022OnIT]
+```

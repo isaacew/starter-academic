@@ -1,0 +1,16 @@
+---
+title: 'Noise Aware Path Planning and Power Management of Hybrid Fuel UAVs'
+authors:
+  - 'Drew Scott'
+  - 'Satyanarayana Gupta Manyam'
+  - 'Isaac E. Weintraub'
+  - 'David W. Casbeer'
+  - 'Manish Kumar'
+year: '2024'
+url: 'https://api.semanticscholar.org/CorpusID:268032478'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Scott2024NoiseAP]
+```

@@ -43,6 +43,49 @@ Then preview the site locally with:
 quarto preview
 ```
 
+## Automated update & rebuild
+
+To minimize manual work and API calls, a master update script is
+provided: `scripts/update.py`.
+
+Typical monthly update procedure:
+
+1. (Optional) Update `scripts/id_to_key.yml` to map Semantic Scholar
+   IDs to publication folder keys (under `publications/`).
+2. (Optional) Run the update script with the IDs you want to refresh
+   from Semantic Scholar:
+
+   ```bash
+   python scripts/update.py --ids CorpusID:238582866 CorpusID:257834217
+   ```
+
+   This will:
+   - Fetch metadata for the given IDs (skipping any updated in the
+     last 30 days based on
+     `scripts/publication_update_state.yml`).
+   - Write JSON files under `data/semantic_scholar/`.
+   - Apply the fetched fields into the corresponding
+     `publications/<Key>/index.qmd` files as `ss_*` fields.
+   - Regenerate publication pages from `publications.bib`.
+   - Ensure `short_abstract` fields exist based on full abstracts.
+
+3. To perform a local-only refresh (no new API calls), simply run:
+
+   ```bash
+   python scripts/update.py
+   ```
+
+   This will skip the fetch step and only apply existing JSON,
+   regenerate publication pages, and update summaries.
+
+4. After running the update script, build or preview the site:
+
+   ```bash
+   quarto preview   # live preview
+   # or
+   quarto render    # full build
+   ```
+
 ## Duplicate title checking
 
 To help maintain a clean bibliography where each title is unique, the script `scripts/check_duplicate_publication_titles.py` scans `publications.bib` and reports any titles that appear more than once.
@@ -62,4 +105,3 @@ This script does not modify any files; it is intended as a safety check before r
 - Edit content in the corresponding `.qmd` files (e.g., `index.qmd`, `about.qmd`, `publications/<Key>/index.qmd`, `talks/*.qmd`).
 
 The original Hugo/Wowchemy README has been replaced with this Quarto-focused description.
-

@@ -1,0 +1,15 @@
+---
+title: 'The Basic Engagement Zone in 3-D'
+authors:
+  - 'Alexander W. Denton'
+  - 'Donald L. Kunz'
+  - 'Isaac E. Weintraub'
+  - 'Alexander Von Moll'
+year: '2025'
+url: 'https://api.semanticscholar.org/CorpusID:283098275'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Denton2025TheBE]
+```

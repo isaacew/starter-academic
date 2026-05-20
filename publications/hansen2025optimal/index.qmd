@@ -9,6 +9,16 @@ year: '2025'
 doi: '10.2514/6.2025-1350'
 url: 'https://arc.aiaa.org/doi/epdf/10.2514/6.2025-1350'
 image: 'featured.jpg'
+short_abstract: |
+  In an era of preparation for potential future conflict, it is of utter
+  importance to uncover methods of amplifying crewed aircraft capability with
+  novel un-crewed systems. To further that goal, this work considers a two-agent
+  scenario of a faster, unmanned turn-constrained pursuer with an engagement
+  zone (EZ) and a non-maneuvering mobile evader. The pursuer aims to capture an
+  evader with its circular EZ. The pursuer's EZ is dynamic and shifts as a
+  function of the evader's velocity vector in both magnitude and direction.
+  Using nonlinear optimal control techniques, the optimal trajectory and minimum
+  time to engage the evader are determined...
 abstract: |
   In an era of preparation for potential future conflict, it is of utter
   importance to uncover methods of amplifying crewed aircraft capability with

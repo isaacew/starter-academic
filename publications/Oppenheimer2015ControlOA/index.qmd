@@ -1,0 +1,15 @@
+---
+title: 'Control of a Minimally Actuated Biomimetic Vehicle Using Quarter-Cycle Wingbeat Modulation'
+authors:
+  - 'Michael W. Oppenheimer'
+  - 'Isaac E. Weintraub'
+  - 'David O. Sigthorsson'
+  - 'David B. Doman'
+year: '2015'
+url: 'https://api.semanticscholar.org/CorpusID:120959824'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Oppenheimer2015ControlOA]
+```

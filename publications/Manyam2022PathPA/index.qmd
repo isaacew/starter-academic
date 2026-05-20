@@ -1,0 +1,16 @@
+---
+title: 'Path Planning and Energy Management of Hybrid Air Vehicles for Urban Air Mobility'
+authors:
+  - 'Satyanarayana Gupta Manyam'
+  - 'David W. Casbeer'
+  - 'Swaroop Darbha'
+  - 'Isaac E. Weintraub'
+  - 'Krishnamoorthy Kalyanam'
+year: '2022'
+url: 'https://api.semantcholar.org/CorpusID:249191315'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Manyam2022PathPA]
+```

@@ -1,0 +1,14 @@
+---
+title: 'Adaptive Event-triggered Cooperative Control of Uncertain Networked Systems'
+authors:
+  - "Eloy Garc{\\'i}a"
+  - 'Isaac E. Weintraub'
+  - 'David W. Casbeer'
+year: '2018'
+url: 'https://api.semanticscholar.org/CorpusID:86553855'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Garca2018AdaptiveEC]
+```

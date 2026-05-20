@@ -1,0 +1,17 @@
+---
+title: 'Power Management for Noise Aware Path Planning of Hybrid UAVs'
+authors:
+  - 'Drew Scott'
+  - 'Satyanarayana Gupta Manyam'
+  - 'David W. Casbeer'
+  - 'Manish Kumar'
+  - 'Michael Rothenberger'
+  - 'Isaac E. Weintraub'
+year: '2022'
+url: 'https://api.semanticscholar.org/CorpusID:252101799'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Scott2022PowerMF]
+```

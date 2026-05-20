@@ -1,0 +1,15 @@
+---
+title: "Trajectory Optimization For Rendezvous Planning Using Quadratic B{\\'e}zier Curves"
+authors:
+  - 'Satyanarayana Gupta Manyam'
+  - 'David W. Casbeer'
+  - 'Isaac E. Weintraub'
+  - 'Colin J. Taylor'
+year: '2021'
+url: 'https://api.semanticscholar.org/CorpusID:245263439'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Manyam2021TrajectoryOF]
+```

@@ -9,6 +9,16 @@ year: '2023'
 doi: '10.2514/1.I011224'
 url: 'https://www.semanticscholar.org/paper/de81886e7cbe7952c73219a011ba1ca549316b9f'
 image: 'featured.jpg'
+short_abstract: |
+  The work herein expresses an optimal control problem for an air vehicle to
+  reach a desired location through two dynamic keep out zones. In today’s
+  contested world, there are many instances where air vehicles are denied a
+  portion of the airspace when trying to reach a desired target. Under these
+  conditions the objective is to find the optimal route to the desired location
+  while obeying path constraints. In this work, the path constraint is defined
+  as the enemy's ground weapon engagement zone, and is established in a way that
+  simulates an anti-aircraft defense system. The vehicle's objective is to
+  reach...
 abstract: |
   The work herein expresses an optimal control problem for an air vehicle to
   reach a desired location through two dynamic keep out zones. In today’s

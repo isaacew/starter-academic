@@ -1,0 +1,16 @@
+---
+title: 'Ring Formation Maneuver: Double-Integrator Kinematics with Input Saturation'
+authors:
+  - 'Dzung Tran'
+  - 'David W. Casbeer'
+  - "Eloy Garc{\\'i}a"
+  - 'Isaac E. Weintraub'
+  - "Dejan Milutinovi{\\'c}"
+year: '2021'
+url: 'https://api.semanticscholar.org/CorpusID:239207414'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Tran2021RingFM]
+```

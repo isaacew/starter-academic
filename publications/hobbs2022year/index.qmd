@@ -3,6 +3,9 @@ title: 'Year of Autonomy in Alaskan Glaciers, Flight, Earth Orbit, Cislular Spac
 authors:
   - 'Kerianne Hobbs'
 image: 'featured.jpg'
+short_abstract: |
+  The Intelligent Systems Technical Committee works to advance the application
+  of computation problem-solving technologies and methods to aerospace systems.
 abstract: |
   The Intelligent Systems Technical Committee works to advance the application
   of computation problem-solving technologies and methods to aerospace systems.

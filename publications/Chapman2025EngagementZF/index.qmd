@@ -1,0 +1,15 @@
+---
+title: 'Engagement Zones for a Turn Constrained Pursuer'
+authors:
+  - 'Thomas Chapman'
+  - 'Isaac E. Weintraub'
+  - 'Alexander Von Moll'
+  - "Eloy Garc{\\'i}a"
+year: '2025'
+url: 'https://api.semanticscholar.org/CorpusID:276095218'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Chapman2025EngagementZF]
+```

@@ -1,0 +1,15 @@
+---
+title: 'Optimal Evasion in an Active Target Defense Scenario'
+authors:
+  - 'Isaac E. Weintraub'
+  - "Eloy Garc{\\'i}a"
+  - 'David W. Casbeer'
+  - 'Meir Pachter'
+year: '2020'
+url: 'https://api.semanticscholar.org/CorpusID:234294898'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Weintraub2020OptimalEI]
+```

@@ -1,0 +1,12 @@
+---
+title: 'On the Synthesis of Optimal Control Laws On the Synthesis of Optimal Control Laws'
+authors:
+  - 'Meir Pachter'
+  - 'Isaac E. Weintraub'
+url: 'https://api.semanticscholar.org/CorpusID:266193812'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@PachterOnTS]
+```

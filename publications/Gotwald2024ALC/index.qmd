@@ -1,0 +1,15 @@
+---
+title: 'A Leader-Follower Control Strategy Built and Refined using Relational Maneuver Primitives for Approximating Optimal Trajectories in Real-Time'
+authors:
+  - 'Charles Allen Gotwald'
+  - 'Michael D. Zollars'
+  - 'Jonah A. Reeger'
+  - 'Isaac E. Weintraub'
+year: '2024'
+url: 'https://api.semanticscholar.org/CorpusID:267360484'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Gotwald2024ALC]
+```

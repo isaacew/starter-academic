@@ -10,6 +10,16 @@ year: '2021'
 doi: '10.2514/6.2022-1587'
 url: 'https://arxiv.org/pdf/2111.05904.pdf'
 image: 'featured.jpg'
+short_abstract: |
+  In this paper, an optimal control problem is considered where a target vehicle
+  aims to reach a desired location in minimum time while avoiding a dynamic
+  engagement zone. Using simple motion, four potential approaches are
+  considered. First, the min-time strategy which ignores the engagement zone is
+  posed and solved. Second, the min-time strategy which avoids the engagement
+  zone entirely is considered. Third, the min-time strategy which allows for
+  some time in the engagement zone; but, still strives to stay away from the
+  center of the engagement zone is posed. Lastly, a fixed final-time strategy is
+  considered, wherein the target tries...
 abstract: |
   In this paper, an optimal control problem is considered where a target vehicle
   aims to reach a desired location in minimum time while avoiding a dynamic

@@ -8,6 +8,16 @@ authors:
 doi: '10.48550/arXiv.2305.19399'
 url: 'https://arxiv.org/pdf/2305.19399.pdf#:~:text=The%20virtual%20targets%20serve%20as,decide%20which%20evader%20to%20capture.'
 image: 'featured.jpg'
+short_abstract: |
+  This paper considers an M-pursuer N-evader scenario involving virtual targets.
+  The virtual targets serve as an intermediary target for the pursuers, allowing
+  the pursuers to delay their final assignment to the evaders. However, upon
+  reaching the virtual target, the pursuers must decide which evader to capture.
+  It is assumed that there are more pursuers than evaders and that the pursuers
+  are faster than the evaders. The objective is two-part: first, assign each
+  pursuer to virtual target and evader such that the the pursuer team's energy
+  is minimized, and second, choose the the virtual targets' locations for this
+  minimization problem. The...
 abstract: |
   This paper considers an M-pursuer N-evader scenario involving virtual targets.
   The virtual targets serve as an intermediary target for the pursuers, allowing

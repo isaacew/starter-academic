@@ -8,6 +8,17 @@ year: '2018'
 doi: '10.1016/j.ifacol.2018.07.092'
 url: 'https://www.semanticscholar.org/paper/d5371c66db87d87f07d77d3d7dc07b3caeb91148'
 image: 'featured.jpg'
+short_abstract: |
+  Coordination and cooperation of networked multi-agent systems is usually
+  constrained by dynamic and communication limitations. In this work we consider
+  the problem of distributed leader following of heterogeneous and uncertain
+  multi-agent systems. Each agent or subsystem implements a local and completely
+  decentralized adaptive controller in order to compensate for the uncertainty
+  on its system parameters. At the inter-agent communication level and due to
+  the limitations on broadcasting continuous signals, each agent employs a
+  decentralized event-triggered multi-agent system (MAS) controller which tracks
+  the state of the leader and reduces broadcasting of information. Hence, the
+  two layer controller architecture provides a useful...
 abstract: |
   Coordination and cooperation of networked multi-agent systems is usually
   constrained by dynamic and communication limitations. In this work we consider

@@ -1,0 +1,16 @@
+---
+title: 'An Intercept and Following Strategy for a Multi-rotor Platform using a Modified Proportional Navigation'
+authors:
+  - 'Garrett Clem'
+  - 'Jay Wilhelm'
+  - 'David W. Casbeer'
+  - 'Isaac E. Weintraub'
+  - 'David J. Grymin'
+year: '2019'
+url: 'https://api.semanticscholar.org/CorpusID:68053831'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Clem2019AnIA]
+```

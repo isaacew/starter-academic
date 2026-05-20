@@ -9,6 +9,16 @@ year: '2021'
 doi: '10.2514/1.G005619'
 url: 'https://www.semanticscholar.org/paper/f6713719a861d1c33e5c111e0261a456f224946c'
 image: 'featured.jpg'
+short_abstract: |
+  In this work, we consider a two-agent scenario consisting of an observer and
+  non-maneuvering target. In the scenario, the observer is considered to be
+  maneuverable and slower than the target. The observer is endowed with a
+  nonzero radius of observation within which he strives at keeping the target
+  for as long as possible. Using the calculus of variations, we pose and solve
+  the optimal control problem, solving for the heading and flight path angle of
+  the observer to maximize the amount of time the target vehicle is contained
+  within his observation radius. Using the optimal observer heading and flight
+  path...
 abstract: |
   In this work, we consider a two-agent scenario consisting of an observer and
   non-maneuvering target. In the scenario, the observer is considered to be

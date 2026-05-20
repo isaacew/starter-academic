@@ -11,6 +11,16 @@ year: '2022'
 doi: '10.1016/j.ifacol.2023.11.002'
 url: 'https://arxiv.org/pdf/2211.09899.pdf'
 image: 'featured.jpg'
+short_abstract: |
+  Mixed Integer Linear Programs (MILPs) are often used in the path planning of
+  both ground and aerial vehicles. Such a formulation of the path planning
+  problem requires a linear objective function and constraints, limiting the
+  fidelity of the the tracking of vehicle states. One such parameter is the
+  state of charge of the battery used to power the vehicle. Accurate battery
+  state estimation requires nonlinear differential equations to be solved. This
+  state estimation is important in path planning to ensure flyable paths,
+  however when using MILPs to formulate the path planning problem these
+  nonlinear equations cannot be implemented. Poor accuracy...
 abstract: |
   Mixed Integer Linear Programs (MILPs) are often used in the path planning of
   both ground and aerial vehicles. Such a formulation of the path planning

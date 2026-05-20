@@ -1,0 +1,14 @@
+---
+title: 'Optimal guidance strategy for the defense of a non‐manoeuvrable target in 3‐dimensions'
+authors:
+  - 'Isaac E. Weintraub'
+  - "Eloy Garc{\\'i}a"
+  - 'Meir Pachter'
+year: '2020'
+url: 'https://api.semanticscholar.org/CorpusID:216221822'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Weintraub2020OptimalGS]
+```

@@ -1,0 +1,17 @@
+---
+title: 'Modeling and Detection of Cyber-Attacks in UAV Swarms using a 2D-LWR Model and Gaussian Processes'
+authors:
+  - 'Abhishek Kashyap'
+  - 'Animesh Chakravarthy'
+  - 'Kamesh Subbarao'
+  - 'David W. Casbeer'
+  - 'Isaac E. Weintraub'
+  - 'Brandon Hencey'
+year: '2024'
+url: 'https://api.semanticscholar.org/CorpusID:267360269'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Kashyap2024ModelingAD]
+```

@@ -1,0 +1,16 @@
+---
+title: 'Surveillance of a Faster Fixed-Course Target'
+authors:
+  - 'Isaac E. Weintraub'
+  - 'Alexander Von Moll'
+  - "Eloy Garc{\\'i}a"
+  - 'David W. Casbeer'
+  - 'Meir Pachter'
+year: '2022'
+url: 'https://api.semanticscholar.org/CorpusID:252519282'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Weintraub2022SurveillanceOA]
+```

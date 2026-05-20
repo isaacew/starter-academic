@@ -4,6 +4,16 @@ authors:
   - 'Isaac E. Weintraub'
 url: 'https://scholar.afit.edu/cgi/viewcontent.cgi?article=5536&context=etd'
 image: 'featured.jpg'
+short_abstract: |
+  Optimal control theory and differential game theory is applied to the study of
+  the defense of high value airborne assets, particularly in the case of a
+  single threat such as an adversarial aircraft or missile. Rather than
+  utilizing onboard defenses of the high value airborne asset, defense is
+  proposed using a teamed unmanned combat air vehicle. The common scenario
+  throughout this dissertation involves the defense of a high value airborne
+  asset (evader) teamed with an unmanned combat vehicle (defender) against a
+  single threat (pursuer). The unmanned combat air vehicle (defender), provides
+  defense in one of two ways: kinetic or directed...
 abstract: |
   Optimal control theory and differential game theory is applied to the study of
   the defense of high value airborne assets, particularly in the case of a

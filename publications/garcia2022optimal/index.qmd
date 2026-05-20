@@ -9,6 +9,17 @@ year: '2022'
 doi: '10.23919/ACC53348.2022.9867567'
 url: 'https://www.semanticscholar.org/paper/5fd46acfb8dab81cafc642856f6f79b1be3766c3'
 image: 'featured.jpg'
+short_abstract: |
+  A conflict between rational and autonomous agents is considered. The paper
+  addresses a differential game of protecting a target in the 3-D space. This
+  problem highlights the strong correlation between the highly dynamic scenario,
+  the uncertainty on the behavior of the adversary, and the online and robust
+  computation of state-feedback strategies which guarantee the required level of
+  performance of each player. This work significantly expands previous results
+  around this problem by providing the players’ state-feedback saddle-point
+  strategies. Additionally, the continuously differentiable Value function of
+  the multi-agent differential game is obtained and it is shown to be the
+  solution of the...
 abstract: |
   A conflict between rational and autonomous agents is considered. The paper
   addresses a differential game of protecting a target in the 3-D space. This

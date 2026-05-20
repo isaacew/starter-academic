@@ -1,0 +1,13 @@
+---
+title: 'Plane Motion of a Particle Subject to Curvature Constraints'
+authors:
+  - 'Ernest J. Cockayne'
+  - 'G. W. C. Hall'
+year: '1975'
+url: 'https://api.semanticscholar.org/CorpusID:119808273'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Cockayne1975PlaneMO]
+```

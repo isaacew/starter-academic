@@ -1,0 +1,15 @@
+---
+title: 'Experimental Measurements of Cycle Averaged Forces for a Flapping Wing Vehicle'
+authors:
+  - 'Michael W. Oppenheimer'
+  - 'Isaac E. Weintraub'
+  - 'David O. Sigthorsson'
+  - 'David B. Doman'
+year: '2015'
+url: 'https://api.semanticscholar.org/CorpusID:123860424'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Oppenheimer2015ExperimentalMO]
+```

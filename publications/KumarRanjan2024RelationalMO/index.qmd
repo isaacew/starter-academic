@@ -1,0 +1,16 @@
+---
+title: 'Relational Maneuvering of Leader-Follower Unmanned Aerial Vehicles for Flexible Formation'
+authors:
+  - 'Praveen Kumar Ranjan'
+  - 'Abhinav Sinha'
+  - 'Yongcan Cao'
+  - 'David W. Casbeer'
+  - 'Isaac E. Weintraub'
+year: '2024'
+url: 'https://api.semanticscholar.org/CorpusID:271862353'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@KumarRanjan2024RelationalMO]
+```

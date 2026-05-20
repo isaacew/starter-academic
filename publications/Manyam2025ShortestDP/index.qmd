@@ -1,0 +1,15 @@
+---
+title: 'Shortest Dubins Path to a Moving Circle with Free Final Heading'
+authors:
+  - 'Satyanarayana Gupta Manyam'
+  - 'David W. Casbeer'
+  - 'Alexander Von Moll'
+  - 'Isaac E. Weintraub'
+year: '2025'
+url: 'https://api.semanticscholar.org/CorpusID:280706300'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Manyam2025ShortestDP]
+```

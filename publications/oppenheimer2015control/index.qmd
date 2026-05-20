@@ -9,6 +9,16 @@ year: '2015'
 doi: '10.2514/1.G000548'
 url: 'https://www.semanticscholar.org/paper/99aa55ebb02317843a5aea599cbaeda70197dc67'
 image: 'featured.jpg'
+short_abstract: |
+  This paper describes a technique, called quarter-cycle constant period
+  frequency modulation, to control the motion of wings on a flapping wing micro-
+  air vehicle. This technique allows control over the wingbeat period and three
+  additional points (the two zero crossings and the reversal of wing direction)
+  within a single wingbeat cycle, allowing modulation of the wing’s velocity to
+  provide direct control over six degrees of freedom of overall vehicle motion.
+  Using a blade element based aerodynamic model, both instantaneous and cycle-
+  averaged forces and moments are analytically computed for a specific type of
+  wingbeat motion that enables nearly decoupled, multi-degrees of freedom...
 abstract: |
   This paper describes a technique, called quarter-cycle constant period
   frequency modulation, to control the motion of wings on a flapping wing micro-

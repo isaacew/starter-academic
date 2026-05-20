@@ -5,6 +5,16 @@ authors:
   - 'Isaac E Weintraub'
 url: 'https://arxiv.org/pdf/2112.10849.pdf'
 image: 'featured.jpg'
+short_abstract: |
+  In this paper we advocate for Isaacs' method for the solution of differential
+  games to be applied to the solution of optimal control problems. To make the
+  argument, the vehicle employed is Pontryagin's canonical optimal control
+  example, which entails a double integrator plant. However, rather than
+  controlling the state to the origin, we correctly require the end state to
+  reach a terminal set that contains the origin in its interior. Indeed, in
+  practice, it is required to control to a prescribed tolerance rather than
+  reach a desired end state; achieving tight tolerances is expensive, and from a
+  theoretical point of...
 abstract: |
   In this paper we advocate for Isaacs' method for the solution of differential
   games to be applied to the solution of optimal control problems. To make the

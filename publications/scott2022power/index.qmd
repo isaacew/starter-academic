@@ -11,6 +11,16 @@ year: '2022'
 doi: '10.23919/ACC53348.2022.9867385'
 url: 'https://www.semanticscholar.org/paper/a0ee433bd19871b938fe4aa7f3dde12f640b0732'
 image: 'featured.jpg'
+short_abstract: |
+  Here we consider the problem of path planning for a hybrid fuel Unmanned
+  Aerial Vehicle (UAV), equipped with both a battery and gasoline generator as
+  two sources of energy. Routing the vehicle while considering this setup adds
+  fuel constraints in addition to requiring the power source state to be
+  specified along each edge along the path. We further add noise restrictions to
+  the problem where certain edges (corresponding to certain portions of the
+  path) have the restriction that the gasoline generator cannot be run. A
+  solution to this path planning problem entails both a sequence of nodes, being
+  the plain...
 abstract: |
   Here we consider the problem of path planning for a hybrid fuel Unmanned
   Aerial Vehicle (UAV), equipped with both a battery and gasoline generator as

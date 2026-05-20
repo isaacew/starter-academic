@@ -1,0 +1,14 @@
+---
+title: 'A Kinematic Rejoin Method for Active Defense of Non-Maneuverable Aircraft'
+authors:
+  - 'Isaac E. Weintraub'
+  - "Eloy Garc{\\'i}a"
+  - 'Meir Pachter'
+year: '2018'
+url: 'https://api.semanticscholar.org/CorpusID:52018020'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Weintraub2018AKR]
+```

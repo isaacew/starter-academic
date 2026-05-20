@@ -11,6 +11,16 @@ year: '2013'
 doi: '10.2514/6.2013-5106'
 url: 'https://www.semanticscholar.org/paper/45546a1fd11e5083de13926531c7d97f07d948fc'
 image: 'featured.jpg'
+short_abstract: |
+  This work is focused on testing multiple versions of flapping wing mechanisms
+  to improve the lift generating capabilities of the mechanisms. Three
+  mechanisms are considered in this work, a traditional four bar linkage
+  version, a four bar mechanism which used ball joints, and a four bar mechanism
+  with a sector and output gear for amplified motion. The traditional four bar
+  version has a wing stroke amplitude of about 55◦ while the other two
+  mechanisms have an amplitude of nearly 90 deg. The criteria for comparison is
+  the lift force generating capacity of each mechanism. For each mechanism, the
+  forward kinematics...
 abstract: |
   This work is focused on testing multiple versions of flapping wing mechanisms
   to improve the lift generating capabilities of the mechanisms. Three

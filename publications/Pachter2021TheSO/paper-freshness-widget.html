@@ -1,0 +1,989 @@
+<!--
+  ╔══════════════════════════════════════════════════════════════╗
+  ║  PAPER FRESHNESS WIDGET  —  embed inside a Quarto .qmd page ║
+  ║  See publication.qmd for usage.                             ║
+  ╚══════════════════════════════════════════════════════════════╝
+
+  HOW TO USE:
+    In your .qmd page add:
+
+      ```{=html}
+      {{< include paper-freshness-widget.html >}}
+      ```
+
+  Or in _quarto.yml set include-after-body for site-wide use.
+
+  CONFIGURE the PAPER_CONFIG object at the bottom of this file.
+-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@300;400;600&family=DM+Sans:wght@300;400;500&display=swap">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+
+<style>
+/* ── Scoped to .pfv-root so it never clashes with Quarto's own CSS ── */
+.pfv-root {
+  --pfv-bg:      #0d0f14;
+  --pfv-surface: #13161e;
+  --pfv-border:  #252a38;
+  --pfv-accent:  #4fffb0;
+  --pfv-a2:      #ff6b6b;
+  --pfv-a3:      #ffd93d;
+  --pfv-a4:      #6bcbff;
+  --pfv-text:    #e8eaf0;
+  --pfv-muted:   #5a6070;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  color: var(--pfv-text);
+  margin-top: 48px;
+}
+
+@keyframes pfv-fadeUp { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
+@keyframes pfv-blink  { 50% { opacity:0; } }
+@keyframes pfv-spin   { to  { transform:rotate(360deg); } }
+
+/* divider */
+.pfv-divider {
+  display: flex; align-items: center; gap: 14px; margin-bottom: 28px;
+}
+.pfv-divider-line { flex:1; height:1px; background: var(--pfv-border); }
+.pfv-divider-label {
+  font-family: 'JetBrains Mono', monospace; font-size: 10px;
+  letter-spacing: 0.2em; text-transform: uppercase; color: var(--pfv-accent);
+  white-space: nowrap;
+}
+
+/* cards */
+.pfv-card {
+  background: var(--pfv-surface); border: 1px solid var(--pfv-border);
+  border-radius: 12px; padding: 24px; margin-bottom: 20px;
+  position: relative; animation: pfv-fadeUp 0.5s ease both;
+}
+.pfv-card::before {
+  content:''; position:absolute; top:0; left:0; right:0; height:2px;
+  background: linear-gradient(90deg, var(--pfv-accent), var(--pfv-a4));
+  border-radius: 12px 12px 0 0;
+}
+
+/* section headers */
+.pfv-sh {
+  display:flex; align-items:center; gap:10px; margin-bottom:12px;
+}
+.pfv-sh h4 {
+  font-family:'JetBrains Mono',monospace; font-size:10px;
+  letter-spacing:0.15em; text-transform:uppercase;
+  color:var(--pfv-muted); font-weight:400; white-space:nowrap; margin:0;
+}
+.pfv-sh::after { content:''; flex:1; height:1px; background:var(--pfv-border); }
+
+/* freshness block */
+.pfv-freshness {
+  display:grid; grid-template-columns:110px 1fr; gap:20px;
+  align-items:center; margin-bottom:20px;
+}
+.pfv-dial { position:relative; width:110px; height:110px; }
+.pfv-dial svg { width:100%; height:100%; display:block; }
+.pfv-dial-num {
+  position:absolute; inset:0; display:flex; flex-direction:column;
+  align-items:center; justify-content:center; pointer-events:none;
+}
+.pfv-dial-num .n {
+  font-family:'DM Serif Display',serif; font-size:2.2rem;
+  line-height:1; color:var(--pfv-accent);
+}
+.pfv-dial-num .l {
+  font-family:'JetBrains Mono',monospace; font-size:8px;
+  letter-spacing:0.1em; color:var(--pfv-muted);
+  text-transform:uppercase; margin-top:3px;
+}
+.pfv-breakdown { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+.pfv-si { background:var(--pfv-bg); border-radius:7px; padding:10px; }
+.pfv-si-lbl {
+  font-family:'JetBrains Mono',monospace; font-size:9px;
+  color:var(--pfv-muted); text-transform:uppercase;
+  letter-spacing:0.1em; margin-bottom:6px;
+}
+.pfv-si-bar { height:3px; background:var(--pfv-border); border-radius:2px; overflow:hidden; margin-bottom:4px; }
+.pfv-si-fill { height:100%; border-radius:2px; width:0%; transition:width 1.3s cubic-bezier(.4,0,.2,1); }
+.pfv-si-val { font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:600; }
+
+/* AI block */
+.pfv-ai {
+  background:var(--pfv-bg); border:1px solid var(--pfv-border);
+  border-left:3px solid var(--pfv-accent); border-radius:0 7px 7px 0;
+  padding:14px 18px; margin-bottom:20px;
+  font-size:13px; line-height:1.85; color:var(--pfv-text);
+}
+.pfv-ai-lbl {
+  font-family:'JetBrains Mono',monospace; font-size:9px;
+  color:var(--pfv-accent); letter-spacing:0.15em;
+  text-transform:uppercase; margin-bottom:7px;
+}
+.pfv-cursor::after {
+  content:'\25AE'; animation:pfv-blink 0.8s step-end infinite;
+  color:var(--pfv-accent); font-size:0.8em;
+}
+
+/* stats */
+.pfv-stats { display:grid; grid-template-columns:repeat(auto-fit,minmax(110px,1fr)); gap:8px; }
+.pfv-stat {
+  background:var(--pfv-bg); border:1px solid var(--pfv-border);
+  border-radius:9px; padding:12px; text-align:center;
+}
+.pfv-stat-val {
+  font-family:'DM Serif Display',serif; font-size:1.7rem;
+  color:var(--pfv-a4); line-height:1; margin-bottom:3px;
+}
+.pfv-stat-lbl {
+  font-family:'JetBrains Mono',monospace; font-size:9px;
+  color:var(--pfv-muted); text-transform:uppercase; letter-spacing:0.1em;
+}
+
+/* network */
+.pfv-net-outer {
+  background:var(--pfv-surface); border:1px solid var(--pfv-border);
+  border-radius:12px; margin-bottom:20px; overflow:hidden;
+}
+.pfv-net-toolbar {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:10px 14px; border-bottom:1px solid var(--pfv-border);
+  flex-wrap:wrap; gap:8px;
+}
+.pfv-view-btns { display:flex; gap:5px; }
+.pfv-vbtn {
+  font-family:'JetBrains Mono',monospace; font-size:9px;
+  letter-spacing:0.07em; text-transform:uppercase;
+  padding:5px 12px; border-radius:5px; border:1px solid var(--pfv-border);
+  background:transparent; color:var(--pfv-muted); cursor:pointer;
+  transition:color .15s,border-color .15s,background .15s;
+}
+.pfv-vbtn:hover { color:var(--pfv-text); border-color:var(--pfv-a4); }
+.pfv-vbtn.active { background:var(--pfv-accent); color:#0d0f14; border-color:var(--pfv-accent); font-weight:600; }
+.pfv-legend { display:flex; gap:12px; font-family:'JetBrains Mono',monospace; font-size:9px; color:var(--pfv-muted); }
+.pfv-ldot { display:inline-block; width:7px; height:7px; border-radius:50%; margin-right:3px; vertical-align:middle; }
+.pfv-net-wrap { background:var(--pfv-bg); position:relative; }
+.pfv-net-hint {
+  position:absolute; top:8px; right:10px;
+  font-family:'JetBrains Mono',monospace; font-size:9px; color:var(--pfv-muted);
+  background:rgba(13,15,20,.8); padding:4px 8px;
+  border-radius:4px; border:1px solid var(--pfv-border); pointer-events:none;
+}
+.pfv-net-wrap svg { display:block; width:100%; }
+
+/* timeline bar chart */
+.pfv-tl-wrap { padding:18px 24px; }
+.pfv-tl-head {
+  font-family:'JetBrains Mono',monospace; font-size:9px;
+  color:var(--pfv-muted); text-transform:uppercase;
+  letter-spacing:0.1em; margin-bottom:12px;
+}
+.pfv-tl-bars { display:flex; align-items:flex-end; gap:4px; height:80px; }
+.pfv-tl-group { flex:1; display:flex; flex-direction:column; align-items:center; height:100%; justify-content:flex-end; }
+.pfv-tl-bar  { width:100%; border-radius:2px 2px 0 0; }
+.pfv-tl-ylabels { display:flex; gap:4px; margin-top:4px; }
+.pfv-tl-ylabel { flex:1; font-family:'JetBrains Mono',monospace; font-size:8px; color:var(--pfv-muted); text-align:center; }
+.pfv-tl-legend { margin-top:8px; font-family:'JetBrains Mono',monospace; font-size:9px; color:var(--pfv-muted); }
+
+/* tabs */
+.pfv-tabs { display:flex; border-bottom:1px solid var(--pfv-border); margin-bottom:14px; }
+.pfv-tab {
+  padding:8px 18px; font-family:'JetBrains Mono',monospace; font-size:10px;
+  letter-spacing:0.1em; text-transform:uppercase; color:var(--pfv-muted);
+  cursor:pointer; border-bottom:2px solid transparent; margin-bottom:-1px;
+  transition:color .2s,border-color .2s; user-select:none;
+}
+.pfv-tab.active { color:var(--pfv-accent); border-color:var(--pfv-accent); }
+.pfv-tab:hover:not(.active) { color:var(--pfv-text); }
+.pfv-tab-panel { display:none; }
+.pfv-tab-panel.active { display:block; }
+
+/* paper list items */
+.pfv-plist { display:flex; flex-direction:column; gap:6px; }
+.pfv-pitem {
+  background:var(--pfv-bg); border:1px solid var(--pfv-border);
+  border-radius:7px; padding:11px 14px;
+  transition:border-color .2s,transform .15s;
+}
+.pfv-pitem:hover { border-color:var(--pfv-a4); transform:translateX(2px); }
+.pfv-pitem-title { font-size:12px; color:var(--pfv-text); margin-bottom:4px; line-height:1.5; }
+.pfv-pitem-meta {
+  font-family:'JetBrains Mono',monospace; font-size:9px;
+  color:var(--pfv-muted); display:flex; gap:12px; flex-wrap:wrap;
+}
+.pfv-badge {
+  display:inline-block; padding:2px 6px; border-radius:3px;
+  font-size:8px; letter-spacing:0.08em; text-transform:uppercase; font-weight:600;
+}
+.pfv-badge-c { background:rgba(79,255,176,.12); color:var(--pfv-accent); }
+.pfv-badge-r { background:rgba(255,217,61,.12);  color:var(--pfv-a3); }
+.pfv-link { color:var(--pfv-a4); text-decoration:none; }
+.pfv-link:hover { text-decoration:underline; }
+.pfv-data-note {
+  font-family:'JetBrains Mono',monospace; font-size:9px;
+  color:var(--pfv-muted); margin-top:12px; text-align:right;
+}
+
+/* recommended reading */
+.pfv-rec-controls {
+  display:flex; align-items:center; justify-content:space-between;
+  flex-wrap:wrap; gap:10px; margin-bottom:14px;
+}
+.pfv-rec-right { display:flex; align-items:center; gap:8px; }
+.pfv-rec-lbl { font-family:'JetBrains Mono',monospace; font-size:9px; color:var(--pfv-muted); }
+.pfv-rec-input {
+  width:48px; background:var(--pfv-bg); border:1px solid var(--pfv-border);
+  border-radius:5px; padding:4px 7px; color:var(--pfv-text);
+  font-family:'JetBrains Mono',monospace; font-size:11px; text-align:center; outline:none;
+}
+.pfv-rec-input:focus { border-color:var(--pfv-accent); }
+.pfv-rec-btn {
+  font-family:'JetBrains Mono',monospace; font-size:9px; letter-spacing:0.07em;
+  text-transform:uppercase; padding:5px 12px; border-radius:5px;
+  border:1px solid var(--pfv-accent); background:transparent; color:var(--pfv-accent);
+  cursor:pointer; transition:background .15s,color .15s;
+}
+.pfv-rec-btn:hover { background:var(--pfv-accent); color:#0d0f14; }
+.pfv-rec-btn:disabled { opacity:.35; cursor:not-allowed; }
+.pfv-rec-status {
+  display:none; align-items:center; gap:8px;
+  font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--pfv-a4);
+  margin-bottom:12px; padding:9px 13px;
+  background:var(--pfv-bg); border:1px solid var(--pfv-border); border-radius:7px;
+}
+.pfv-rec-status.on { display:flex; }
+.pfv-spinner {
+  width:11px; height:11px; border:2px solid var(--pfv-border);
+  border-top-color:var(--pfv-a4); border-radius:50%;
+  animation:pfv-spin 0.7s linear infinite; flex-shrink:0;
+}
+.pfv-rec-err {
+  display:none; background:rgba(255,107,107,.08); border:1px solid rgba(255,107,107,.25);
+  border-radius:7px; padding:11px 14px; color:var(--pfv-a2);
+  font-family:'JetBrains Mono',monospace; font-size:10px; margin-bottom:12px;
+}
+.pfv-rec-err.on { display:block; }
+.pfv-rec-grid {
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:10px;
+}
+.pfv-rec-card {
+  background:var(--pfv-bg); border:1px solid var(--pfv-border); border-radius:9px;
+  padding:14px; display:flex; flex-direction:column; gap:7px;
+  transition:border-color .2s,transform .15s; cursor:pointer; text-decoration:none; color:inherit;
+}
+.pfv-rec-card:hover { border-color:var(--pfv-a4); transform:translateY(-2px); }
+.pfv-rec-top { display:flex; align-items:flex-start; justify-content:space-between; gap:7px; }
+.pfv-rec-badge {
+  font-family:'JetBrains Mono',monospace; font-size:8px; letter-spacing:0.08em;
+  text-transform:uppercase; padding:2px 7px; border-radius:3px; white-space:nowrap; flex-shrink:0;
+  background:rgba(79,255,176,.1); color:var(--pfv-accent);
+}
+.pfv-rec-title { font-size:12px; line-height:1.5; color:var(--pfv-text); flex:1; }
+.pfv-rec-authors { font-family:'JetBrains Mono',monospace; font-size:9px; color:var(--pfv-muted); }
+.pfv-rec-footer { display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+.pfv-rec-chip { font-family:'JetBrains Mono',monospace; font-size:9px; color:var(--pfv-muted); }
+.pfv-rec-open { margin-left:auto; font-family:'JetBrains Mono',monospace; font-size:9px; color:var(--pfv-a4); }
+.pfv-rec-empty { font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--pfv-muted); text-align:center; padding:22px; }
+
+/* tooltip */
+.pfv-tooltip {
+  position:fixed; background:var(--pfv-surface); border:1px solid var(--pfv-border);
+  border-radius:7px; padding:10px 13px;
+  font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--pfv-text);
+  pointer-events:none; opacity:0; transition:opacity .15s;
+  z-index:9999; max-width:260px; line-height:1.6;
+}
+.pfv-tooltip.on { opacity:1; }
+
+/* modal */
+.pfv-modal-bg {
+  position:fixed; inset:0; background:rgba(0,0,0,.72);
+  display:none; align-items:center; justify-content:center;
+  z-index:10000; padding:20px;
+}
+.pfv-modal-bg.on { display:flex; }
+.pfv-modal {
+  background:var(--pfv-surface); border:1px solid var(--pfv-border);
+  border-radius:12px; padding:26px; max-width:500px; width:100%;
+  max-height:80vh; overflow-y:auto;
+}
+.pfv-modal-type { font-family:'JetBrains Mono',monospace; font-size:9px; text-transform:uppercase; letter-spacing:.1em; margin-bottom:7px; }
+.pfv-modal-title { font-family:'DM Serif Display',serif; font-size:1.2rem; line-height:1.4; margin-bottom:12px; }
+.pfv-modal-meta { font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--pfv-muted); display:flex; gap:14px; flex-wrap:wrap; margin-bottom:16px; }
+.pfv-modal-desc { background:var(--pfv-bg); border:1px solid var(--pfv-border); border-radius:7px; padding:12px 14px; font-size:12px; line-height:1.7; color:var(--pfv-muted); margin-bottom:16px; }
+.pfv-modal-acts { display:flex; gap:8px; }
+.pfv-modal-btn { flex:1; padding:10px; border-radius:7px; font-family:'JetBrains Mono',monospace; font-size:10px; font-weight:600; letter-spacing:.07em; text-transform:uppercase; cursor:pointer; border:1px solid var(--pfv-border); transition:opacity .15s; }
+.pfv-modal-primary { background:var(--pfv-accent); color:#0d0f14; border-color:var(--pfv-accent); }
+.pfv-modal-secondary { background:transparent; color:var(--pfv-muted); }
+.pfv-modal-btn:hover { opacity:.82; }
+
+@media(max-width:600px){
+  .pfv-freshness { grid-template-columns:1fr; }
+  .pfv-stats     { grid-template-columns:repeat(3,1fr); }
+  .pfv-net-toolbar { flex-direction:column; align-items:flex-start; }
+  .pfv-rec-grid  { grid-template-columns:1fr; }
+}
+</style>
+
+<!-- ═══════════════════════════════════════════════════════════ WIDGET HTML -->
+<div class="pfv-root" id="pfv-root">
+
+  <!-- divider so it sits cleanly below the abstract -->
+  <div class="pfv-divider">
+    <div class="pfv-divider-line"></div>
+    <div class="pfv-divider-label">// Paper Freshness Analysis</div>
+    <div class="pfv-divider-line"></div>
+  </div>
+
+  <!-- FRESHNESS CARD -->
+  <div class="pfv-card">
+    <div class="pfv-sh"><h4>Freshness Score</h4></div>
+    <div class="pfv-freshness">
+      <div class="pfv-dial">
+        <svg viewBox="0 0 110 110" id="pfv-dial-svg"></svg>
+        <div class="pfv-dial-num"><div class="n" id="pfv-score-num">—</div><div class="l">Freshness</div></div>
+      </div>
+      <div class="pfv-breakdown" id="pfv-breakdown">
+        <div class="pfv-si"><div class="pfv-si-lbl">Velocity</div><div class="pfv-si-bar"><div class="pfv-si-fill" id="pfv-bar-v" style="background:var(--pfv-accent)"></div></div><div class="pfv-si-val" id="pfv-val-v" style="color:var(--pfv-accent)">—</div></div>
+        <div class="pfv-si"><div class="pfv-si-lbl">Recency</div><div class="pfv-si-bar"><div class="pfv-si-fill" id="pfv-bar-r" style="background:var(--pfv-a4)"></div></div><div class="pfv-si-val" id="pfv-val-r" style="color:var(--pfv-a4)">—</div></div>
+        <div class="pfv-si"><div class="pfv-si-lbl">Impact</div><div class="pfv-si-bar"><div class="pfv-si-fill" id="pfv-bar-i" style="background:var(--pfv-a3)"></div></div><div class="pfv-si-val" id="pfv-val-i" style="color:var(--pfv-a3)">—</div></div>
+        <div class="pfv-si"><div class="pfv-si-lbl">Longevity</div><div class="pfv-si-bar"><div class="pfv-si-fill" id="pfv-bar-l" style="background:var(--pfv-a2)"></div></div><div class="pfv-si-val" id="pfv-val-l" style="color:var(--pfv-a2)">—</div></div>
+      </div>
+    </div>
+    <div class="pfv-ai">
+      <div class="pfv-ai-lbl">// Claude AI &middot; Freshness Analysis</div>
+      <div id="pfv-ai-text">Waiting for data...</div>
+    </div>
+    <div class="pfv-stats" id="pfv-stats"></div>
+  </div>
+
+  <!-- CITATION NETWORK -->
+  <div class="pfv-sh"><h4>Citation Network</h4></div>
+  <div class="pfv-net-outer">
+    <div class="pfv-net-toolbar">
+      <div class="pfv-view-btns">
+        <button class="pfv-vbtn active" id="pfv-btn-bowtie"   onclick="pfv.setView('bowtie')">&#9668; Bow Tie &#9658;</button>
+        <button class="pfv-vbtn"        id="pfv-btn-timeline" onclick="pfv.setView('timeline')">Year Timeline</button>
+        <button class="pfv-vbtn"        id="pfv-btn-force"    onclick="pfv.setView('force')">Force</button>
+      </div>
+      <div class="pfv-legend">
+        <span><span class="pfv-ldot" style="background:var(--pfv-accent)"></span>This Paper</span>
+        <span><span class="pfv-ldot" style="background:var(--pfv-a4)"></span>Cites It</span>
+        <span><span class="pfv-ldot" style="background:var(--pfv-a3)"></span>It Cites</span>
+      </div>
+    </div>
+    <div class="pfv-net-wrap" id="pfv-net-wrap">
+      <svg id="pfv-net-svg" height="480"></svg>
+      <div class="pfv-net-hint">scroll to zoom &middot; click for details &middot; dbl-click to open</div>
+    </div>
+  </div>
+
+  <!-- CITATION TIMELINE BAR CHART -->
+  <div class="pfv-sh"><h4>Citation Timeline</h4></div>
+  <div class="pfv-card">
+    <div class="pfv-tl-wrap">
+      <div class="pfv-tl-head">Citations by year</div>
+      <div class="pfv-tl-bars"   id="pfv-tl-bars"></div>
+      <div class="pfv-tl-ylabels" id="pfv-tl-ylabels"></div>
+      <div class="pfv-tl-legend">
+        <span style="color:var(--pfv-accent)">&#9632;</span> Recent (last 3 yr) &nbsp;
+        <span style="color:var(--pfv-a4);opacity:.6">&#9632;</span> Earlier
+      </div>
+    </div>
+  </div>
+
+  <!-- CITATION + REFERENCE TABS -->
+  <div class="pfv-sh"><h4>Related Papers</h4></div>
+  <div class="pfv-card" style="padding:18px 24px">
+    <div class="pfv-tabs">
+      <div class="pfv-tab active" onclick="pfv.switchTab('cited')">Citing Papers <span id="pfv-cit-count"></span></div>
+      <div class="pfv-tab"       onclick="pfv.switchTab('refs')">References <span id="pfv-ref-count"></span></div>
+    </div>
+    <div class="pfv-tab-panel active" id="pfv-tab-cited"><div class="pfv-plist" id="pfv-cited-list"></div></div>
+    <div class="pfv-tab-panel"        id="pfv-tab-refs"><div class="pfv-plist"  id="pfv-ref-list"></div></div>
+    <div class="pfv-data-note">// Semantic Scholar &middot; <span id="pfv-ss-id"></span></div>
+  </div>
+
+  <!-- RECOMMENDED READING -->
+  <div class="pfv-sh"><h4>Recommended Reading</h4></div>
+  <div class="pfv-card" style="padding:18px 24px">
+    <div class="pfv-rec-controls">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--pfv-muted)">Most related papers via Semantic Scholar</span>
+      <div class="pfv-rec-right">
+        <span class="pfv-rec-lbl">Show</span>
+        <input class="pfv-rec-input" type="number" id="pfv-rec-count" value="6" min="1" max="20">
+        <button class="pfv-rec-btn" id="pfv-rec-btn" onclick="pfv.fetchRecommended()">Refresh</button>
+      </div>
+    </div>
+    <div class="pfv-rec-status" id="pfv-rec-status">
+      <div class="pfv-spinner"></div><span id="pfv-rec-status-txt">Fetching recommendations...</span>
+    </div>
+    <div class="pfv-rec-err" id="pfv-rec-err"></div>
+    <div class="pfv-rec-grid" id="pfv-rec-grid"></div>
+  </div>
+
+</div><!-- /pfv-root -->
+
+<!-- modal + tooltip (outside pfv-root to overlay everything) -->
+<div class="pfv-modal-bg" id="pfv-modal-bg">
+  <div class="pfv-modal" id="pfv-modal-content"></div>
+</div>
+<div class="pfv-tooltip" id="pfv-tooltip"></div>
+
+<!-- ═══════════════════════════════════════════════════════════ WIDGET SCRIPT -->
+<script>
+(function() {
+'use strict';
+
+/* ── CONFIGURATION — edit this block for each paper ── */
+var CFG = {
+  paperId:    '779ca7ae97b0288943bbdf175002a1fb243867ce',
+  paperYear:  2020,
+  paperTitle: 'An Introduction to Pursuit-Evasion Differential Games',
+  authors:    'Weintraub, Pachter, García',
+  doi:        '10.23919/ACC45564.2020.9147205',
+
+  /* Pre-fetched citation/reference data (fill from Semantic Scholar).
+     Leave empty arrays [] to skip the network and related-papers sections
+     (the recommended reading still fetches live). */
+  citations: [
+    { id:'c1',  title:'Fast and the Furious: Hot Starts in Pursuit-Evasion Games',                              year:2025, cites:2,   authors:'Zheng et al.' },
+    { id:'c2',  title:'Overview of Recent Advances in Pursuit-Evasion Games with Unmanned Surface Vehicles',    year:2025, cites:4,   authors:'Wang et al.' },
+    { id:'c3',  title:'Adaptive Pursuit-Evasion Differential Game with Unknown Cost Functions',                  year:2025, cites:1,   authors:'Liu, Zhang et al.',          journal:'J. Systems Sci.' },
+    { id:'c4',  title:'Range-Limited Pursuit-Evasion',                                                          year:2023, cites:8,   authors:'Weintraub et al.' },
+    { id:'c5',  title:'Pursuit-Evasion Differential Games of Players with Different Speeds',                     year:2022, cites:14,  authors:'Yan, Shi, Zhong' },
+    { id:'c6',  title:'Pursuer Assignment and Control Strategies in Multi-Agent Pursuit-Evasion',                year:2021, cites:22,  authors:'Zhang, Prorok, Bhattacharya', journal:'Frontiers Robotics AI' },
+    { id:'c7',  title:'Skirmish-Level Tactics via Game-Theoretic Analysis',                                      year:2021, cites:11,  authors:'Von Moll' },
+    { id:'c8',  title:'A Differential Game of Surveillance Evasion of Two Identical Cars',                       year:2022, cites:9,   authors:'Greenfeld et al.' },
+    { id:'c9',  title:'Cooperative Target Protection from a Superior Attacker',                                  year:2021, cites:31,  authors:'Garcia',                     journal:'Automatica' },
+    { id:'c10', title:'Multi-Agent Pursuit Evasion with Soft Constraints',                                       year:2023, cites:6,   authors:'Chen, Liu' },
+    { id:'c11', title:'Hamilton-Jacobi Reachability for Pursuit-Evasion Under Uncertainty',                      year:2022, cites:18,  authors:'Fridovich-Keil et al.' },
+    { id:'c12', title:'Reach-Avoid Differential Games with Multiple Players',                                    year:2023, cites:7,   authors:'Yan, Shi, Zhong' },
+    { id:'c13', title:'Deep Reinforcement Learning for Pursuit Evasion in Continuous Space',                     year:2024, cites:3,   authors:'Nguyen, Park' },
+    { id:'c14', title:'Active Defense Strategy for UAV Swarms via Differential Game Theory',                     year:2024, cites:5,   authors:'Li, Wang, Zhang' },
+  ],
+  references: [
+    { id:'r1',  title:'Differential Games: A Mathematical Theory with Applications to Warfare and Pursuit',     year:1965, cites:4200, authors:'Isaacs, R.' },
+    { id:'r2',  title:'The Game of Two Identical Cars',                                                         year:1972, cites:312,  authors:'Merz, A.W.',                journal:'J. Optim. Theory Appl.' },
+    { id:'r3',  title:'Differential Games and Optimal Pursuit-Evasion Strategies',                              year:1965, cites:890,  authors:'Ho, Bryson, Baron',          journal:'IEEE Trans. Autom. Control' },
+    { id:'r4',  title:'Zero-Sum Pursuit-Evasion Differential Games: Survey',                                    year:2017, cites:145,  authors:'Kumkov et al.',             journal:'Dynamic Games & Apps' },
+    { id:'r5',  title:'Geometric Approach for the Cooperative Two-Pursuer One-Evader Differential Game',        year:2017, cites:67,   authors:'Garcia et al.',             journal:'IFAC-PapersOnLine' },
+    { id:'r6',  title:'Active Target Defense Using First Order Missile Models',                                  year:2017, cites:89,   authors:'Garcia, Casbeer, Pachter',  journal:'Automatica' },
+    { id:'r7',  title:'Contributions to Pursuit-Evasion Game Theory',                                           year:2016, cites:44,   authors:'Oyler, D.',                 journal:'PhD Diss., U. Michigan' },
+    { id:'r8',  title:'Cooperative Pursuit with Voronoi Partitions',                                            year:2016, cites:183,  authors:'Zhou et al.',               journal:'Automatica' },
+    { id:'r9',  title:'Border Defense Differential Game',                                                       year:2020, cites:38,   authors:'Willey et al.',             journal:'J. Aerospace Info Systems' },
+    { id:'r10', title:'Two-on-One Pursuit with Non-Zero Capture Radius',                                        year:2019, cites:21,   authors:'Wasz, Pachter, Pham',       journal:'Mediterranean Conf. Control' },
+    { id:'r11', title:'Homicidal Chauffeur: A Differential Game',                                               year:1971, cites:520,  authors:'Merz, A.W.',                journal:'PhD Diss., Stanford' },
+    { id:'r12', title:'Local-Game Decomposition for Multiplayer Perimeter-Defense Problem',                     year:2018, cites:74,   authors:'Shishika, Kumar',           journal:'IEEE CDC' },
+  ],
+  timeline: [
+    { year:2020, count:4 }, { year:2021, count:16 },
+    { year:2022, count:22 }, { year:2023, count:24 },
+    { year:2024, count:20 }, { year:2025, count:6  },
+  ],
+  /* Computed freshness metrics — update to match your paper */
+  freshness: 72,
+  sub: { velocity:84, recency:68, impact:71, longevity:62 },
+  stats: [
+    { val:'92',   lbl:'Total Citations' },
+    { val:'18.4', lbl:'Cites / Year'   },
+    { val:'~31',  lbl:'Recent (3yr)'   },
+    { val:'3',    lbl:'Highly Influential' },
+    { val:'5',    lbl:'Years Old'      },
+    { val:'47+',  lbl:'Background Cites' },
+  ],
+  aiText: 'This paper is actively maintaining strong relevance in the pursuit-evasion community \u2014 92 citations in 5 years (~18.4/year) is well above average for a conference paper, and continued citations from 2024\u20132025 across robotics, UAV systems, and unmanned surface vehicles confirm sustained interest. Notably, it functions primarily as a background/orientation reference (47 of 92 citations are background-type), meaning it shaped how researchers frame the field rather than serving as a direct methods source. A researcher entering differential game theory for autonomous systems should read this first: it provides the taxonomy and key problem formulations that the recent literature assumes as shared context.',
+};
+/* ── END CONFIGURATION ── */
+
+var SS = 'https://api.semanticscholar.org/graph/v1';
+var simRef = null;
+var currentView = 'bowtie';
+var C = { main:'#4fffb0', cited_by:'#6bcbff', references:'#ffd93d' };
+
+/* ── Helpers ── */
+function $  (id) { return document.getElementById(id); }
+function el (tag, cls, text) { var e=document.createElement(tag); if(cls)e.className=cls; if(text)e.textContent=text; return e; }
+
+function typewriter(elId, text, ms) {
+  var e = $(elId); e.textContent=''; e.classList.add('pfv-cursor');
+  var i=0, iv=setInterval(function(){
+    e.textContent += text[i++];
+    if(i>=text.length){ clearInterval(iv); e.classList.remove('pfv-cursor'); }
+  }, ms||18);
+}
+
+function truncLabel(s, n) {
+  if(!s||s.length<=n) return s||'';
+  var c=s.lastIndexOf(' ',n); return (c>0?s.substring(0,c):s.substring(0,n))+'...';
+}
+
+function wrapSvgText(textEl, str, maxW, lh) {
+  var cpp=Math.max(8,Math.floor(maxW/6));
+  var words=str.split(' '), lines=[], cur='';
+  words.forEach(function(w){
+    if((cur+' '+w).trim().length>cpp){ if(cur)lines.push(cur.trim()); cur=w; }
+    else cur=(cur+' '+w).trim();
+  });
+  if(cur)lines.push(cur.trim());
+  if(lines.length>3){ lines=lines.slice(0,3); lines[2]=lines[2].replace(/\.\.\.$/,'')+'...'; }
+  textEl.innerHTML='';
+  var ns='http://www.w3.org/2000/svg';
+  lines.forEach(function(line,i){
+    var ts=document.createElementNS(ns,'tspan');
+    ts.setAttribute('x',0); ts.setAttribute('dy',i===0?0:lh); ts.textContent=line;
+    textEl.appendChild(ts);
+  });
+}
+
+/* ── Dial ── */
+function renderDial(score) {
+  var svg=$('pfv-dial-svg'); svg.innerHTML='';
+  var ns='http://www.w3.org/2000/svg', cx=55,cy=55,r=42;
+  var circ=2*Math.PI*r, arcLen=(280/360)*circ, startDeg=130;
+  function arc(stroke,w,dash){ var c=document.createElementNS(ns,'circle');
+    c.setAttribute('cx',cx);c.setAttribute('cy',cy);c.setAttribute('r',r);
+    c.setAttribute('fill','none');c.setAttribute('stroke',stroke);c.setAttribute('stroke-width',w);
+    c.setAttribute('stroke-dasharray',dash);c.setAttribute('stroke-linecap','round');
+    c.setAttribute('transform','rotate('+startDeg+' '+cx+' '+cy+')'); return c; }
+  svg.appendChild(arc('#1e2232',9,arcLen+' '+circ));
+  var fg=arc('#4fffb0',9,'0 '+circ); svg.appendChild(fg);
+  var fillLen=(score/100)*arcLen, t0=null;
+  (function step(ts){ if(!t0)t0=ts; var t=Math.min((ts-t0)/1100,1), e=1-Math.pow(1-t,3);
+    fg.setAttribute('stroke-dasharray',(e*fillLen)+' '+(circ-e*fillLen));
+    if(t<1)requestAnimationFrame(step); })(0);
+  $('pfv-score-num').textContent=score;
+}
+
+/* ── Timeline bar chart ── */
+function renderTimeline() {
+  var bars=$('pfv-tl-bars'), labs=$('pfv-tl-ylabels');
+  var maxC=Math.max.apply(null,CFG.timeline.map(function(d){return d.count;}));
+  bars.innerHTML=CFG.timeline.map(function(d){
+    var h=Math.max(5,(d.count/maxC)*72), rec=d.year>=new Date().getFullYear()-3;
+    return '<div class="pfv-tl-group" title="'+d.year+': ~'+d.count+' citations">'+
+           '<div class="pfv-tl-bar" style="height:'+h+'px;background:'+(rec?'var(--pfv-accent)':'var(--pfv-a4)')+';opacity:'+(rec?.9:.5)+'"></div></div>';
+  }).join('');
+  labs.innerHTML=CFG.timeline.map(function(d){ return '<div class="pfv-tl-ylabel">'+d.year+'</div>'; }).join('');
+}
+
+/* ── Paper lists ── */
+function renderPaperList(papers, containerId, badge, badgeCls) {
+  var e=$(containerId); if(!e)return;
+  e.innerHTML=papers.map(function(p){
+    return '<div class="pfv-pitem">'+
+      '<div class="pfv-pitem-title">'+p.title+'</div>'+
+      '<div class="pfv-pitem-meta">'+
+        '<span class="pfv-badge '+badgeCls+'">'+badge+'</span>'+
+        (p.year?'<span>&#x1F4C5; '+p.year+'</span>':'')+
+        (p.authors?'<span>&#x1F464; '+p.authors+'</span>':'')+
+        (p.journal?'<span>&#x1F4D6; '+p.journal+'</span>':'')+
+        (p.cites!=null?'<span>&#x1F4CA; '+p.cites+' cites</span>':'')+
+      '</div></div>';
+  }).join('');
+}
+
+/* ── Modal ── */
+function showModal(d) {
+  var typeLabel=d.type==='cited_by'?'CITES THIS PAPER':'REFERENCED BY THIS PAPER';
+  var mc=$('pfv-modal-content');
+  mc.innerHTML=
+    '<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:14px">'+
+      '<div class="pfv-modal-type" style="color:'+C[d.type]+'">'+typeLabel+'</div>'+
+      '<button class="pfv-modal-btn pfv-modal-secondary" onclick="pfv.closeModal()" style="flex:0;padding:5px 11px;font-size:9px">Close</button>'+
+    '</div>'+
+    '<div class="pfv-modal-title">'+d.title+'</div>'+
+    '<div class="pfv-modal-meta">'+
+      (d.year?'<span>&#x1F4C5; '+d.year+'</span>':'')+
+      (d.authors?'<span>&#x1F464; '+d.authors+'</span>':'')+
+      (d.journal?'<span>&#x1F4D6; '+d.journal+'</span>':'')+
+      (d.cites!=null?'<span>&#x1F4CA; '+d.cites+' citations</span>':'')+
+    '</div>'+
+    '<div class="pfv-modal-desc">This paper '+(d.type==='cited_by'?'cites the paper being analyzed, building on its framework.':'is cited by the analyzed paper as a foundational or closely related prior work.')+'</div>'+
+    '<div class="pfv-modal-acts">'+
+      '<button class="pfv-modal-btn pfv-modal-primary" onclick="pfv.openSS(\''+d.id+'\')">Open on Semantic Scholar</button>'+
+      '<button class="pfv-modal-btn pfv-modal-secondary" onclick="pfv.closeModal()">Dismiss</button>'+
+    '</div>';
+  $('pfv-modal-bg').classList.add('on');
+}
+
+/* ── Network helpers ── */
+function drawLinks(g, allNodes, links) {
+  return g.append('g').selectAll('line').data(links).enter().append('line')
+    .attr('stroke','#35394a').attr('stroke-width',1).attr('marker-end','url(#pfv-arr)').attr('opacity',.65)
+    .attr('x1',function(d){ var s=allNodes.find(function(n){return n.id===d.source;}); return s?s.x:0; })
+    .attr('y1',function(d){ var s=allNodes.find(function(n){return n.id===d.source;}); return s?s.y:0; })
+    .attr('x2',function(d){ var t=allNodes.find(function(n){return n.id===d.target;}); return t?t.x:0; })
+    .attr('y2',function(d){ var t=allNodes.find(function(n){return n.id===d.target;}); return t?t.y:0; });
+}
+
+function addNodeVisuals(nodeG, RM, RO, LABEL_W, view) {
+  nodeG.append('circle')
+    .attr('r',function(d){return d.type==='main'?RM:RO;})
+    .attr('fill',function(d){return C[d.type];})
+    .attr('opacity',function(d){return d.type==='main'?1:.82;})
+    .attr('stroke',function(d){return d.type==='main'?'rgba(79,255,176,.4)':'none';})
+    .attr('stroke-width',function(d){return d.type==='main'?8:0;});
+
+  // Author (below)
+  nodeG.filter(function(d){return d.type!=='main';}).append('text')
+    .attr('dy',function(d){return RO+11;})
+    .attr('text-anchor',function(d){
+      if(view==='bowtie') return d.type==='references'?'end':'start';
+      return 'middle';
+    })
+    .attr('dx',function(d){
+      if(view==='bowtie') return d.type==='references'?-(RO+4):(RO+4);
+      return 0;
+    })
+    .attr('font-family','JetBrains Mono, monospace').attr('font-size',9)
+    .attr('fill',function(d){return C[d.type];}).attr('opacity',.72)
+    .attr('pointer-events','none')
+    .text(function(d){ var a=d.authors||''; return a.length>14?a.substring(0,13)+'.':a; });
+
+  // Year (above)
+  nodeG.filter(function(d){return d.type!=='main';}).append('text')
+    .attr('dy',function(d){return -(RO+4);})
+    .attr('text-anchor',function(d){
+      if(view==='bowtie') return d.type==='references'?'end':'start';
+      return 'middle';
+    })
+    .attr('dx',function(d){
+      if(view==='bowtie') return d.type==='references'?-(RO+4):(RO+4);
+      return 0;
+    })
+    .attr('font-family','JetBrains Mono, monospace').attr('font-size',9)
+    .attr('fill','#6a7290').attr('pointer-events','none')
+    .text(function(d){return d.year||'';});
+
+  // Title (wrapped)
+  nodeG.filter(function(d){return d.type!=='main';}).each(function(d){
+    var sel=d3.select(this);
+    var isRef=d.type==='references';
+    var anchor,dx,dy;
+    if(view==='bowtie'){ anchor=isRef?'end':'start'; dx=isRef?-(RO+6):(RO+6); dy=-5; }
+    else { anchor='middle'; dx=0; dy=RO+22; }
+    var t=sel.append('text').attr('text-anchor',anchor).attr('dx',dx).attr('dy',dy)
+      .attr('font-family','DM Sans, sans-serif').attr('font-size',10)
+      .attr('fill','#9aa0b8').attr('pointer-events','none');
+    wrapSvgText(t.node(), truncLabel(d.title, view==='bowtie'?22:18), LABEL_W, 13);
+  });
+
+  // Main label
+  nodeG.filter(function(d){return d.type==='main';}).append('text')
+    .attr('text-anchor','middle').attr('dy',function(){return 20+5;})
+    .attr('font-family','JetBrains Mono, monospace').attr('font-size',10)
+    .attr('fill','#4fffb0').attr('opacity',.9)
+    .text(function(d){ var a=d.authors||''; return a.length>20?a.substring(0,18)+'...':a; });
+
+  nodeG.filter(function(d){return d.type==='main';}).append('text')
+    .attr('text-anchor','middle').attr('dy',function(){return 20+17;})
+    .attr('font-family','JetBrains Mono, monospace').attr('font-size',9)
+    .attr('fill','#4a5878').attr('opacity',.9)
+    .text(function(d){return d.year||'';});
+
+  // Interactions
+  nodeG.filter(function(d){return d.type!=='main';})
+    .style('cursor','pointer')
+    .on('click',function(ev,d){ showModal(d); })
+    .on('dblclick',function(ev,d){
+      var url='https://www.semanticscholar.org/paper/'+d.id;
+      window.open(url,'_blank');
+    })
+    .on('mousemove',function(ev,d){
+      var tip=$('pfv-tooltip');
+      var tl=d.type==='cited_by'?'CITES IT':'IT CITES';
+      tip.innerHTML='<strong style="color:'+C[d.type]+'">'+tl+'</strong><br>'+d.title+
+        '<br><span style="color:var(--pfv-muted)">'+(d.year||'?')+' &middot; '+(d.authors||'')+
+        ' &middot; '+(d.cites||'?')+' cites</span>'+
+        '<br><em style="color:#4a5070;font-size:9px">Click: details &nbsp; Dbl-click: open</em>';
+      tip.classList.add('on');
+      tip.style.left=(ev.clientX+14)+'px'; tip.style.top=(ev.clientY-10)+'px';
+    })
+    .on('mouseleave',function(){ $('pfv-tooltip').classList.remove('on'); });
+}
+
+function pulseRing(g, node, RM) {
+  var pr=g.append('circle').attr('cx',node.x).attr('cy',node.y)
+    .attr('r',RM+6).attr('fill','none').attr('stroke','#4fffb0')
+    .attr('stroke-width',1.5).attr('opacity',.35);
+  (function p(){ pr.transition().duration(1600).attr('r',RM+20).attr('opacity',0)
+    .transition().duration(0).attr('r',RM+6).attr('opacity',.35).on('end',p); })();
+  return pr;
+}
+
+/* ── Network layouts ── */
+function buildNodes() {
+  var main={ id:CFG.paperId, title:CFG.paperTitle, type:'main', year:CFG.paperYear, cites:92, authors:CFG.authors };
+  var refs=CFG.references.map(function(r){ return Object.assign({},r,{type:'references'}); });
+  var cits=CFG.citations.map(function(c){ return Object.assign({},c,{type:'cited_by'}); });
+  var links=[];
+  refs.forEach(function(r){ links.push({source:r.id, target:CFG.paperId}); });
+  cits.forEach(function(c){ links.push({source:CFG.paperId, target:c.id}); });
+  return {main:main, refs:refs, cits:cits, all:[main].concat(refs).concat(cits), links:links};
+}
+
+function initSvg(W,H) {
+  var svg=d3.select('#pfv-net-svg').attr('width',W).attr('height',H);
+  svg.selectAll('*').remove();
+  svg.append('defs').append('marker').attr('id','pfv-arr')
+    .attr('markerWidth',6).attr('markerHeight',6)
+    .attr('refX',18).attr('refY',3).attr('orient','auto')
+    .append('path').attr('d','M0,0 L6,3 L0,6 Z').attr('fill','#4a5060');
+  var g=svg.append('g');
+  svg.call(d3.zoom().scaleExtent([0.25,4]).on('zoom',function(ev){ g.attr('transform',ev.transform); }));
+  return {svg:svg, g:g};
+}
+
+function renderBowtie(W,H) {
+  var M={top:30,bottom:30,left:20,right:20};
+  var nd=buildNodes(), RM=16, RO=8, LABEL_W=W*0.19;
+  var LX=W*0.15, CX=W*0.5, RX=W*0.85;
+  function spreadY(arr){ var n=arr.length, u=H-M.top-M.bottom;
+    return arr.map(function(_,i){ return M.top+(n===1?u/2:(u*i/Math.max(n-1,1))); }); }
+  var ry=spreadY(nd.refs), cy=spreadY(nd.cits);
+  nd.refs.forEach(function(d,i){ d.x=LX; d.y=ry[i]; });
+  nd.cits.forEach(function(d,i){ d.x=RX; d.y=cy[i]; });
+  nd.main.x=CX; nd.main.y=H/2;
+
+  var sv=initSvg(W,H);
+  // zone labels
+  [['IT CITES',LX,'#ffd93d'],[' CITES IT',RX,'#6bcbff']].forEach(function(z){
+    sv.g.append('text').attr('x',z[0]).attr('y',M.top-12).attr('text-anchor','middle')
+      .attr('font-family','JetBrains Mono, monospace').attr('font-size',9)
+      .attr('fill',z[2]).attr('opacity',.65).text(z[1]);
+  });
+  // dashed guide lines
+  [LX,RX].forEach(function(x){
+    sv.g.append('line').attr('x1',x).attr('y1',M.top-2).attr('x2',x).attr('y2',H-M.bottom+2)
+      .attr('stroke','#1a1e2a').attr('stroke-width',1).attr('stroke-dasharray','4,4');
+  });
+  drawLinks(sv.g, nd.all, nd.links);
+  var ng=sv.g.append('g').selectAll('g').data(nd.all).enter().append('g')
+    .attr('transform',function(d){ return 'translate('+d.x+','+d.y+')'; });
+  addNodeVisuals(ng, RM, RO, LABEL_W, 'bowtie');
+  pulseRing(sv.g, nd.main, RM);
+}
+
+function renderTimelineNet(W,H) {
+  var M={top:30,bottom:44,left:60,right:20};
+  var nd=buildNodes(), RM=16, RO=8, LABEL_W=W*0.13;
+  var allY=nd.all.map(function(d){return d.year;}).filter(Boolean);
+  var minY=Math.min.apply(null,allY)-1, maxY=Math.max.apply(null,allY)+1;
+  var xSc=d3.scaleLinear().domain([minY,maxY]).range([M.left+40,W-M.right-40]);
+  var bandT=M.top+10, bandM=H/2, bandB=H-M.bottom-50;
+
+  // bucket nodes by year
+  var buckets={};
+  nd.all.forEach(function(d){ if(!d.year)return; if(!buckets[d.year])buckets[d.year]=[]; buckets[d.year].push(d); });
+
+  nd.main.x=xSc(CFG.paperYear); nd.main.y=bandM;
+  nd.refs.forEach(function(d){ d.x=d.year?xSc(d.year):M.left+40; d.y=bandT+Math.random()*(bandM-bandT-30); });
+  nd.cits.forEach(function(d){ d.x=d.year?xSc(d.year):W-M.right-40; d.y=bandM+20+Math.random()*(bandB-bandM-20); });
+
+  // repel within same year
+  Object.keys(buckets).forEach(function(yr){
+    var b=buckets[yr];
+    var rs=b.filter(function(d){return d.type==='references';});
+    var cs=b.filter(function(d){return d.type==='cited_by';});
+    function rep(arr,minY,maxY){ if(arr.length<2)return;
+      var step=Math.min(26,(maxY-minY)/arr.length);
+      arr.forEach(function(d,i){d.y=minY+step*i;}); }
+    rep(rs,bandT,bandM-30); rep(cs,bandM+20,bandB);
+  });
+
+  var sv=initSvg(W,H);
+
+  // X axis
+  var axG=sv.g.append('g').attr('transform','translate(0,'+(H-M.bottom)+')');
+  axG.append('line').attr('x1',M.left+40).attr('x2',W-M.right-40).attr('y1',0).attr('y2',0)
+    .attr('stroke','#252a38').attr('stroke-width',1);
+  d3.range(minY+1,maxY).forEach(function(y){
+    var x=xSc(y);
+    axG.append('line').attr('x1',x).attr('x2',x).attr('y1',0).attr('y2',4).attr('stroke','#252a38');
+    sv.g.append('line').attr('x1',x).attr('x2',x).attr('y1',M.top).attr('y2',H-M.bottom)
+      .attr('stroke','#1a1e2a').attr('stroke-width',1).attr('stroke-dasharray','3,5');
+    axG.append('text').attr('x',x).attr('y',14).attr('text-anchor','middle')
+      .attr('font-family','JetBrains Mono, monospace').attr('font-size',9).attr('fill','#3a4255').text(y);
+  });
+  axG.append('text').attr('x',xSc((minY+maxY)/2)).attr('y',30).attr('text-anchor','middle')
+    .attr('font-family','JetBrains Mono, monospace').attr('font-size',9).attr('fill','#3a4255').text('Publication Year');
+
+  // Band labels
+  [['IT CITES',bandT,'#ffd93d'],['THIS',bandM,'#4fffb0'],['CITES IT',bandB,'#6bcbff']].forEach(function(z){
+    sv.g.append('text').attr('x',M.left+30).attr('y',z[1]).attr('text-anchor','end')
+      .attr('font-family','JetBrains Mono, monospace').attr('font-size',9).attr('fill',z[2]).attr('opacity',.6).text(z[0]);
+  });
+
+  drawLinks(sv.g, nd.all, nd.links);
+  var ng=sv.g.append('g').selectAll('g').data(nd.all).enter().append('g')
+    .attr('transform',function(d){ return 'translate('+d.x+','+d.y+')'; });
+  addNodeVisuals(ng, RM, RO, LABEL_W, 'timeline');
+  pulseRing(sv.g, nd.main, RM);
+}
+
+function renderForce(W,H) {
+  var nd=buildNodes(), RM=16, RO=8, LABEL_W=130;
+  nd.main.fx=W/2; nd.main.fy=H/2;
+  nd.refs.forEach(function(d){ d.x=W/2+(Math.random()-.5)*280; d.y=H/2+(Math.random()-.5)*280; });
+  nd.cits.forEach(function(d){ d.x=W/2+(Math.random()-.5)*280; d.y=H/2+(Math.random()-.5)*280; });
+
+  var sv=initSvg(W,H);
+  var sim=d3.forceSimulation(nd.all)
+    .force('link',d3.forceLink(nd.links).id(function(d){return d.id;}).distance(125).strength(.4))
+    .force('charge',d3.forceManyBody().strength(-280))
+    .force('center',d3.forceCenter(W/2,H/2))
+    .force('collide',d3.forceCollide().radius(function(d){return d.type==='main'?RM+18:RO+26;}));
+  simRef=sim;
+
+  var lSel=sv.g.append('g').selectAll('line').data(nd.links).enter().append('line')
+    .attr('stroke','#35394a').attr('stroke-width',1).attr('marker-end','url(#pfv-arr)').attr('opacity',.65);
+
+  var ng=sv.g.append('g').selectAll('g').data(nd.all).enter().append('g')
+    .call(d3.drag()
+      .on('start',function(ev,d){ if(!ev.active)sim.alphaTarget(.3).restart(); d.fx=d.x; d.fy=d.y; })
+      .on('drag', function(ev,d){ d.fx=ev.x; d.fy=ev.y; })
+      .on('end',  function(ev,d){ if(!ev.active)sim.alphaTarget(0); if(d.type!=='main'){d.fx=null;d.fy=null;} }));
+
+  addNodeVisuals(ng, RM, RO, LABEL_W, 'force');
+  var pr=pulseRing(sv.g, nd.main, RM);
+
+  sim.on('tick',function(){
+    lSel.attr('x1',function(d){return d.source.x;}).attr('y1',function(d){return d.source.y;})
+        .attr('x2',function(d){return d.target.x;}).attr('y2',function(d){return d.target.y;});
+    ng.attr('transform',function(d){return 'translate('+d.x+','+d.y+')';});
+    pr.attr('cx',nd.main.x).attr('cy',nd.main.y);
+  });
+}
+
+/* ── Recommended Reading ── */
+function fetchRecommended() {
+  var n=parseInt($('pfv-rec-count').value,10)||6;
+  var st=$('pfv-rec-status'), err=$('pfv-rec-err'), grid=$('pfv-rec-grid'), btn=$('pfv-rec-btn');
+  st.classList.add('on'); err.classList.remove('on'); grid.innerHTML=''; btn.disabled=true;
+  $('pfv-rec-status-txt').textContent='Fetching recommendations from Semantic Scholar...';
+
+  var url=SS+'/paper/'+CFG.paperId+'/recommendations?fields=title,authors,year,citationCount,externalIds,abstract&limit='+Math.min(n*3,50);
+  fetch(url)
+    .then(function(r){ if(!r.ok)throw new Error('HTTP '+r.status); return r.json(); })
+    .then(function(data){
+      st.classList.remove('on'); btn.disabled=false;
+      var papers=(data.recommendedPapers||[]).slice(0,n);
+      if(!papers.length){ grid.innerHTML='<div class="pfv-rec-empty">No recommendations returned.</div>'; return; }
+      renderRecCards(papers);
+    })
+    .catch(function(e){
+      st.classList.remove('on'); btn.disabled=false;
+      err.classList.add('on');
+      err.textContent='Could not load recommendations: '+e.message+'. The Semantic Scholar API may be unavailable or CORS-restricted in this browser context.';
+    });
+}
+
+function renderRecCards(papers) {
+  var grid=$('pfv-rec-grid');
+  grid.innerHTML='';
+  papers.forEach(function(p,idx){
+    var card=document.createElement('a');
+    card.className='pfv-rec-card';
+    var doi=p.externalIds&&p.externalIds.DOI;
+    var ssUrl='https://www.semanticscholar.org/paper/'+(p.paperId||'');
+    card.href=doi?'https://doi.org/'+doi:ssUrl;
+    card.target='_blank'; card.rel='noopener noreferrer';
+    var authors=(p.authors||[]).slice(0,3).map(function(a){return a.name;}).join(', ');
+    if((p.authors||[]).length>3) authors+=' et al.';
+    var rank=['Highly Relevant','Strongly Related','Related','Related','Related'][Math.min(idx,4)];
+    card.innerHTML=
+      '<div class="pfv-rec-top">'+
+        '<div class="pfv-rec-title">'+p.title+'</div>'+
+        '<div class="pfv-rec-badge">'+rank+'</div>'+
+      '</div>'+
+      (authors?'<div class="pfv-rec-authors">&#x1F464; '+authors+'</div>':'')+
+      (p.abstract?'<div style="font-size:11px;color:var(--pfv-muted);line-height:1.6">'+p.abstract.substring(0,160)+'...</div>':'')+
+      '<div class="pfv-rec-footer">'+
+        (p.year?'<span class="pfv-rec-chip">&#x1F4C5; '+p.year+'</span>':'')+
+        (p.citationCount!=null?'<span class="pfv-rec-chip">&#x1F4CA; '+p.citationCount+' cites</span>':'')+
+        '<span class="pfv-rec-open">Open &#x2197;</span>'+
+      '</div>';
+    grid.appendChild(card);
+  });
+}
+
+/* ── Public API (called from onclick attributes) ── */
+window.pfv = {
+  setView: function(v) {
+    if(simRef){ simRef.stop(); simRef=null; }
+    currentView=v;
+    ['bowtie','timeline','force'].forEach(function(x){
+      $('pfv-btn-'+x).classList.toggle('active', x===v);
+    });
+    renderNetwork();
+  },
+  switchTab: function(tab) {
+    ['cited','refs'].forEach(function(t){
+      var tp=$('pfv-tab-'+t);
+      if(tp) tp.classList.toggle('active',t===tab);
+    });
+    document.querySelectorAll('.pfv-tab').forEach(function(t,i){
+      t.classList.toggle('active',(i===0&&tab==='cited')||(i===1&&tab==='refs'));
+    });
+  },
+  closeModal: function() { $('pfv-modal-bg').classList.remove('on'); },
+  openSS: function(id) { window.open('https://www.semanticscholar.org/paper/'+id,'_blank'); },
+  fetchRecommended: fetchRecommended,
+};
+
+function renderNetwork() {
+  var wrap=$('pfv-net-wrap');
+  var W=wrap.clientWidth||900, H=480;
+  d3.select('#pfv-net-svg').attr('height',H);
+  if(currentView==='bowtie')   renderBowtie(W,H);
+  if(currentView==='timeline') renderTimelineNet(W,H);
+  if(currentView==='force')    renderForce(W,H);
+}
+
+/* ── Init ── */
+document.addEventListener('DOMContentLoaded', function() {
+  // IDs
+  $('pfv-ss-id').textContent=CFG.paperId;
+
+  // Stats
+  var sg=$('pfv-stats');
+  CFG.stats.forEach(function(s){
+    sg.innerHTML+='<div class="pfv-stat"><div class="pfv-stat-val">'+s.val+'</div><div class="pfv-stat-lbl">'+s.lbl+'</div></div>';
+  });
+
+  // Counts
+  $('pfv-cit-count').textContent='('+CFG.citations.length+')';
+  $('pfv-ref-count').textContent='('+CFG.references.length+')';
+
+  renderDial(CFG.freshness);
+  setTimeout(function(){
+    $('pfv-bar-v').style.width=CFG.sub.velocity+'%';
+    $('pfv-bar-r').style.width=CFG.sub.recency+'%';
+    $('pfv-bar-i').style.width=CFG.sub.impact+'%';
+    $('pfv-bar-l').style.width=CFG.sub.longevity+'%';
+    $('pfv-val-v').textContent=CFG.sub.velocity;
+    $('pfv-val-r').textContent=CFG.sub.recency;
+    $('pfv-val-i').textContent=CFG.sub.impact;
+    $('pfv-val-l').textContent=CFG.sub.longevity;
+  },250);
+
+  setTimeout(function(){ typewriter('pfv-ai-text',CFG.aiText,16); },500);
+
+  renderTimeline();
+  renderNetwork();
+  renderPaperList(CFG.citations,'pfv-cited-list','Cites It','pfv-badge-c');
+  renderPaperList(CFG.references,'pfv-ref-list','Reference','pfv-badge-r');
+  fetchRecommended();
+
+  // Modal backdrop close
+  $('pfv-modal-bg').addEventListener('click',function(e){
+    if(e.target===this) pfv.closeModal();
+  });
+});
+
+var _rt;
+window.addEventListener('resize',function(){
+  clearTimeout(_rt);
+  _rt=setTimeout(function(){ if(simRef){simRef.stop();simRef=null;} renderNetwork(); },280);
+});
+
+})();
+</script>

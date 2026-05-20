@@ -10,6 +10,16 @@ year: '2022'
 doi: '10.1109/TAES.2023.3237129'
 url: 'https://arxiv.org/pdf/2209.11289.pdf'
 image: 'featured.jpg'
+short_abstract: |
+  The maximum surveillance of a target which is holding course is considered,
+  wherein an observer vehicle aims to maximize the time that a faster target
+  remains within a fixed-range of the observer. This entails two coupled phases:
+  an approach phase and observation phase. In the approach phase, the observer
+  strives to make contact with the faster target, such that in the observation
+  phase, the observer is able to maximize the time where the target remains
+  within range. Using Pontryagin's Minimum Principle, the optimal control laws
+  for the observer are found in closed-form. Example scenarios highlight various
+  aspects of the engagement.
 abstract: |
   The maximum surveillance of a target which is holding course is considered,
   wherein an observer vehicle aims to maximize the time that a faster target

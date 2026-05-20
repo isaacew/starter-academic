@@ -11,6 +11,16 @@ year: '2020'
 doi: '10.23919/ACC45564.2020.9147340'
 url: 'https://www.semanticscholar.org/paper/673e74c6bc26cd5c9e1e898ddf89e98ae9348281'
 image: 'featured.jpg'
+short_abstract: |
+  This paper considers a two agent scenario containing an observer and a non-
+  maneuvering target. The observer is maneuverable but is slower than the
+  course-holding target. In this scenario, the observer is endowed with a
+  nonzero radius of observation within which he strives at keeping the target
+  for as long as possible. Using the calculus of variations, we pose and solve
+  the optimal control problem, solving for the heading of the observer which
+  maximizes the amount of time the target remains inside the radius of
+  observation. Utilizing the optimal observer heading we compute the exposure
+  time based upon the angle by...
 abstract: |
   This paper considers a two agent scenario containing an observer and a non-
   maneuvering target. The observer is maneuverable but is slower than the

@@ -1,0 +1,17 @@
+---
+title: 'Maximum Observation of a Faster Non-Maneuvering Target by a Slower Observer'
+authors:
+  - 'Isaac E. Weintraub'
+  - 'Alexander Von Moll'
+  - "Eloy Garc{\\'i}a"
+  - 'David W. Casbeer'
+  - 'Zachary J. L. Demers'
+  - 'Meir Pachter'
+year: '2020'
+url: 'https://api.semanticscholar.org/CorpusID:220889996'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Weintraub2020MaximumOO]
+```

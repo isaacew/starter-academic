@@ -1,0 +1,17 @@
+---
+title: 'Continuous Monitoring of a Path-Constrained Moving Target by Multiple Unmanned Aerial Vehicles'
+authors:
+  - 'Camilla Tabasso'
+  - 'Calvin Kielas-Jensen'
+  - 'Venanzio Cichella'
+  - 'Satyanarayana Gupta Manyam'
+  - 'David W. Casbeer'
+  - 'Isaac E. Weintraub'
+year: '2021'
+url: 'https://api.semanticscholar.org/CorpusID:244162741'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Tabasso2021ContinuousMO]
+```

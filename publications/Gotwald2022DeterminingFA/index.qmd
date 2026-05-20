@@ -1,0 +1,14 @@
+---
+title: "Determining Follower Aircraft's Optimal Trajectory in Relation to a Dynamic Formation Ring"
+authors:
+  - 'Charles Allen Gotwald'
+  - 'Michael D. Zollars'
+  - 'Isaac E. Weintraub'
+year: '2022'
+url: 'https://api.semanticscholar.org/CorpusID:252693170'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Gotwald2022DeterminingFA]
+```

@@ -1,0 +1,14 @@
+---
+title: 'A Comparison of Reinforcement Learning and Optimal Control Methods for Path Planning'
+authors:
+  - 'Qiang Le'
+  - 'Yaguang Yang'
+  - 'Isaac E. Weintraub'
+year: '2026'
+url: 'https://api.semanticscholar.org/CorpusID:287473622'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Le2026ACO]
+```

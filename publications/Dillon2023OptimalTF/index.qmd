@@ -1,0 +1,15 @@
+---
+title: 'Optimal Trajectories for Aircraft Avoidance of Multiple Weapon Engagement Zones'
+authors:
+  - 'Patrick M. Dillon'
+  - 'Michael D. Zollars'
+  - 'Isaac E. Weintraub'
+  - 'Alexander Von Moll'
+year: '2023'
+url: 'https://api.semanticscholar.org/CorpusID:259414938'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Dillon2023OptimalTF]
+```

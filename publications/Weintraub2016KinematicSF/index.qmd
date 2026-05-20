@@ -1,0 +1,15 @@
+---
+title: 'Kinematic Selection for a Tailless Flapping Wing Micro-Air Vehicle'
+authors:
+  - 'Isaac E. Weintraub'
+  - 'David O. Sigthorsson'
+  - 'Michael W. Oppenheimer'
+  - 'David B. Doman'
+year: '2016'
+url: 'https://api.semanticscholar.org/CorpusID:113023562'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Weintraub2016KinematicSF]
+```

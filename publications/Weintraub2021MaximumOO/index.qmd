@@ -1,0 +1,15 @@
+---
+title: 'Maximum Observation of a Target by a Slower Observer in Three Dimensions'
+authors:
+  - 'Isaac E. Weintraub'
+  - 'Alexander Von Moll'
+  - "Eloy Garc{\\'i}a"
+  - 'Meir Pachter'
+year: '2021'
+url: 'https://api.semanticscholar.org/CorpusID:233777283'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Weintraub2021MaximumOO]
+```

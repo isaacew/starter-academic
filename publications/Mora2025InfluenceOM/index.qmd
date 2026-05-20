@@ -1,0 +1,16 @@
+---
+title: 'Influence of Malicious Agents in a Team Seeking to Contain an Evader'
+authors:
+  - 'Braulio Mora'
+  - 'Animesh Chakravarthy'
+  - 'Alexander Von Moll'
+  - 'Isaac E. Weintraub'
+  - 'David W. Casbeer'
+year: '2025'
+url: 'https://api.semanticscholar.org/CorpusID:276325643'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Mora2025InfluenceOM]
+```

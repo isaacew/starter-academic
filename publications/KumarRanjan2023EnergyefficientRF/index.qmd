@@ -8,7 +8,6 @@ authors:
   - 'David W. Casbeer'
   - 'Isaac E. Weintraub'
 year: '2023'
-doi: '10.2514/6.2023-2642'
 url: 'https://api.semanticscholar.org/CorpusID:256163225'
 image: 'featured.jpg'
 ---

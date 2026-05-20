@@ -1,0 +1,15 @@
+---
+title: 'Policy for Optimal Avoidance of Multiple Engagement Zones'
+authors:
+  - "Dejan Milutinovi{\\'c}"
+  - 'Alexander Von Moll'
+  - 'Isaac E. Weintraub'
+  - 'David W. Casbeer'
+year: '2025'
+url: 'https://api.semanticscholar.org/CorpusID:276322890'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Milutinovi2025PolicyFO]
+```

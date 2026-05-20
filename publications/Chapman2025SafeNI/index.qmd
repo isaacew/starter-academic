@@ -1,0 +1,14 @@
+---
+title: 'Safe Navigation in the Presence of Range-Limited Pursuers'
+authors:
+  - 'Thomas Chapman'
+  - 'Alexander Von Moll'
+  - 'Isaac E. Weintraub'
+year: '2025'
+url: 'https://api.semanticscholar.org/CorpusID:281103399'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Chapman2025SafeNI]
+```

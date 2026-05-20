@@ -1,0 +1,17 @@
+---
+title: 'Energy-aware 3D Leader-Follower Flight Trajectory Optimization for Fixed-Wing Aircraft'
+authors:
+  - 'Praveen Kumar Ranjan'
+  - 'Johnathan Votion'
+  - 'Yong-Shang Cao'
+  - 'Dzung Tran'
+  - 'David W. Casbeer'
+  - 'Isaac E. Weintraub'
+year: '2022'
+url: 'https://api.semanticscholar.org/CorpusID:245719588'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Ranjan2022Energyaware3L]
+```

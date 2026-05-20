@@ -1,0 +1,17 @@
+---
+title: 'Development of a Flapping Wing Mechanism that Can Produce Lift Greater than Weight'
+authors:
+  - 'Michael W. Oppenheimer'
+  - 'David O. Sigthorsson'
+  - 'Isaac E. Weintraub'
+  - 'Todd J. Smith'
+  - 'Jaderic C. Dawson'
+  - 'David B. Doman'
+year: '2013'
+url: 'https://api.semanticscholar.org/CorpusID:123767696'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Oppenheimer2013DevelopmentOA]
+```

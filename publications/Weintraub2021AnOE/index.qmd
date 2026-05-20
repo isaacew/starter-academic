@@ -1,0 +1,16 @@
+---
+title: 'An Optimal Engagement Zone Avoidance Scenario in 2-D'
+authors:
+  - 'Isaac E. Weintraub'
+  - 'Alexander Von Moll'
+  - 'Christian Carrizales'
+  - 'Nicholas Hanlon'
+  - 'Zachariah E. Fuchs'
+year: '2021'
+url: 'https://api.semanticscholar.org/CorpusID:243986002'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Weintraub2021AnOE]
+```

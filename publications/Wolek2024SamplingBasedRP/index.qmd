@@ -1,0 +1,16 @@
+---
+title: 'Sampling-Based Risk-Aware Path Planning Around Dynamic Engagement Zones'
+authors:
+  - 'Artur Wolek'
+  - 'Isaac E. Weintraub'
+  - 'Alexander Von Moll'
+  - 'David W. Casbeer'
+  - 'Satyanarayana Gupta Manyam'
+year: '2024'
+url: 'https://api.semanticscholar.org/CorpusID:268297320'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Wolek2024SamplingBasedRP]
+```

@@ -1,0 +1,15 @@
+---
+title: 'Flapping Wing Technology for Micro Air Vehicles Incorporating a Lead Zirconate Titanate (PZT) Bimorph Actuator'
+authors:
+  - 'Asha Hall'
+  - 'Richard Roberts'
+  - 'Isaac E. Weintraub'
+  - 'Jaret C. Riddick'
+year: '2012'
+url: 'https://api.semanticscholar.org/CorpusID:137645305'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Hall2012FlappingWT]
+```

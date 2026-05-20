@@ -1,0 +1,15 @@
+---
+title: 'Virtual Target Selection for a Multiple-Pursuer-Multiple-Evader Scenario'
+authors:
+  - 'Isaac E. Weintraub'
+  - 'Alexander Von Moll'
+  - 'David W. Casbeer'
+  - 'Satyanarayana Gupta Manyam'
+year: '2023'
+url: 'https://api.semanticscholar.org/CorpusID:258987925'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Weintraub2023VirtualTS]
+```

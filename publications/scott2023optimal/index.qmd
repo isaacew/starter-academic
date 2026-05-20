@@ -10,6 +10,17 @@ year: '2023'
 doi: '10.1016/j.ifacol.2023.11.005'
 url: 'https://www.semanticscholar.org/paper/84ce8430044ce7010e0002323a86db95949af029'
 image: 'featured.jpg'
+short_abstract: |
+  Here we study an optimal control problem involving energy management of a
+  hybrid-fuel Unmanned Aerial Vehicle (UAV). The planning problem for a hybrid-
+  fuel platform involves determining the path while managing the energy
+  resources, which includes a policy for power modality switching whenever
+  applicable. The hybrid-fuel platform considered here involves a generator and
+  battery pack combined in a series fashion as energy sources on-board a UAV.
+  Also included in the problem are the noise restrictions, which place
+  constraints on generator operation depending on the airspace location. These
+  emulate possible restrictions on UAV noise that occur in military surveillance
+  missions or in...
 abstract: |
   Here we study an optimal control problem involving energy management of a
   hybrid-fuel Unmanned Aerial Vehicle (UAV). The planning problem for a hybrid-

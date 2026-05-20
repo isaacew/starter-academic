@@ -1,0 +1,16 @@
+---
+title: 'Computation of Inertial Forces and Torques Associated with Flapping Wings'
+authors:
+  - 'Michael W. Oppenheimer'
+  - 'Shorya Awtar'
+  - 'David O. Sigthorsson'
+  - 'Isaac E. Weintraub'
+  - 'David B. Doman'
+year: '2012'
+url: 'https://api.semanticscholar.org/CorpusID:110325608'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Oppenheimer2012ComputationOI]
+```

@@ -11,6 +11,16 @@ year: '2020'
 doi: '10.2514/6.2021-1879'
 url: 'https://www.semanticscholar.org/paper/8884a7f1bd2500f129fb7eca4a4f323f2f3ddc73'
 image: 'featured.jpg'
+short_abstract: |
+  We consider a multiple vehicle path planning problem with curvature
+  constraints in the presence of obstacles, where multiple vehicles need to
+  arrive at a given final location simultaneously. We aim to find the paths
+  using a simplex framework that tessellates the feasible regions into hexagonal
+  grids from which a graph is abstracted with nodes at the mid-point of every
+  hexagon edge. The graph edges are defined over the adjacent nodes of the
+  hexagons and each edge corresponds to a quadratic Bezier curve. We present an
+  algorithm that finds the shortest path for each vehicle, and a path
+  perturbation technique to...
 abstract: |
   We consider a multiple vehicle path planning problem with curvature
   constraints in the presence of obstacles, where multiple vehicles need to

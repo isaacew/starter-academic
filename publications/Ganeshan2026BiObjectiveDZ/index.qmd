@@ -1,0 +1,17 @@
+---
+title: 'Bi-Objective Dynamic Zone Navigation'
+authors:
+  - 'Reyshwanth Ganeshan'
+  - 'Sivakumar Rathinam'
+  - 'Swaroop Darbha'
+  - 'Satyanarayana G Manyam'
+  - 'Isaac E. Weintraub'
+  - 'David W. Casbeer'
+year: '2026'
+url: 'https://api.semanticscholar.org/CorpusID:285234519'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Ganeshan2026BiObjectiveDZ]
+```

@@ -1,0 +1,14 @@
+---
+title: 'Probabilistic Weapon Engagement Zones for a Turn Constrained Pursuer'
+authors:
+  - 'Grant Stagg'
+  - 'Cammy K. Peterson'
+  - 'Isaac E. Weintraub'
+year: '2026'
+url: 'https://api.semanticscholar.org/CorpusID:285359644'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Stagg2026ProbabilisticWE]
+```

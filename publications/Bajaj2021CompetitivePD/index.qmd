@@ -1,0 +1,18 @@
+---
+title: 'Competitive Perimeter Defense of Conical Environments'
+authors:
+  - 'Shivam Bajaj'
+  - 'Eric K. Torng'
+  - 'Shaunak Dattaprasad Bopardikar'
+  - 'Alexander Von Moll'
+  - 'Isaac E. Weintraub'
+  - "Eloy Garc{\\'i}a"
+  - 'David W. Casbeer'
+year: '2021'
+url: 'https://api.semanticscholar.org/CorpusID:238582866'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Bajaj2021CompetitivePD]
+```

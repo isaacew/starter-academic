@@ -1,0 +1,16 @@
+---
+title: 'Escape from an Orbiting Pursuer with a Nonzero Capture Radius'
+authors:
+  - 'Braulio Mora'
+  - 'Alexander Von Moll'
+  - 'Isaac E. Weintraub'
+  - 'David W. Casbeer'
+  - 'Animesh Chakravarthy'
+year: '2023'
+url: 'https://api.semanticscholar.org/CorpusID:263605525'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Mora2023EscapeFA]
+```

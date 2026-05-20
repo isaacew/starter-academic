@@ -1,0 +1,16 @@
+---
+title: 'Persistent Monitoring by Multiple Unmanned Aerial Vehicles Using Bernstein Polynomials'
+authors:
+  - 'Calvin Kielas-Jensen'
+  - 'Venanzio Cichella'
+  - 'David W. Casbeer'
+  - 'Satyanarayana Gupta Manyam'
+  - 'Isaac E. Weintraub'
+year: '2021'
+url: 'https://api.semanticscholar.org/CorpusID:254751832'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@KielasJensen2021PersistentMB]
+```

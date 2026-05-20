@@ -1,0 +1,16 @@
+---
+title: 'Optimal Generator Policy for Hybrid Fuel UAV under Airspace Noise Restrictions'
+authors:
+  - 'Drew Scott'
+  - 'Isaac E. Weintraub'
+  - 'Satyanarayana Gupta Manyam'
+  - 'David W. Casbeer'
+  - 'Manish Kumar'
+year: '2023'
+url: 'https://api.semanticscholar.org/CorpusID:266450926'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Scott2023OptimalGP]
+```

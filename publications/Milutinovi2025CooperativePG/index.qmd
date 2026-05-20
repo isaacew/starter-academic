@@ -1,0 +1,17 @@
+---
+title: 'Cooperative Pursuit-Evasion Games With a Flat Sphere Condition'
+authors:
+  - "Dejan Milutinovi{\\'c}"
+  - 'Alexander Von Moll'
+  - 'Satyanarayana Gupta Manyam'
+  - 'David W. Casbeer'
+  - 'Isaac E. Weintraub'
+  - 'Meir Pachter'
+year: '2025'
+url: 'https://api.semanticscholar.org/CorpusID:281046061'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Milutinovi2025CooperativePG]
+```

@@ -9,6 +9,17 @@ year: '2024'
 doi: '10.2514/6.2024-2760'
 url: 'https://www.semanticscholar.org/paper/264da47d1694a0d500ebd34a881de323bfc7806f'
 image: 'featured.jpg'
+short_abstract: |
+  The work herein presents a new approach to aircraft control within a leader-
+  follower formation, and the refinement process used in its development. During
+  autonomous flight, a follower aircraft is tasked to rejoin and maintain a
+  designated formation position, which is defined dynamically in reference to a
+  maneuvering leader aircraft. Simple control algorithms, named Relational
+  Maneuver Primitives, are intelligently combined into a control strategy such
+  that the autonomous follower aircraft’s response approximates the optimal
+  trajectory. This research specifically addresses the control strategy
+  refinement process where a genetic algorithm is implemented to determine the
+  appropriate selection of Relational Maneuver Primitives based on...
 abstract: |
   The work herein presents a new approach to aircraft control within a leader-
   follower formation, and the refinement process used in its development. During

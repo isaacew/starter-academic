@@ -1,0 +1,15 @@
+---
+title: 'An Optimal Strategy for Off-Board Proximal Sensing of a Target: Part 2'
+authors:
+  - 'Alexander Hansen'
+  - 'Michael D. Zollars'
+  - 'Isaac E. Weintraub'
+  - 'Alexander Von Moll'
+year: '2025'
+url: 'https://api.semanticscholar.org/CorpusID:276327868'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Hansen2025AnOS]
+```

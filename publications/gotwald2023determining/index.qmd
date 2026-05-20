@@ -8,6 +8,16 @@ year: '2022'
 doi: '10.1109/AERO55745.2023.10115672'
 url: 'https://arxiv.org/pdf/2210.01665.pdf'
 image: 'featured.jpg'
+short_abstract: |
+  The specific objective of this paper is to develop a tool that calculates the
+  optimal trajectory of the follower aircraft as it completes a formation
+  rejoin, and then maintains the formation position, defined as a ring of
+  points, until a fixed final time. The tool is designed to produce optimal
+  trajectories for a variety of initial conditions and leader trajectories.
+  Triple integrator dynamics are used to model the follower aircraft in three
+  dimensions. Control is applied directly to the rate of acceleration. Both the
+  follower's and leader's velocities and accelerations are bounded, as dictated
+  by the aircraft's performance envelope. Lastly,...
 abstract: |
   The specific objective of this paper is to develop a tool that calculates the
   optimal trajectory of the follower aircraft as it completes a formation

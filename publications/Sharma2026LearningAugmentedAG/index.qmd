@@ -1,0 +1,14 @@
+---
+title: 'Learning-Augmented Adaptive Guidance for Target Interception'
+authors:
+  - 'Rajnikant Sharma'
+  - 'Abhinav Sinha'
+  - 'Isaac E. Weintraub'
+year: '2026'
+url: 'https://api.semanticscholar.org/CorpusID:285212934'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Sharma2026LearningAugmentedAG]
+```

@@ -1,0 +1,17 @@
+---
+title: 'Quadratic Bezier Curves for Multi-Agent Coordinated Arrival in the Presence of Obstacles'
+authors:
+  - 'Satyanarayana Gupta Manyam'
+  - 'David W. Casbeer'
+  - 'Isaac E. Weintraub'
+  - 'Dzung Tran'
+  - 'Justin M. Bradley'
+  - 'Swaroop Darbha'
+year: '2020'
+url: 'https://api.semanticscholar.org/CorpusID:234297681'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Manyam2020QuadraticBC]
+```

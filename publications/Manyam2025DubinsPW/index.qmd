@@ -1,0 +1,15 @@
+---
+title: 'Dubins Path With Terminal Range and Field-of-View Constraints'
+authors:
+  - 'Satyanarayana Gupta Manyam'
+  - 'David W. Casbeer'
+  - 'Alexander Von Moll'
+  - 'Isaac E. Weintraub'
+year: '2025'
+url: 'https://api.semanticscholar.org/CorpusID:279646941'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Manyam2025DubinsPW]
+```

@@ -1,0 +1,15 @@
+---
+title: 'Pure Pursuit of a Target on a Circular Trajectory'
+authors:
+  - 'Alexander Von Moll'
+  - 'David W. Casbeer'
+  - 'Isaac E. Weintraub'
+  - 'Meir Pachter'
+year: '2024'
+url: 'https://api.semanticscholar.org/CorpusID:267356856'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@VonMoll2024PurePO]
+```

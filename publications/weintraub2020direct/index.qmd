@@ -9,6 +9,16 @@ year: '2020'
 doi: '10.2514/6.2020-0612'
 url: 'https://www.semanticscholar.org/paper/d60e0913a6225a7f9a767326723f448b5230025e'
 image: 'featured.jpg'
+short_abstract: |
+  The goal of optimal control is to obtain an admissible function which
+  minimizes an objective functional subject to specified constraints and
+  boundary conditions. Four popular methods of computing the optimal control
+  directly are the Single Shooting Method, Multiple Shootings Method, Even
+  Collocation Method, and Pseudospectral Method. In this paper, the four direct
+  methods of computing the optimal control for the Active Target Defense
+  Scenario are presented and compared. The Active Target Defense Scenario is a
+  three-agent engagement where an evading agent tries to escape a pursuing agent
+  with the assistance of a defending agent. The goal of the Evader is...
 abstract: |
   The goal of optimal control is to obtain an admissible function which
   minimizes an objective functional subject to specified constraints and

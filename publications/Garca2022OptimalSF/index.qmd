@@ -1,0 +1,15 @@
+---
+title: 'Optimal Strategies for the Game of Protecting a Plane in 3-D'
+authors:
+  - "Eloy Garc{\\'i}a"
+  - 'Isaac E. Weintraub'
+  - 'David W. Casbeer'
+  - 'Meir Pachter'
+year: '2022'
+url: 'https://api.semanticscholar.org/CorpusID:246607899'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Garca2022OptimalSF]
+```

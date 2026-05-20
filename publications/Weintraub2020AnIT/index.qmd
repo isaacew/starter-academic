@@ -1,0 +1,14 @@
+---
+title: 'An Introduction to Pursuit-evasion Differential Games'
+authors:
+  - 'Isaac E. Weintraub'
+  - 'Meir Pachter'
+  - "Eloy Garc{\\'i}a"
+year: '2020'
+url: 'https://api.semanticscholar.org/CorpusID:212657428'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Weintraub2020AnIT]
+```

@@ -1,0 +1,16 @@
+---
+title: "Circular Rejoin in 3D Using B{\\'e}zier Paths"
+authors:
+  - 'Isaac E. Weintraub'
+  - 'Zachary J. L. Demers'
+  - 'Jason E. Shroyer'
+  - 'Nathan P. Ritsema'
+  - 'Dillon P. Sluss'
+year: '2020'
+url: 'https://api.semanticscholar.org/CorpusID:222097712'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Weintraub2020CircularRI]
+```

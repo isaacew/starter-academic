@@ -1,0 +1,16 @@
+---
+title: 'Engagement Zone Defense of a Non-Maneuvering Evader'
+authors:
+  - 'Isaac E. Weintraub'
+  - 'Alexander Von Moll'
+  - 'David W. Casbeer'
+  - "Eloy Garc{\\'i}a"
+  - 'Meir Pachter'
+year: '2021'
+url: 'https://api.semanticscholar.org/CorpusID:245693804'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Weintraub2021EngagementZD]
+```

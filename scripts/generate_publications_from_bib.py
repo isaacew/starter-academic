@@ -47,7 +47,16 @@ def main() -> None:
         # If you add featured.jpg or featured.png later, update this field if needed.
         front_matter_lines.append("image: 'featured.jpg'")
         if abstract:
-            # Keep abstract in front matter for easy access.
+            # Short abstract for listing (max ~100 words)
+            words = abstract.split()
+            short = " ".join(words[:100])
+            if len(words) > 100:
+                short += "..."
+            front_matter_lines.append("short_abstract: |")
+            for line in textwrap.fill(short, width=78).splitlines():
+                front_matter_lines.append(f"  {line}")
+
+            # Full abstract for detail page
             wrapped = textwrap.fill(abstract, width=78)
             front_matter_lines.append("abstract: |")
             for line in wrapped.splitlines():

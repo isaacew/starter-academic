@@ -7,6 +7,16 @@ authors:
 year: '2026'
 url: 'https://arxiv.org/abs/2604.12628'
 image: 'featured.jpg'
+short_abstract: |
+  Path-planning for autonomous vehicles in threat-laden environments is a
+  fundamental challenge. While traditional optimal control methods can find
+  ideal paths, the computational time is often too slow for real-time decision-
+  making. To solve this challenge, we propose a method based on Deep
+  Deterministic Policy Gradient (DDPG) and model the threat as a simple,
+  circular `no-go'zone. A mission failure is claimed if the vehicle enters this
+  `no-go'zone at any time or does not reach a neighborhood of the destination.
+  The DDPG agent is trained to learn a direct mapping from its current state
+  (position and velocity) to a series of feasible actions...
 abstract: |
   Path-planning for autonomous vehicles in threat-laden environments is a
   fundamental challenge. While traditional optimal control methods can find

@@ -1,0 +1,17 @@
+---
+title: 'Pursuit-Evasion on a Sphere and When It Can Be Considered Flat'
+authors:
+  - "Dejan Milutinovi{\\'c}"
+  - 'Alexander Von Moll'
+  - 'Satyanarayana Gupta Manyam'
+  - 'David W. Casbeer'
+  - 'Isaac E. Weintraub'
+  - 'Meir Pachter'
+year: '2024'
+url: 'https://api.semanticscholar.org/CorpusID:268667061'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Milutinovi2024PursuitEvasionOA]
+```

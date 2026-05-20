@@ -1,0 +1,16 @@
+---
+title: 'Heterogeneous Pursuit of an Active Target Under Sensing Constraints'
+authors:
+  - 'Prajakta Surve'
+  - 'Shaunak Dattaprasad Bopardikar'
+  - 'Alexander Von Moll'
+  - 'Isaac E. Weintraub'
+  - 'David W. Casbeer'
+year: '2025'
+url: 'https://api.semanticscholar.org/CorpusID:283959873'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Surve2025HeterogeneousPO]
+```

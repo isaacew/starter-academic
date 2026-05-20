@@ -6,6 +6,8 @@ authors:
   - 'Meir Pachter'
 doi: '10.48550/arXiv.2405.05725'
 image: 'featured.jpg'
+short_abstract: |
+  A turn-constrained evader strives to escape a circular region in minimum time.
 abstract: |
   A turn-constrained evader strives to escape a circular region in minimum time.
 ---
