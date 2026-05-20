@@ -1,0 +1,33 @@
+---
+title: 'On Improving the Potential Field Method for Ring Formation'
+authors:
+  - 'Dzung Tran'
+  - 'David Casbeer'
+  - 'Isaac Weintraub'
+  - 'Dejan Milutinovic'
+year: '2022'
+doi: '10.23919/ACC53348.2022.9867582'
+url: 'https://www.semanticscholar.org/paper/4995c62f53232f43b69d5ffb2e29ad7217c3781f'
+image: 'featured.jpg'
+abstract: |
+  In the ring formation control problem, the follower is designated to approach
+  a ring defined relative to the leader. This type of formation gives the
+  follower more flexibility as it trails the leader. To achieve such formation,
+  the follower’s reference velocity is derived using the potential field method,
+  and then a sliding surface is constructed to enforce the follower to track the
+  reference. Motivated by the Levenberg-Marquardt algorithm, this paper proposes
+  modifications on the potential field method to further enhance the follower’s
+  performance in the ring formation. Specifically, adding the approximated
+  Hessian into the formulation of the potential field has a damping effect on
+  the controller and improves the follower’s performance by reducing
+  oscillations about the sliding surface. The use of the approximated Hessian,
+  which is introduced in this paper in the context of ring formation, extends
+  and is useful for control design of potential field methods in general. The
+  proposed algorithm is discussed and interpreted from the feedback control
+  viewpoint, where stability is guaranteed. A numerical example is also
+  presented to illustrate the efficacy of the proposed algorithm.
+---
+
+```{=markdown}
+[@tran2022improving]
+```

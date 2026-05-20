@@ -1,0 +1,30 @@
+---
+title: 'Engagement Zone Defense of a Non-Maneuvering Evader'
+authors:
+  - 'Isaac Weintraub'
+  - 'Alexander Von Moll'
+  - 'David Casbeer'
+  - 'Eloy Garcia'
+  - 'Meir Pachter'
+year: '2021'
+doi: '10.1109/CCTA48906.2021.9659042'
+url: 'https://www.semanticscholar.org/paper/624967590604d542af16039b2412e5a4015914ea'
+image: 'featured.jpg'
+abstract: |
+  This paper considers a three agent scenario consisting of a pursuer, evader,
+  and a defender. The pursuer’s objective is to capture the non-maneuvering
+  evader in minimum time while a defender aims at maximize contact with the
+  pursuer by keeping the pursuer inside his circular engagement zone for as long
+  as possible; the pursuer is considered to be faster than both the evader and
+  the defender. Using optimal control theory, the optimal control for the
+  defender that maximizes contact with the pursuer is posed and solved. In the
+  event that the evader is captured by the pursuer before the pursuer escapes
+  the engagement zone of the defender, some suboptimal strategies of the
+  defender provide equivalent contact time. A derivation of defender’s headings
+  that maximize contact is presented along with examples that highlight the
+  importance of the initial conditions of the engagement scenario.
+---
+
+```{=markdown}
+[@weintraub2021engagement]
+```

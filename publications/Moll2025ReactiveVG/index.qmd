@@ -1,0 +1,13 @@
+---
+title: 'Reactive Vehicle Guidance Using Dynamic Maneuvering Cue'
+authors:
+  - 'Alexander Von Moll'
+  - 'Isaac E. Weintraub'
+year: '2025'
+url: 'https://api.semanticscholar.org/CorpusID:283721994'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Moll2025ReactiveVG]
+```

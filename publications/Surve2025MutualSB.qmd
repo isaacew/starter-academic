@@ -1,0 +1,16 @@
+---
+title: 'Mutual Support by Sensor-Attacker Team for a Passive Target'
+authors:
+  - 'Prajakta Surve'
+  - 'Shaunak Dattaprasad Bopardikar'
+  - 'Alexander Von Moll'
+  - 'Isaac E. Weintraub'
+  - 'David W. Casbeer'
+year: '2025'
+url: 'https://api.semanticscholar.org/CorpusID:281203290'
+image: 'images/publications/Surve2025MutualSB.jpg'
+---
+
+```{=markdown}
+[@Surve2025MutualSB]
+```

@@ -1,0 +1,13 @@
+---
+title: "Acc2024"
+subtitle: ""
+summary: ""
+author: []
+tags: []
+categories: []
+date: 2022-10-01
+draft: true
+image: ""
+---
+
+Content for the Acc2024 post can be added here. This file was created by converting the front matter from `content/post/acc2024/index.md` into Quarto's YAML format.

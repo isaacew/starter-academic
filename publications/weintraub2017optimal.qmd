@@ -1,0 +1,16 @@
+---
+title: 'An Optimal Aircraft Defense Strategy for the Active Target Defense Scenario'
+authors:
+  - 'Isaac Weintraub'
+  - 'Eloy Garcia'
+  - 'David Casbeer'
+  - 'Meir Pachter'
+year: '2017'
+doi: '10.2514/6.2017-1917'
+url: 'https://www.semanticscholar.org/paper/dbd08dcc1a26f57a2fe8299c19b309f1fbe5f58f'
+image: 'images/publications/weintraub2017optimal.jpg'
+---
+
+```{=markdown}
+[@weintraub2017optimal]
+```

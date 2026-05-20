@@ -1,0 +1,15 @@
+---
+title: 'Structural Technology Evaluation and Analysis Program (STEAP). Delivery Order 0035: Dynamics and Control and Computational Design of Flapping Wing Micro Air Vehicles'
+authors:
+  - 'David O Sigthorsson'
+  - 'Isaac Weintraub'
+  - 'Christopher Smithson'
+year: '2012'
+doi: '10.21236/ada582345'
+url: 'https://apps.dtic.mil/sti/pdfs/ADA582345.pdf'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@sigthorsson2012steap]
+```

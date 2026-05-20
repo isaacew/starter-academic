@@ -1,0 +1,14 @@
+---
+title: 'Optimal Trajectories for Multiple-UAS Simultaneous Target Acquisition with Obstacle Avoidance'
+authors:
+  - 'Michael D. Zollars'
+  - 'David J. Grymin'
+  - 'Isaac E. Weintraub'
+year: '2023'
+url: 'https://api.semanticscholar.org/CorpusID:257833795'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@Zollars2023OptimalTF]
+```

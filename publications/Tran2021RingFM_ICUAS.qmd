@@ -1,0 +1,16 @@
+---
+title: 'Ring Formation Maneuvering with Double Integrator Dynamics*'
+authors:
+  - 'Dzung Tran'
+  - 'David W. Casbeer'
+  - "Eloy Garc{\\'i}a"
+  - 'Isaac E. Weintraub'
+  - "Dejan Milutinovi{\\'c}"
+year: '2021'
+url: 'https://api.semanticscholar.org/CorpusID:236187935'
+image: 'images/publications/Tran2021RingFM_ICUAS.jpg'
+---
+
+```{=markdown}
+[@Tran2021RingFM_ICUAS]
+```

@@ -1,0 +1,27 @@
+---
+title: "About"
+image: images/weintraubdec2020.png
+---
+
+## Isaac Weintraub
+
+Senior Electronics Engineer, Autonomous Controls branch, Power and Control division, Aerospace Systems Directorate, Air Force Research Laboratory.
+
+My research includes the use of optimization and differential games for aerospace applications, with interests in
+
+- Autonomous control of aerospace systems
+- Optimal control and differential games
+- Nonlinear feedback control
+
+I received my PhD in Electrical Engineering from the Air Force Institute of Technology in 2021, my MS in Electrical Engineering from the University of Texas at Arlington in 2011, and my BS in Mechanical Engineering from Rose-Hulman Institute of Technology in 2009. I am currently an associate fellow of the American Institute of Aeronautics and Astronautics (AIAA) and a senior member of the Institute of Electrical and Electronics Engineers (IEEE). I am a member of the Intelligent Systems Technical Committee (ISTC) in the AIAA and an active member of both the Robotics and Automation Society (RAS) and the Control Systems Society (CSS) in the IEEE. My research interests lie in automation and control of aerospace systems for defense applications.
+
+### Selected Profiles and Links
+
+- Google Scholar: <https://scholar.google.com/citations?user=Re7-TLgAAAAJ&hl=en>
+- Publons: <https://publons.com/researcher/4706316/isaac-weintraub/>
+- ORCID: <https://orcid.org/0000-0003-2209-2500>
+- IEEE Xplore: <https://ieeexplore.ieee.org/author/37086423160>
+- AIAA: <https://arc.aiaa.org/author/Weintraub%2C+Isaac+E>
+- YouTube: <https://www.youtube.com/channel/UCzD4oozaIrhqJGHrol70zbg>
+
+You can reach me at `isaac.weintraub.1@afrl.af.mil`.

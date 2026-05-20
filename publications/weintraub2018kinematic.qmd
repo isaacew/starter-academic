@@ -1,0 +1,28 @@
+---
+title: 'A Kinematic Rejoin Method for Active Defense of Non-Maneuverable Aircraft'
+authors:
+  - 'Isaac E Weintraub'
+  - 'Eloy Garcia'
+  - 'Meir Pachter'
+year: '2018'
+doi: '10.23919/ACC.2018.8431129'
+url: 'https://www.semanticscholar.org/paper/3b1b9d6cb8ce8db4b6efb73ad562a96120a94e83'
+image: 'images/publications/weintraub2018kinematic.jpg'
+abstract: |
+  An engagement scenario involving the defense of a valuable and non-
+  maneuverable aircraft is investigated in this paper. An Attacker missile
+  pursuing a Target aircraft and a Defender missile which aims at intercepting
+  the Attacker in order to protect the Target aircraft are considered. A zero-
+  sum differential game is formulated where the objective of the Attacker is to
+  minimize the terminal distance with respect to the Target aircraft and the
+  objective of the Defender is to maximize the terminal Attacker-Target
+  separation at the time of intercepting the Attacker. The saddle point state-
+  feedback strategies for the Attacker and the Defender are obtained; these
+  strategies are compared to other heuristic approaches. It is shown that better
+  performance is obtained by implementation of the saddle point strategies
+  derived in this paper.
+---
+
+```{=markdown}
+[@weintraub2018kinematic]
+```

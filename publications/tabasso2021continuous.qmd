@@ -1,0 +1,32 @@
+---
+title: 'Continuous Monitoring of a Path-Constrained Moving Target by Multiple Unmanned Aerial Vehicles'
+authors:
+  - 'Camilla Tabasso'
+  - 'Calvin Kielas-Jensen'
+  - 'Venanzio Cichella'
+  - 'Satyanarayana Manyam'
+  - 'David W. Casbeer'
+  - 'Isaac Weintraub'
+year: '2021'
+doi: '10.2514/1.G006043'
+url: 'https://www.semanticscholar.org/paper/e15373b4d648f5f64a03e01b1b7875a34b388bfc'
+image: 'images/publications/tabasso2021continuous.jpg'
+abstract: |
+  In this work, a continuous monitoring scenario where multiple unmanned aerial
+  vehicles are tasked to monitor a dynamic target moving along a path with
+  unknown speed profile is addressed. Optimal trajectories based on the nominal
+  trajectory of the target are generated offline. If changes in the speed
+  profile of the target are detected, the agents’ trajectories can be modified
+  online to ensure that the monitoring requirements are met, while still
+  maintaining intervehicle safety guarantees. The time-coordination algorithm
+  proposed as a solution to this problem is based on a leader–follower
+  structure. The unmanned aerial vehicles are assumed to exchange information
+  over a communication network where limited quality of service, switching
+  topologies, and data package dropouts are considered. Finally, performance
+  bounds and simulation results to prove the efficacy of our method are
+  provided.
+---
+
+```{=markdown}
+[@tabasso2021continuous]
+```

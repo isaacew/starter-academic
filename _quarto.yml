@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+
+website:
+  title: "Isaac Weintraub"
+  site-url: "https://isaacew.netlify.app/"
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Publications"
+        href: publications.qmd
+      - text: "Talks"
+        href: talks.qmd
+      - text: "Contact"
+        href: contact.qmd
+      - text: "Posts"
+        href: posts.qmd
+  page-footer:
+    center: "© {year} Isaac Weintraub"
+
+format:
+  html:
+    theme:
+      dark: darkly
+    toc: true
+    code-copy: true
+    smooth-scroll: true
+    css: styles.css
+    bibliography: publications.bib

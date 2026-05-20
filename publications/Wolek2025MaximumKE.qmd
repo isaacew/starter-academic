@@ -1,0 +1,15 @@
+---
+title: 'Maximum Kinetic Energy Paths for a Decaying-Speed Dubins Vehicle'
+authors:
+  - 'Artur Wolek'
+  - 'David W. Casbeer'
+  - 'Isaac E. Weintraub'
+  - 'Alexander Von Moll'
+year: '2025'
+url: 'https://api.semanticscholar.org/CorpusID:276325511'
+image: 'images/publications/Wolek2025MaximumKE.jpg'
+---
+
+```{=markdown}
+[@Wolek2025MaximumKE]
+```

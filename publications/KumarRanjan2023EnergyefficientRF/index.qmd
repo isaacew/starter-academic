@@ -1,0 +1,18 @@
+---
+title: 'Energy-efficient Ring Formation Control with Constrained Inputs'
+authors:
+  - 'Praveen Kumar Ranjan'
+  - 'Abhinav Sinha'
+  - 'Yongcan Cao'
+  - 'Dzung Tran'
+  - 'David W. Casbeer'
+  - 'Isaac E. Weintraub'
+year: '2023'
+doi: '10.2514/6.2023-2642'
+url: 'https://api.semanticscholar.org/CorpusID:256163225'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@KumarRanjan2023EnergyefficientRF]
+```

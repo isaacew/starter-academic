@@ -1,0 +1,24 @@
+---
+title: "Virtual Target Selection for a Multiple-Pursuer Multiple-Evader Scenario"
+event: "AIAA SciTech"
+event_url: "https://www.aiaa.org/SciTech"
+location: "Orlando, FL"
+address: "9801 International Drive, Orlando, FL 32819, United States of America"
+date: 2024-01-08T11:19:51-05:00
+date_end: 2024-01-12T11:19:51-05:00
+all_day: true
+publishDate: 2023-12-08T11:19:51-05:00
+authors:
+  - "Isaac E. Weintraub"
+  - "Alexander Von Moll"
+  - "David Casbeer"
+  - "Satyanarayana G. Manyam"
+tags: []
+featured: false
+draft: true
+url_slides: ""
+projects: []
+---
+
+Details, abstract, or links to additional material for this talk can be added here. This entry was converted from `content/talk/SciTech2023/index.md`.
+

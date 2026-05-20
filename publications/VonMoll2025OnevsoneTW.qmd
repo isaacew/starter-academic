@@ -1,0 +1,15 @@
+---
+title: 'One-vs-one Threat-Aware Weaponeering with Basic Engagement Zones'
+authors:
+  - 'Alexander Von Moll'
+  - "Dejan Milutinovi{\\'c}"
+  - 'Isaac E. Weintraub'
+  - 'David W. Casbeer'
+year: '2025'
+url: 'https://api.semanticscholar.org/CorpusID:276937890'
+image: 'images/publications/VonMoll2025OnevsoneTW.jpg'
+---
+
+```{=markdown}
+[@VonMoll2025OnevsoneTW]
+```

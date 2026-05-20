@@ -1,0 +1,24 @@
+---
+title: "Engagement Zone Defense of a Non-Maneuvering Evader"
+event: "Conference on Control Tehnology and Applications"
+event_url: "https://ccta2021.ieeecss.org/"
+location: "San Diego, CA / Virtual"
+date: 2021-08-09T10:20:03Z
+date_end: 2021-08-09T10:40:03Z
+all_day: false
+publishDate: 2021-08-09T10:40:00-05:00
+authors:
+  - "Isaac Weintraub"
+  - "Alexander Von Moll"
+  - "David Casbeer"
+  - "Eloy Garcia"
+  - "Meir Pachter"
+tags: []
+featured: false
+url_slides: ""
+url_video: "https://youtu.be/Zy6ir5e-Fbo"
+projects: []
+---
+
+Details, abstract, or links to additional material for this talk can be added here. This entry was converted from `content/talk/CCTA2021/index.md`.
+

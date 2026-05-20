@@ -1,0 +1,12 @@
+---
+title: 'Pure Pursuit of a Target on a Circular Trajectory'
+authors:
+  - 'Alexander Von Moll'
+  - 'David W. Casbeer'
+  - 'Isaac E. Weintraub'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@vonmoll2024pure]
+```

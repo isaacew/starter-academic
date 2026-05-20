@@ -1,0 +1,34 @@
+---
+title: 'A Leader-Follower Control Strategy Built and Refined using Relational Maneuver Primitives for Approximating Optimal Trajectories in Real-Time'
+authors:
+  - 'Carl Gotwald'
+  - 'Michael D. Zollars'
+  - 'Jonah A. Reeger'
+  - 'Isaac E. Weintraub'
+year: '2024'
+doi: '10.2514/6.2024-2760'
+url: 'https://www.semanticscholar.org/paper/264da47d1694a0d500ebd34a881de323bfc7806f'
+image: 'featured.jpg'
+abstract: |
+  The work herein presents a new approach to aircraft control within a leader-
+  follower formation, and the refinement process used in its development. During
+  autonomous flight, a follower aircraft is tasked to rejoin and maintain a
+  designated formation position, which is defined dynamically in reference to a
+  maneuvering leader aircraft. Simple control algorithms, named Relational
+  Maneuver Primitives, are intelligently combined into a control strategy such
+  that the autonomous follower aircraft’s response approximates the optimal
+  trajectory. This research specifically addresses the control strategy
+  refinement process where a genetic algorithm is implemented to determine the
+  appropriate selection of Relational Maneuver Primitives based on the Time-To-
+  Go between the follower aircraft and the desired goal position. The control
+  strategy takes the form of a lookup table database based on the current state
+  of the follower aircraft which provides the autopilot with the appropriate
+  Relational Maneuver Primitive to use over the next time step. Two test cases
+  are presented which demonstrate a 36% and 48% reduction in error between the
+  follower response trajectory and the follower optimal trajectory when compared
+  to using a single Relational Maneuver Primitive.
+---
+
+```{=markdown}
+[@gotwald2024leader]
+```

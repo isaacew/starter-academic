@@ -1,32 +1,65 @@
-<p align="center"><a href="https://wowchemy.com" target="_blank" rel="noopener"><img src="https://wowchemy.com/img/logo_200px.png" alt="Wowchemy Website Builder"></a></p>
+# Personal Website (Quarto)
 
-# Academic Template for [Hugo](https://github.com/gohugoio/hugo)
+This repository contains the source for Isaac Weintraub's personal academic website. The site is built with [Quarto](https://quarto.org) and has been migrated from the original Hugo/Wowchemy-based starter template.
 
-The Hugo **Academic Resumé Template** empowers you to create your job-winning online resumé and showcase your academic publications.
+## Project structure
 
-[Check out the latest demo](https://academic-demo.netlify.app) of what you'll get in less than 10 minutes, or [view the showcase](https://wowchemy.com/user-stories/).
+- `_quarto.yml` – Quarto project configuration (website, theme, navbar, etc.).
+- `index.qmd` – Homepage with photo and short biography.
+- `about.qmd` – Detailed biography and links to scholarly profiles.
+- `publications/` – One folder per publication (generated from `publications.bib`).
+- `talks/` – Quarto pages for talks and presentations.
+- `styles.css` – Custom CSS for layout, dark theme, and publication cards.
+- `scripts/` – Helper scripts for managing content and metadata.
 
-[**Wowchemy**](https://wowchemy.com) makes it easy to create a beautiful website for free. Edit your site in Markdown, Jupyter, or RStudio (via Blogdown), generate it with Hugo, and deploy with GitHub or Netlify. Customize anything on your site with widgets, themes, and language packs.
+## Publications workflow
 
-- 👉 [**Get Started**](https://wowchemy.com/docs/install/)
-- 📚 [View the **documentation**](https://wowchemy.com/docs/)
-- 💬 [Chat with the **Wowchemy community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
-- 🐦 Twitter: [@wowchemy](https://twitter.com/wowchemy) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithWowchemy](https://twitter.com/search?q=(%23MadeWithWowchemy%20OR%20%23MadeWithAcademic)&src=typed_query)
-- 💡 [Request a **feature** or report a **bug** for _Wowchemy_](https://github.com/wowchemy/wowchemy-hugo-modules/issues)
-- ⬆️ **Updating Wowchemy?** View the [Update Guide](https://wowchemy.com/docs/update/) and [Release Notes](https://wowchemy.com/updates/)
+Publications are managed via a BibTeX file and generator script:
 
-## Crowd-funded open-source software
+- `publications.bib` is the source of truth for publication metadata (titles, authors, years, venues, DOIs, URLs, abstracts).
+- `scripts/generate_publications_from_bib.py` reads `publications.bib` and generates one Quarto page per entry:
+  - Output structure: `publications/<Key>/index.qmd`.
+  - Front matter fields include `title`, `authors`, `year`, `doi`, `url`, `image`, and `abstract`.
+  - A citation block using the BibTeX key is included in the page body.
 
-To help us develop this template and software sustainably under the MIT license, we ask all individuals and businesses that use it to help support its ongoing maintenance and development via sponsorship.
+Publications are listed on `publications.qmd` using a custom card layout:
 
-### [❤️ Click here to unlock rewards with sponsorship](https://wowchemy.com/plans/)
+- `_templates/publication-card.html` defines the layout for each publication "tile":
+  - Bold title linking to the individual publication page.
+  - Year and venue (journal/conference) shown under the title.
+  - Authors and optional abstract in smaller text.
+  - Optional featured image, configured via `image: 'featured.jpg'` in the publication's front matter.
+  - Links for URL/DOI/PDF along the bottom of the card.
 
-## Ecosystem
+To regenerate publication pages after editing `publications.bib`:
 
-* **[Wowchemy Admin](https://github.com/wowchemy/wowchemy-admin/):** An admin tool to import publications from BibTeX
+```bash
+python scripts/generate_publications_from_bib.py
+```
 
-[![Screenshot](https://raw.githubusercontent.com/wowchemy/wowchemy-hugo-modules/master/academic.png)](https://wowchemy.com)
+Then preview the site locally with:
 
-<!--
-[![Analytics](https://ga-beacon.appspot.com/UA-78646709-2/academic-kickstart/readme?pixel)](https://github.com/igrigorik/ga-beacon)
--->
+```bash
+quarto preview
+```
+
+## Duplicate title checking
+
+To help maintain a clean bibliography where each title is unique, the script `scripts/check_duplicate_publication_titles.py` scans `publications.bib` and reports any titles that appear more than once.
+
+Run:
+
+```bash
+python scripts/check_duplicate_publication_titles.py
+```
+
+This script does not modify any files; it is intended as a safety check before regenerating publication pages.
+
+## Development
+
+- Use `python` to run helper scripts under `scripts/`.
+- Use `quarto preview` during development to serve the site locally.
+- Edit content in the corresponding `.qmd` files (e.g., `index.qmd`, `about.qmd`, `publications/<Key>/index.qmd`, `talks/*.qmd`).
+
+The original Hugo/Wowchemy README has been replaced with this Quarto-focused description.
+

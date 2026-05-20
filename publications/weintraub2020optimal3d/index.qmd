@@ -1,0 +1,31 @@
+---
+title: 'An Optimal Guidance Strategy for the Defense of a Non-Maneuverable Target in 3-D'
+authors:
+  - 'Isaac Weintraub'
+  - 'Eloy Garcia'
+  - 'Meir Pachter'
+year: '2020'
+doi: '10.1049/iet-cta.2019.0541'
+url: 'https://ietresearch.onlinelibrary.wiley.com/doi/pdfdirect/10.1049/iet-cta.2019.0541'
+image: 'featured.jpg'
+abstract: |
+  An engagement scenario involving the defence of a non-manoeuvrable agent,
+  called the Target, is considered. A pursuing agent, engages the non-
+  manoeuvrable Target while a defending agent, which aims at intercepting the
+  Pursuer to protect the Target, is considered in 3-dimensions. A zero-sum
+  differential game is formulated where the objective of the Defender is to
+  capture the Pursuer and maximise the terminal Pursuer-Target range at final
+  time; while the Pursuer aims at minimising the terminal Pursuer-Target range
+  at final time. The terminal time is not fixed and is determined by the
+  interception of the Pursuer by the Defender. The saddle point state-feedback
+  strategies for the Pursuer and the Defender are obtained using a gradient-
+  based minimisation routine. A comparison of the saddle point strategy against
+  a heuristic approach, Pure Pursuit, is conducted. The comparison demonstrates
+  that poorer performance is achieved by players who deviate from the optimal
+  saddle point strategy; and, as a result, the saddle point strategies
+  outperform the heuristic method.
+---
+
+```{=markdown}
+[@weintraub2020optimal3d]
+```

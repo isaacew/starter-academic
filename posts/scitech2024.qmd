@@ -1,0 +1,13 @@
+---
+title: "2024 AIAA SciTech"
+subtitle: ""
+summary: "The AIAA Science and Technology Forum and Exposition (AIAA SciTech Forum) program covers the science, technologies, and policies that are shaping the future of aerospace. The forum is the largest event for aerospace research, development, and technology in the world—bringing together 11 individual technical disciplines. AIAA SciTech Forum delegates include over 1,500 undergraduate and graduate students, and aerospace professionals from nearly 1,000 corporate, academic, and government institutions in 43 countries."
+author: []
+tags: []
+categories: []
+date: 2023-01-08
+draft: true
+image: ""
+---
+
+Content for the 2024 AIAA SciTech post can be added here. This file was created by converting the front matter from `content/post/scitech2024/index.md` into Quarto's YAML format.

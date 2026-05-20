@@ -1,0 +1,16 @@
+---
+title: 'Wing Flexibility Induced Control Reversal For Flapping Wing Vehicles: Observation and Evaluation'
+authors:
+  - 'David Sigthorsson'
+  - 'Michael W Oppenheimer'
+  - 'David B Doman'
+  - 'Isaac Weintraub'
+year: '2017'
+doi: '10.2514/6.2017-1273'
+url: 'https://www.semanticscholar.org/paper/e997d8d2a4e3fdb48b075da89e8902f5e4005490'
+image: 'images/publications/sigthorsson2017wingobservation.jpg'
+---
+
+```{=markdown}
+[@sigthorsson2017wingobservation]
+```

@@ -1,0 +1,46 @@
+<div class="pub-card">
+  {% if item.image %}
+  <div class="pub-card-image">
+    <img src="{{ item.image | relative_url }}" alt="{{ item.title }}">
+  </div>
+  {% endif %}
+  <div class="pub-card-body">
+    <h3 class="pub-card-title">
+      <a href="{{ item.url_path | relative_url }}">{{ item.title }}</a>
+    </h3>
+
+    <div class="pub-card-meta">
+      {% if item.year %}
+      <span class="pub-year">{{ item.year }}</span>
+      {% endif %}
+      {% if item.journal %}
+      <span class="pub-venue">{{ item.journal }}</span>
+      {% endif %}
+    </div>
+
+    {% if item.authors %}
+    <div class="pub-authors">
+      {{ item.authors | join(", ") }}
+    </div>
+    {% endif %}
+
+    {% if item.abstract %}
+    <div class="pub-abstract">
+      {{ item.abstract }}
+    </div>
+    {% endif %}
+
+    <div class="pub-links">
+      {% if item.url %}
+      <a href="{{ item.url }}" class="pub-link">Link</a>
+      {% endif %}
+      {% if item.doi %}
+      <a href="https://doi.org/{{ item.doi }}" class="pub-link">DOI</a>
+      {% endif %}
+      {% if item.pdf %}
+      <a href="{{ item.pdf | relative_url }}" class="pub-link">PDF</a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+

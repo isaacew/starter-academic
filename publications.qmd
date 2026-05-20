@@ -1,0 +1,8 @@
+---
+title: "Publications"
+listing:
+  contents: publications
+  type: default
+  sort: "date desc"
+  template: _templates/publication-card.html
+---

@@ -1,0 +1,35 @@
+---
+title: 'Energy-aware 3D Leader-Follower Flight Trajectory Optimization for Fixed-Wing Aircraft'
+authors:
+  - 'Praveen Ranjan'
+  - 'Johnathan Votion'
+  - 'Yongcan Cao'
+  - 'Dzung M Tran'
+  - 'David Casbeer'
+  - 'Isaac E Weintraub'
+year: '2022'
+doi: '10.2514/6.2022-2217'
+url: 'https://www.semanticscholar.org/paper/6346f8921f6bf6d5055a47d3bfbe18be6ae2dd92'
+image: 'images/publications/ranjan2022energy.jpg'
+abstract: |
+  This paper focuses on optimizing the 3D flight trajectory of a fixed-wing
+  follower aircraft in a leader-follower formation scenario. Instead of a rigid
+  formation, the desired formation is defined as set of points configured as a
+  ring located behind the leader. Both the leader and the wingman aircraft are
+  modeled by high order dynamics. In particular, we formulate the optimization
+  problem under three different system structures: (i) naturally constrained,
+  (ii) ring angle constrained, and (iii) controller constrained. These system
+  structures reflect the variation of possible inputs to the system under
+  different levels of control freedom, from an unknown control structure to a
+  known control structure. The optimization objective is to minimize the thrust
+  profile so that the follower minimizes its consumed energy while also
+  maintaining the desired wingman formation. Our simulation studies demonstrate
+  that optimized solutions are attainable for all three cases. Moreover, for a
+  naturally constrained system, there exists a convergent steady-state solution
+  for the wingman’s position along the ring structure that represents a global
+  solution, regardless of the wingman’s initial states.
+---
+
+```{=markdown}
+[@ranjan2022energy]
+```

@@ -1,0 +1,31 @@
+---
+title: 'Ring Formation Maneuvering with Double Integrator Dynamics'
+authors:
+  - 'Dzung Tran'
+  - 'David Casbeer'
+  - 'Eloy Garcia'
+  - 'Isaac E Weintraub'
+  - 'Dejan Milutinović'
+year: '2021'
+doi: '10.1109/ICUAS51884.2021.9476770'
+url: 'https://www.semanticscholar.org/paper/a17a0d2d702e7da45b9760b3e43ec4e7c4a7cb89'
+image: 'images/publications/tran2021ringdoubleicuas.jpg'
+abstract: |
+  Conventional leader-follower formations restrict the follower to a single
+  desired position relative to the leader. To give the follower more flexibility
+  in motion and to replicate typical human pilot operations, in this paper we
+  propose a control architecture allowing the follower to converge to a ring,
+  which is a set of desired points, relative to the leader. The follower is
+  considered subject to a point-mass aircraft model, which can be transformed
+  into the double integrator kinematics. For that reason, the nonlinear
+  backstepping method is first utilized to design the controller for the double
+  integrator kinematics with input saturation constraints being taken into
+  account. The controller is then converted into control variables for the
+  point-mass model. The stability of the proposed architecture is analyzed.
+  Finally, a numerical example is presented to illustrate the efficacy of the
+  proposed controller.
+---
+
+```{=markdown}
+[@tran2021ringdoubleicuas]
+```

@@ -1,0 +1,33 @@
+---
+title: 'Modeling and Detection of Cyber-Attacks in UAV Swarms using a 2D-LWR Model and Gaussian Processes'
+authors:
+  - 'Abhishek Kashyap'
+  - 'Animesh Chakravarthy'
+  - 'Kamesh Subbarao'
+  - 'David Casbeer'
+  - 'Isaac E. Weintraub'
+  - 'Brandon Hencey'
+year: '2024'
+doi: '10.2514/6.2024-0529'
+url: 'https://www.semanticscholar.org/paper/8b090ac87f107b0531e1b21bca269255fae2856a'
+image: 'images/publications/kashyap2024modeling.jpg'
+abstract: |
+  This paper considers a class of cyber-attacks attacking a swarm of Unmanned
+  Aerial Vehicles (UAVs). Our focus is on scenarios wherein an attacker may hack
+  into a subset of vehicles in the swarm and create subtle changes in their
+  parameters. These hacked vehicles (referred to as malicious vehicles) are
+  subsequently able to modify the behavior of the overall swarm. The swarm
+  comprising the mix of malicious and normal vehicles is modeled using a system
+  of coupled Partial Differential Equations (PDEs) in a two-dimensional LWR
+  model. We develop a methodology that combines Gaussian Processes (GP) with
+  this two-species 2D PDE model, and use this method for detecting the presence
+  of such malicious vehicles in the swarm. A Bayesian Optimization scheme is
+  employed to determine the optimal choice of basis and kernel functions that
+  constitute the GP. Simulation results demonstrate that this detection
+  architecture performs successful detection of the malicious vehicles, and also
+  their mode of attack on the traffic.
+---
+
+```{=markdown}
+[@kashyap2024modeling]
+```

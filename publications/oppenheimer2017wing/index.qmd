@@ -1,0 +1,16 @@
+---
+title: 'Wing Design and Testing for a Tailless Flapping Wing Micro-Air Vehicle'
+authors:
+  - 'Michael W. Oppenheimer'
+  - 'David Sigthorsson'
+  - 'David B. Doman'
+  - 'Isaac Weintraub'
+year: '2017'
+doi: '10.2514/6.2017-1271'
+url: 'https://www.semanticscholar.org/paper/b8c5a8059467ca064a2374cf6572afa1862c9a40'
+image: 'featured.jpg'
+---
+
+```{=markdown}
+[@oppenheimer2017wing]
+```

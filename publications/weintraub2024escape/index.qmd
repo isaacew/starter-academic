@@ -1,0 +1,15 @@
+---
+title: 'Minimum Time Escape from a Circular Region of a Dubins Car'
+authors:
+  - 'Isaac E. Weintraub'
+  - 'Alexander Von Moll'
+  - 'Meir Pachter'
+doi: '10.48550/arXiv.2405.05725'
+image: 'featured.jpg'
+abstract: |
+  A turn-constrained evader strives to escape a circular region in minimum time.
+---
+
+```{=markdown}
+[@weintraub2024escape]
+```
