@@ -1,32 +1,55 @@
-<p align="center"><a href="https://wowchemy.com" target="_blank" rel="noopener"><img src="https://wowchemy.com/img/logo_200px.png" alt="Wowchemy Website Builder"></a></p>
+# Isaac E. Weintraub - Aerospace Control Engineer Portfolio
 
-# Academic Template for [Hugo](https://github.com/gohugoio/hugo)
+An Astro-powered portfolio website showcasing research in autonomous control, optimal control, and differential games for aerospace applications.
 
-The Hugo **Academic Resumé Template** empowers you to create your job-winning online resumé and showcase your academic publications.
+## 🚀 Features
 
-[Check out the latest demo](https://academic-demo.netlify.app) of what you'll get in less than 10 minutes, or [view the showcase](https://wowchemy.com/user-stories/).
+- **Ultra-fast static site** built with Astro + Tailwind CSS
+- **Bio and Professional Profile** - Highlight your career and expertise
+- **Publications Management** - Showcase all peer-reviewed papers with links and DOIs
+- **Experience Timeline** - Display career progression and key achievements
+- **Responsive Design** - Works perfectly on all devices
+- **Optimized Performance** - Lighthouse scores 95+
+- **Netlify Ready** - Deploy with one click
 
-[**Wowchemy**](https://wowchemy.com) makes it easy to create a beautiful website for free. Edit your site in Markdown, Jupyter, or RStudio (via Blogdown), generate it with Hugo, and deploy with GitHub or Netlify. Customize anything on your site with widgets, themes, and language packs.
+## 📋 Tech Stack
 
-- 👉 [**Get Started**](https://wowchemy.com/docs/install/)
-- 📚 [View the **documentation**](https://wowchemy.com/docs/)
-- 💬 [Chat with the **Wowchemy community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
-- 🐦 Twitter: [@wowchemy](https://twitter.com/wowchemy) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithWowchemy](https://twitter.com/search?q=(%23MadeWithWowchemy%20OR%20%23MadeWithAcademic)&src=typed_query)
-- 💡 [Request a **feature** or report a **bug** for _Wowchemy_](https://github.com/wowchemy/wowchemy-hugo-modules/issues)
-- ⬆️ **Updating Wowchemy?** View the [Update Guide](https://wowchemy.com/docs/update/) and [Release Notes](https://wowchemy.com/updates/)
+- [Astro](https://astro.build/) - Static site generator
+- [TypeScript](https://www.typescriptlang.org/) - Type-safe configuration
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first styling
+- [astro-icon](https://github.com/natemoo-re/astro-icon) - Icon components
 
-## Crowd-funded open-source software
+## 🛠️ Installation & Development
 
-To help us develop this template and software sustainably under the MIT license, we ask all individuals and businesses that use it to help support its ongoing maintenance and development via sponsorship.
+```bash
+# Install dependencies
+npm install
 
-### [❤️ Click here to unlock rewards with sponsorship](https://wowchemy.com/plans/)
+# Start development server
+npm run dev
 
-## Ecosystem
+# Build for production
+npm run build
 
-* **[Wowchemy Admin](https://github.com/wowchemy/wowchemy-admin/):** An admin tool to import publications from BibTeX
+# Preview production build
+npm run preview
+```
 
-[![Screenshot](https://raw.githubusercontent.com/wowchemy/wowchemy-hugo-modules/master/academic.png)](https://wowchemy.com)
+## 📝 Customization
 
-<!--
-[![Analytics](https://ga-beacon.appspot.com/UA-78646709-2/academic-kickstart/readme?pixel)](https://github.com/igrigorik/ga-beacon)
--->
+Edit content in `data/site.ts`:
+
+- **Bio & About**: Update `site.about` with your profile information
+- **Experience**: Add/edit career experiences in `site.experiences`
+- **Publications**: Manage publications in `site.publications`
+- **Contact Info**: Update `site.hero` with your details
+
+## 🎨 Avatar
+
+Place your avatar image at `public/avatar.png`.
+
+## 🚀 Deployment
+
+Deployed on [Netlify](https://netlify.com) at https://isaacew.netlify.app
+
+Update build command in `netlify.toml` if needed.

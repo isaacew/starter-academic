@@ -1,0 +1,82 @@
+---
+import { site } from '@data/site';
+
+interface Publication {
+  title: string;
+  year: number;
+  authors: string;
+  publication: string;
+  doi?: string;
+  type: string;
+  abstract: string;
+  url?: string;
+}
+
+interface Props {
+  publications: Publication[];
+  limit?: number;
+}
+
+const { publications, limit } = Astro.props;
+const displayedPubs = limit ? publications.slice(0, limit) : publications;
+---
+
+<section
+  id="publications"
+  class="mb-24 scroll-mt-24 lg:mb-32 lg:scroll-mt-8"
+  aria-labelledby="publications-heading"
+>
+  <h2 id="publications-heading" class="section-heading">Publications</h2>
+  <div class="reveal-content mt-8">
+    <div class="space-y-8">
+      {displayedPubs.map((pub) => (
+        <article class="space-y-3 border-b border-slate-subtle pb-8 last:border-0 last:pb-0">
+          <div class="space-y-1">
+            <h3 class="text-base font-semibold text-white-soft lg:text-lg">
+              {pub.url ? (
+                <a href={pub.url} target="_blank" rel="noreferrer" class="subtle-link hover:text-accent">
+                  {pub.title}
+                </a>
+              ) : (
+                pub.title
+              )}
+            </h3>
+            <p class="text-sm text-slate-light">
+              <span class="font-medium">{pub.authors}</span>
+            </p>
+            <p class="text-xs text-slate-lighter">
+              {pub.publication}
+              {pub.year && <span class="ml-2">({pub.year})</span>}
+              {pub.type && <span class="ml-2 rounded-full bg-slate-subtle px-2 py-0.5 text-xs">{pub.type}</span>}
+            </p>
+          </div>
+          {pub.abstract && (
+            <p class="text-sm leading-relaxed text-slate-lighter">{pub.abstract}</p>
+          )}
+          <div class="flex flex-wrap gap-3 pt-2">
+            {pub.doi && (
+              <a
+                href={`https://doi.org/${pub.doi}`}
+                target="_blank"
+                rel="noreferrer"
+                class="text-xs font-medium text-accent transition hover:text-slate-light"
+              >
+                DOI: {pub.doi}
+              </a>
+            )}
+            {pub.url && (
+              <a
+                href={pub.url}
+                target="_blank"
+                rel="noreferrer"
+                class="text-xs font-medium text-accent transition hover:text-slate-light"
+              >
+                View Paper
+              </a>
+            )}
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
