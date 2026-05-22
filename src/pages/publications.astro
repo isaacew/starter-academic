@@ -1,0 +1,286 @@
+---
+import ArchiveLayout from '../layouts/ArchiveLayout.astro';
+import { site } from '@data/site';
+import { Icon } from 'astro-icon/components';
+
+const publications = site.publications;
+
+const journalsCount = publications.filter(p => p.type === 'Journal').length;
+const conferencesCount = publications.filter(p => p.type === 'Conference').length;
+const preprintsCount = publications.filter(p => p.type === 'Preprint').length;
+const othersCount = publications.filter(p => !['Journal', 'Conference', 'Preprint'].includes(p.type)).length;
+
+const title = `Publications | ${site.hero.name}`;
+const description = `Academic publications and research papers by ${site.hero.name}.`;
+
+const base = import.meta.env.BASE_URL.endsWith('/')
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
+const homeHref = base;
+---
+
+<ArchiveLayout title={title} description={description}>
+  <p class="mb-8">
+    <a
+      href={homeHref}
+      class="group inline-flex items-center gap-2 text-sm text-accent transition hover:text-slate-light"
+      data-astro-prefetch
+    >
+      <Icon name="ph:arrow-left" class="h-4 w-4 transition-transform group-hover:-translate-x-1" />
+      {site.hero.name}
+    </a>
+  </p>
+
+  <h1 class="mb-6 text-4xl font-bold tracking-tight text-white sm:text-4xl">Publications</h1>
+
+  <p class="mb-10 max-w-prose text-slate-light leading-relaxed">
+    A comprehensive archive of my academic publications, journal articles, conference papers, and preprints on optimal control, autonomous aerospace systems, and differential games.
+  </p>
+
+  <!-- Search and Filtering UI -->
+  <div class="mb-8 space-y-6">
+    <!-- Search Input -->
+    <div class="relative max-w-md">
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Search by title, author, venue, year..."
+        class="w-full rounded-lg border border-slate-subtle/50 bg-slate-subtle/10 px-4 py-3 pl-10 pr-10 text-sm text-white-soft placeholder-slate-light focus:border-accent focus:bg-slate-subtle/20 focus:outline-none transition duration-300"
+      />
+      <span class="absolute left-3.5 top-3.5 h-4.5 w-4.5 text-slate-light flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="h-4.5 w-4.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+        </svg>
+      </span>
+      <button
+        id="clear-search"
+        class="absolute right-3.5 top-3 h-6.5 w-6.5 text-slate-light hover:text-white hidden flex items-center justify-center cursor-pointer transition duration-200"
+        aria-label="Clear search"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="h-5 w-5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="flex flex-wrap gap-2 border-b border-slate-subtle pb-6">
+      <button
+        class="px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-lg border border-slate-subtle/50 bg-slate-subtle/25 text-accent font-bold transition cursor-pointer"
+        data-filter="all"
+      >
+        All ({publications.length})
+      </button>
+      <button
+        class="px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-lg border border-transparent text-slate-light hover:text-white transition cursor-pointer"
+        data-filter="Journal"
+      >
+        Journals ({journalsCount})
+      </button>
+      <button
+        class="px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-lg border border-transparent text-slate-light hover:text-white transition cursor-pointer"
+        data-filter="Conference"
+      >
+        Conferences ({conferencesCount})
+      </button>
+      <button
+        class="px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-lg border border-transparent text-slate-light hover:text-white transition cursor-pointer"
+        data-filter="Preprint"
+      >
+        Preprints ({preprintsCount})
+      </button>
+      {othersCount > 0 && (
+        <button
+          class="px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-lg border border-transparent text-slate-light hover:text-white transition cursor-pointer"
+          data-filter="Other"
+        >
+          Other ({othersCount})
+        </button>
+      )}
+    </div>
+  </div>
+
+  <!-- Results Stats -->
+  <p id="results-count" class="mb-8 text-xs font-semibold uppercase tracking-wider text-slate-light/70">
+    Showing all {publications.length} publications
+  </p>
+
+  <!-- Empty State -->
+  <div id="empty-state" class="hidden py-16 text-center text-slate-light max-w-sm mx-auto">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mx-auto mb-4 h-12 w-12 text-slate-subtle/80">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
+    </svg>
+    <p class="text-base font-semibold text-white-soft">No publications match your filter</p>
+    <p class="text-sm text-slate-light mt-1">Try clearing your search query or choosing another tab filter.</p>
+  </div>
+
+  <!-- Publications Cards Grid -->
+  <div class="space-y-6" id="publications-list">
+    {publications.map((pub) => (
+      <article
+        class="pub-card group p-6 rounded-xl border border-slate-subtle/30 bg-slate-subtle/5 hover:bg-slate-subtle/10 hover:border-slate-subtle/70 transition-all duration-300 space-y-4"
+        data-title={pub.title.toLowerCase()}
+        data-authors={pub.authors.toLowerCase()}
+        data-venue={pub.publication.toLowerCase()}
+        data-year={pub.year}
+        data-type={pub.type}
+      >
+        <div class="space-y-2">
+          <div class="flex items-center justify-between gap-4">
+            <span class="rounded-full bg-slate-subtle/30 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-slate-lighter">
+              {pub.type}
+            </span>
+            <span class="font-mono text-xs text-slate-light font-medium">{pub.year}</span>
+          </div>
+          
+          <h3 class="text-base font-bold text-white-soft group-hover:text-accent transition duration-300 lg:text-lg">
+            {pub.url ? (
+              <a href={pub.url} target="_blank" rel="noreferrer" class="hover:underline">
+                {pub.title}
+              </a>
+            ) : (
+              pub.title
+            )}
+          </h3>
+
+          <p class="text-sm text-slate-lighter">
+            <span class="font-medium text-slate-light">{pub.authors}</span>
+          </p>
+
+          <p class="text-xs text-slate-light italic">
+            {pub.publication}
+          </p>
+        </div>
+
+        {pub.abstract && (
+          <p class="text-sm leading-relaxed text-slate-lighter/80">
+            {pub.abstract}
+          </p>
+        )}
+
+        <div class="flex flex-wrap gap-4 pt-2">
+          {pub.doi && (
+            <a
+              href={`https://doi.org/${pub.doi}`}
+              target="_blank"
+              rel="noreferrer"
+              class="inline-flex items-center gap-1 text-xs font-semibold text-accent hover:text-slate-light transition duration-200"
+            >
+              DOI: {pub.doi}
+            </a>
+          )}
+          {pub.url && (
+            <a
+              href={pub.url}
+              target="_blank"
+              rel="noreferrer"
+              class="inline-flex items-center gap-1 text-xs font-semibold text-accent hover:text-slate-light transition duration-200"
+            >
+              View Paper →
+            </a>
+          )}
+        </div>
+      </article>
+    ))}
+  </div>
+</ArchiveLayout>
+
+<script is:inline>
+  function setupFiltering() {
+    const searchInput = document.getElementById('search-input');
+    const clearSearch = document.getElementById('clear-search');
+    const tabs = document.querySelectorAll('[data-filter]');
+    const cards = document.querySelectorAll('.pub-card');
+    const resultsCount = document.getElementById('results-count');
+    const emptyState = document.getElementById('empty-state');
+    
+    if (!searchInput || !cards.length) return;
+
+    let activeFilter = 'all';
+    let searchQuery = '';
+
+    function filterPublications() {
+      let visibleCount = 0;
+
+      cards.forEach(card => {
+        const title = card.getAttribute('data-title') || '';
+        const authors = card.getAttribute('data-authors') || '';
+        const venue = card.getAttribute('data-venue') || '';
+        const year = card.getAttribute('data-year') || '';
+        const type = card.getAttribute('data-type') || '';
+
+        const matchesSearch = 
+          title.includes(searchQuery) ||
+          authors.includes(searchQuery) ||
+          venue.includes(searchQuery) ||
+          year.includes(searchQuery);
+
+        const matchesTab = 
+          activeFilter === 'all' || 
+          type === activeFilter ||
+          (activeFilter === 'Other' && !['Journal', 'Conference', 'Preprint'].includes(type));
+
+        if (matchesSearch && matchesTab) {
+          card.style.display = 'block';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      // Update count text
+      if (searchQuery || activeFilter !== 'all') {
+        resultsCount.textContent = `Showing ${visibleCount} of ${cards.length} publications`;
+      } else {
+        resultsCount.textContent = `Showing all ${cards.length} publications`;
+      }
+
+      // Show/hide empty state
+      if (visibleCount === 0) {
+        emptyState.classList.remove('hidden');
+      } else {
+        emptyState.classList.add('hidden');
+      }
+    }
+
+    // Search input handler
+    searchInput.addEventListener('input', (e) => {
+      searchQuery = e.target.value.toLowerCase().trim();
+      if (searchQuery) {
+        clearSearch.classList.remove('hidden');
+      } else {
+        clearSearch.classList.add('hidden');
+      }
+      filterPublications();
+    });
+
+    // Clear search handler
+    clearSearch.addEventListener('click', () => {
+      searchInput.value = '';
+      searchQuery = '';
+      clearSearch.classList.add('hidden');
+      searchInput.focus();
+      filterPublications();
+    });
+
+    // Filter tabs click handler
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => {
+          t.className = "px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-lg border border-transparent text-slate-light hover:text-white transition cursor-pointer";
+        });
+        
+        tab.className = "px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-lg border border-slate-subtle/50 bg-slate-subtle/25 text-accent font-bold transition cursor-pointer";
+
+        activeFilter = tab.getAttribute('data-filter') || 'all';
+        filterPublications();
+      });
+    });
+  }
+
+  // Run on load
+  setupFiltering();
+
+  // Re-run on Astro navigation
+  document.addEventListener('astro:page-load', setupFiltering);
+</script>
