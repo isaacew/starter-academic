@@ -170,7 +170,7 @@ export const site = {
       type: 'Journal',
       abstract: 'Distributed leader following with adaptive controllers and event-triggered multi-agent control.',
       url: '',
-    },
+    }
   ],
   featuredProjects: [],
   projectArchivePage: {

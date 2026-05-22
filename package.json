@@ -12,7 +12,8 @@
     "check": "astro check",
     "lint": "eslint \"src/**/*.{ts,astro,mjs}\" \"data/**/*.ts\" \"astro.config.mjs\" \"eslint.config.js\"",
     "lint:fix": "eslint --fix \"src/**/*.{ts,astro,mjs}\" \"data/**/*.ts\" \"astro.config.mjs\" \"eslint.config.js\"",
-    "astro": "astro"
+    "astro": "astro",
+    "sync-publications": "node scripts/sync-publications.mjs"
   },
   "keywords": [
     "portfolio",
